@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITULO_GUIA}} — CreActive Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --red:    #fe3333;
+      --blue:   #5390dc;
+      --teal:   #2cb8c5;
+      --dark:   #0f1623;
+      --ink:    #1a1a1a;
+      --muted:  #64748b;
+      --border: #e8edf2;
+      --bg:     #f4f6f9;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #dde1e8;
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ── PAGE SHELL ────────────────────────────── */
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      background: #fff;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: #fff; margin: 0; padding: 0; }
+      .page {
+        width: 210mm; height: 297mm; margin: 0;
+        box-shadow: none; break-after: page; break-inside: avoid;
+      }
+      .page:last-child { break-after: auto; }
+    }
+
+    /* ── ACCENT BAR TOP ────────────────────────── */
+    .accent-bar {
+      width: 100%; height: 5px; flex-shrink: 0;
+      background: linear-gradient(90deg, var(--red) 0%, var(--blue) 55%, var(--teal) 100%);
+    }
+
+    /* ── FOOTER ────────────────────────────────── */
+    .page-footer {
+      flex-shrink: 0;
+      padding: 14px 52px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 11px; color: #aab;
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+    .page-footer a { color: var(--teal); text-decoration: none; }
+    .page-footer .page-num { font-weight: 600; color: var(--muted); }
+
+    /* ═══════════════════════════════════════════ */
+    /* PORTADA                                     */
+    /* ═══════════════════════════════════════════ */
+    .cover {
+      flex: 1;
+      background: var(--dark);
+      display: flex; flex-direction: column;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decoración geométrica */
+    .cover-deco {
+      position: absolute; top: 0; right: 0;
+      width: 320px; height: 320px;
+      border-radius: 0 0 0 100%;
+      background: linear-gradient(135deg, rgba(83,144,220,.18) 0%, rgba(44,184,197,.1) 100%);
+      pointer-events: none;
+    }
+    .cover-deco-2 {
+      position: absolute; bottom: 60px; left: -40px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(254,51,51,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cover-inner {
+      position: relative; z-index: 1;
+      flex: 1;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      padding: 72px 64px 64px;
+    }
+
+    .cover-logo {
+      height: 44px; width: auto;
+      margin-bottom: 72px;
+      opacity: .9;
+    }
+
+    .cover-eyebrow {
+      font-size: 11px; font-weight: 600;
+      color: var(--teal);
+      text-transform: uppercase; letter-spacing: 3.5px;
+      margin-bottom: 20px;
+    }
+
+    .cover-title {
+      font-size: 56px; font-weight: 800;
+      color: #fff; line-height: 1.05;
+      margin-bottom: 12px;
+      letter-spacing: -1.5px;
+    }
+
+    .cover-title span {
+      background: linear-gradient(90deg, var(--red), var(--blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cover-subtitle {
+      font-size: 17px; font-weight: 400;
+      color: rgba(255,255,255,.6);
+      line-height: 1.6;
+      margin-bottom: 56px;
+      max-width: 460px;
+    }
+
+    .cover-divider {
+      width: 64px; height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--teal));
+      border-radius: 2px;
+      margin-bottom: 36px;
+    }
+
+    .cover-meta {
+      font-size: 13px; color: rgba(255,255,255,.45);
+      line-height: 2;
+    }
+    .cover-meta strong { color: rgba(255,255,255,.75); font-weight: 500; }
+
+    .cover-footer-strip {
+      height: 4px;
+      background: linear-gradient(90deg, var(--red), var(--blue), var(--teal));
+    }
+
+    /* ═══════════════════════════════════════════ */
+    /* TABLA DE CONTENIDOS                         */
+    /* ═══════════════════════════════════════════ */
+    .page-content {
+      flex: 1;
+      padding: 44px 52px 28px;
+      overflow: hidden;
+    }
+
+    .toc-header {
+      font-size: 11px; font-weight: 700; color: var(--teal);
+      text-transform: uppercase; letter-spacing: 3px;
+      margin-bottom: 32px;
+    }
+
+    .toc-entry {
+      display: flex; align-items: baseline;
+      gap: 0; margin-bottom: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .toc-entry:first-child { border-top: 1px solid var(--border); }
+
+    .toc-num {
+      font-size: 12px; font-weight: 700; color: var(--blue);
+      min-width: 40px; flex-shrink: 0;
+    }
+    .toc-label {
+      font-size: 15px; font-weight: 500; color: var(--ink);
+      flex: 1;
+    }
+    .toc-sub {
+      font-size: 12px; color: var(--muted); font-weight: 400;
+      margin-left: 40px; margin-top: 2px;
+      display: block;
+    }
+    .toc-dot {
+      flex: 1;
+      border-bottom: 1px dotted #ccd;
+      margin: 0 12px; margin-bottom: 3px;
+    }
+    .toc-page { font-size: 12px; font-weight: 600; color: var(--muted); }
+
+    /* ═══════════════════════════════════════════ */
+    /* CHAPTER OPENER                              */
+    /* ═══════════════════════════════════════════ */
+    .chapter-opener {
+      flex: 1;
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+    }
+
+    .chapter-opener-bg {
+      position: absolute; inset: 0;
+      background: var(--dark);
+    }
+
+    /* Big ghost number */
+    .chapter-ghost-num {
+      position: absolute;
+      right: -20px; bottom: -40px;
+      font-size: 280px; font-weight: 800;
+      color: rgba(255,255,255,.04);
+      line-height: 1;
+      pointer-events: none;
+      letter-spacing: -8px;
+      user-select: none;
+    }
+
+    /* Top colored strip */
+    .chapter-strip {
+      height: 4px;
+      background: linear-gradient(90deg, var(--red), var(--blue));
+      position: relative; z-index: 1;
+    }
+
+    .chapter-opener-inner {
+      position: relative; z-index: 1;
+      flex: 1;
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: 52px;
+    }
+
+    .chapter-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 11px; font-weight: 600;
+      color: var(--teal); letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+
+    .chapter-num-label {
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,.35);
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .chapter-title {
+      font-size: 44px; font-weight: 800;
+      color: #fff; line-height: 1.08;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+      max-width: 480px;
+    }
+
+    .chapter-intro {
+      font-size: 16px; color: rgba(255,255,255,.55);
+      line-height: 1.7; max-width: 480px;
+      font-weight: 400;
+    }
+
+    .chapter-footer-bar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--blue));
+      position: relative; z-index: 1;
+    }
+
+    /* ═══════════════════════════════════════════ */
+    /* CONTENT PAGE ELEMENTS                       */
+    /* ═══════════════════════════════════════════ */
+
+    /* Section label */
+    .section-label {
+      font-size: 11px; font-weight: 700;
+      color: var(--teal); text-transform: uppercase;
+      letter-spacing: 2.5px; margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 28px; font-weight: 800;
+      color: var(--ink); line-height: 1.2;
+      margin-bottom: 6px; letter-spacing: -.5px;
+    }
+
+    .section-rule {
+      width: 44px; height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--blue));
+      border-radius: 2px; margin-bottom: 24px;
+    }
+
+    /* Body text */
+    .body-text {
+      font-size: 14px; line-height: 1.8;
+      color: #444; margin-bottom: 14px;
+    }
+
+    .body-text + .body-text { margin-top: 0; }
+
+    /* ── PULL QUOTE ────────────────────────────── */
+    .pull-quote {
+      margin: 28px 0;
+      padding: 28px 32px;
+      background: var(--dark);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pull-quote::before {
+      content: '\201C';
+      position: absolute; top: -12px; left: 20px;
+      font-size: 120px; line-height: 1;
+      color: var(--blue); opacity: .25;
+      font-family: Georgia, serif;
+      pointer-events: none;
+    }
+    .pull-quote-text {
+      font-size: 20px; font-weight: 600;
+      color: #fff; line-height: 1.5;
+      position: relative; z-index: 1;
+    }
+    .pull-quote-text em { color: var(--teal); font-style: normal; }
+    .pull-quote-author {
+      font-size: 12px; color: rgba(255,255,255,.4);
+      margin-top: 12px; position: relative; z-index: 1;
+    }
+
+    /* ── CONCEPT BOX ───────────────────────────── */
+    .concept-box {
+      background: #f0f7ff;
+      border: 1px solid #c8ddf5;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px; margin: 20px 0;
+    }
+    .concept-label {
+      font-size: 10px; font-weight: 700;
+      color: var(--blue); text-transform: uppercase;
+      letter-spacing: 2px; margin-bottom: 8px;
+    }
+    .concept-text {
+      font-size: 14px; line-height: 1.7; color: #234;
+    }
+    .concept-text strong { color: var(--ink); }
+
+    /* ── KEY INSIGHT STRIP ─────────────────────── */
+    .insight-strip {
+      background: linear-gradient(135deg, #fff7f0 0%, #fff0f7 100%);
+      border: 1px solid #fcd9c8;
+      border-left: 4px solid var(--red);
+      border-radius: 0 10px 10px 0;
+      padding: 18px 24px; margin: 16px 0;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .insight-icon {
+      font-size: 22px; flex-shrink: 0; line-height: 1;
+    }
+    .insight-body { flex: 1; }
+    .insight-label {
+      font-size: 10px; font-weight: 700; color: var(--red);
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px;
+    }
+    .insight-text { font-size: 13.5px; line-height: 1.65; color: #432; }
+
+    /* ── ACTION BOX ────────────────────────────── */
+    .action-box {
+      background: #f0fdf7;
+      border: 1px solid #b8e8d4;
+      border-radius: 10px;
+      padding: 20px 24px; margin: 20px 0;
+    }
+    .action-label {
+      font-size: 10px; font-weight: 700; color: #0a7a4a;
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .action-label::before { content: '→'; }
+    .action-list { list-style: none; }
+    .action-list li {
+      font-size: 13.5px; line-height: 1.7; color: #1a4a32;
+      padding-left: 18px; position: relative; margin-bottom: 4px;
+    }
+    .action-list li::before {
+      content: '';
+      position: absolute; left: 0; top: 9px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--teal);
+    }
+
+    /* ── STEP SEQUENCE ─────────────────────────── */
+    .steps-container { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+
+    .step-card {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fafbfd;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+
+    .step-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: #fff; font-size: 16px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 1px;
+    }
+
+    .step-body { flex: 1; }
+    .step-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .step-desc  { font-size: 12.5px; line-height: 1.65; color: #556; }
+    .step-desc strong { color: var(--ink); }
+
+    /* ── COMPARISON TABLE ──────────────────────── */
+    .compare-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; margin: 20px 0;
+    }
+    .compare-col {
+      border-radius: 10px; overflow: hidden;
+    }
+    .compare-header {
+      padding: 12px 18px;
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .compare-col.bad  .compare-header { background: #fee2e2; color: #991b1b; }
+    .compare-col.good .compare-header { background: #dcfce7; color: #166534; }
+    .compare-col.neutral-a .compare-header { background: #fef3c7; color: #92400e; }
+    .compare-col.neutral-b .compare-header { background: #eff6ff; color: #1e40af; }
+
+    .compare-body {
+      background: #fafbfc; border: 1px solid var(--border);
+      border-top: none; border-radius: 0 0 10px 10px;
+      padding: 16px 18px;
+    }
+    .compare-item {
+      font-size: 13px; line-height: 1.7; color: #445;
+      padding: 4px 0 4px 16px; position: relative;
+    }
+    .compare-col.bad  .compare-item::before { content: '✕'; position:absolute; left:0; color:#dc2626; font-size:11px; top:5px; }
+    .compare-col.good .compare-item::before { content: '✓'; position:absolute; left:0; color:#16a34a; font-size:11px; top:5px; }
+    .compare-col.neutral-a .compare-item::before { content: '—'; position:absolute; left:0; color:#d97706; font-size:11px; top:4px; }
+    .compare-col.neutral-b .compare-item::before { content: '→'; position:absolute; left:0; color:var(--blue); font-size:11px; top:4px; }
+
+    /* ── DATA TABLE ────────────────────────────── */
+    .data-table {
+      width: 100%; border-collapse: collapse; margin: 16px 0;
+    }
+    .data-table thead tr {
+      background: var(--dark); color: #fff;
+    }
+    .data-table th {
+      font-size: 11px; font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; padding: 12px 16px; text-align: left;
+    }
+    .data-table td {
+      font-size: 13px; color: #445; padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.55;
+    }
+    .data-table tr:nth-child(even) td { background: #f8f9fb; }
+    .data-table td:first-child { font-weight: 600; color: var(--ink); }
+    .data-table td strong { color: var(--ink); }
+
+    /* ── HIGHLIGHT TABLE (2-col) ───────────────── */
+    .highlight-table {
+      width: 100%; border-collapse: collapse; margin: 16px 0;
+    }
+    .highlight-table th {
+      font-size: 11px; font-weight: 700;
+      color: #fff; letter-spacing: 1px; text-transform: uppercase;
+      padding: 12px 18px; text-align: left;
+    }
+    .highlight-table thead tr { background: linear-gradient(90deg, #1e3a5f, #1a3a5c); }
+    .highlight-table td {
+      font-size: 13px; color: #445; padding: 12px 18px;
+      border-bottom: 1px solid var(--border); vertical-align: top;
+      line-height: 1.65;
+    }
+    .highlight-table tr:nth-child(even) td { background: #f5f8fc; }
+    .highlight-table td strong { color: var(--ink); }
+
+    /* ── METHOD CARD (numbered) ────────────────── */
+    .method-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px; margin: 16px 0;
+    }
+
+    .method-card {
+      background: #fafbfd;
+      border: 1px solid var(--border);
+      border-radius: 10px; padding: 18px 20px;
+      position: relative; overflow: hidden;
+    }
+    .method-card::after {
+      content: attr(data-num);
+      position: absolute; right: 10px; bottom: -8px;
+      font-size: 64px; font-weight: 800; line-height: 1;
+      color: rgba(83,144,220,.07);
+      pointer-events: none;
+    }
+    .method-card-num {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--red), var(--blue));
+      color: #fff; font-size: 13px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 10px;
+    }
+    .method-card-title { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .method-card-desc  { font-size: 12px; line-height: 1.6; color: #667; }
+
+    /* ── INLINE BADGE ──────────────────────────── */
+    .badge {
+      display: inline-block;
+      padding: 3px 10px; border-radius: 100px;
+      font-size: 11px; font-weight: 700; letter-spacing: .5px;
+    }
+    .badge-red  { background: #fee2e2; color: #991b1b; }
+    .badge-blue { background: #dbeafe; color: #1e40af; }
+    .badge-teal { background: #ccfbf1; color: #065f46; }
+    .badge-dark { background: #1e293b; color: #94a3b8; }
+
+    /* ── COST COMPARE ──────────────────────────── */
+    .cost-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 18px; border-radius: 8px;
+      border: 1px solid var(--border); margin-bottom: 8px;
+    }
+    .cost-row.chosen { background: #f0fdf7; border-color: #86efac; }
+    .cost-row.not-chosen { background: #fafbfc; opacity: .75; }
+    .cost-model { font-size: 13px; font-weight: 700; color: var(--ink); flex: 1; }
+    .cost-price { font-size: 18px; font-weight: 800; color: var(--ink); }
+    .cost-note  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .cost-check { font-size: 18px; }
+
+    /* ── CLOSING CTA ───────────────────────────── */
+    .cta-block {
+      background: var(--dark);
+      border-radius: 14px; padding: 36px 40px; margin: 20px 0;
+      position: relative; overflow: hidden;
+    }
+    .cta-block::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--blue), var(--teal));
+    }
+    .cta-label { font-size: 11px; font-weight: 700; color: var(--teal);
+      text-transform: uppercase; letter-spacing: 2.5px; margin-bottom: 12px; }
+    .cta-title { font-size: 24px; font-weight: 800; color: #fff;
+      line-height: 1.2; margin-bottom: 10px; }
+    .cta-desc  { font-size: 14px; color: rgba(255,255,255,.55); line-height: 1.7; }
+    .cta-email { font-size: 16px; font-weight: 600; color: var(--teal);
+      margin-top: 16px; display: block; }
+
+    /* ── SUMMARY CHECKLIST ─────────────────────── */
+    .checklist { list-style: none; margin: 12px 0; }
+    .checklist li {
+      font-size: 13.5px; line-height: 1.7; color: #344;
+      padding: 6px 0 6px 28px; position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '';
+      position: absolute; left: 0; top: 13px;
+      width: 14px; height: 14px; border-radius: 4px;
+      border: 2px solid var(--border);
+      background: #fff;
+    }
+    .checklist li.checked::before {
+      background: var(--teal);
+      border-color: var(--teal);
+      content: '✓';
+      color: #fff; font-size: 9px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ── COLUMN LAYOUT ─────────────────────────── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 16px 0; }
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 16px 0; }
+
+    /* ── STAT CARD ─────────────────────────────── */
+    .stat-card {
+      background: var(--dark); border-radius: 10px; padding: 20px;
+      text-align: center;
+    }
+    .stat-num  { font-size: 40px; font-weight: 800; line-height: 1;
+      background: linear-gradient(90deg, var(--teal), var(--blue));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,.5);
+      margin-top: 6px; line-height: 1.4; }
+
+    /* ── DIVIDER ───────────────────────────────── */
+    .divider { width: 100%; height: 1px; background: var(--border); margin: 24px 0; }
+    .divider-accent { height: 2px; background: linear-gradient(90deg, var(--red), transparent); margin: 20px 0; }
+
+    /* ── SPACER ────────────────────────────────── */
+    .sp4  { height: 4px; }
+    .sp8  { height: 8px; }
+    .sp12 { height: 12px; }
+    .sp20 { height: 20px; }
+    .sp28 { height: 28px; }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 1 — PORTADA                                 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-deco"></div>
+    <div class="cover-deco-2"></div>
+
+    <div class="cover-inner">
+      <!-- Logo -->
+      <img
+        src="/Users/oz/Documents/CAS-CEO/creactive-studio/content-engine/carrusel/public/brand/logo.png"
+        class="cover-logo" alt="CreActive Studio" />
+
+      <div class="cover-eyebrow">{{TIPO_DOCUMENTO}}</div>
+
+      <div class="cover-title">
+        {{TITULO_LINEA_1}}<br>
+        <span>{{TITULO_LINEA_2}}</span>
+      </div>
+
+      <div class="cover-subtitle">{{SUBTITULO_GUIA}}</div>
+
+      <div class="cover-divider"></div>
+
+      <div class="cover-meta">
+        <strong>Por:</strong> {{AUTOR}}<br>
+        <strong>Edición:</strong> {{VERSION}} — {{FECHA}}<br>
+        <strong>Web:</strong> {{WEB}}
+      </div>
+    </div>
+
+    <div class="cover-footer-strip"></div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 2 — TABLA DE CONTENIDOS                     -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+    <div class="sp8"></div>
+    <div class="toc-header">Contenidos</div>
+
+    <div class="toc-entry">
+      <span class="toc-num">Intro</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_0_TITULO}}</span>
+        <span class="toc-sub">{{TOC_0_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">01</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_1_TITULO}}</span>
+        <span class="toc-sub">{{TOC_1_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">02</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_2_TITULO}}</span>
+        <span class="toc-sub">{{TOC_2_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">03</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_3_TITULO}}</span>
+        <span class="toc-sub">{{TOC_3_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">04</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_4_TITULO}}</span>
+        <span class="toc-sub">{{TOC_4_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">05</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_5_TITULO}}</span>
+        <span class="toc-sub">{{TOC_5_DESC}}</span>
+      </div>
+    </div>
+
+    <div class="toc-entry">
+      <span class="toc-num">Cierre</span>
+      <div style="flex:1">
+        <span class="toc-label">{{TOC_6_TITULO}}</span>
+        <span class="toc-sub">{{TOC_6_DESC}}</span>
+      </div>
+    </div>
+
+    <!-- STAT STRIP opcional -->
+    <div class="sp28"></div>
+    <div class="three-col">
+      <div class="stat-card">
+        <div class="stat-num">{{STAT_1_NUM}}</div>
+        <div class="stat-label">{{STAT_1_LABEL}}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">{{STAT_2_NUM}}</div>
+        <div class="stat-label">{{STAT_2_LABEL}}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">{{STAT_3_NUM}}</div>
+        <div class="stat-label">{{STAT_3_LABEL}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. 2</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 3 — CHAPTER OPENER (INTRO / CAP. 0)        -->
+<!-- Duplicar este bloque para cada capítulo            -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="chapter-opener">
+    <div class="chapter-opener-bg"></div>
+    <div class="chapter-ghost-num">{{OPENER_NUM}}</div>
+    <div class="chapter-strip"></div>
+    <div class="chapter-opener-inner">
+      <div class="chapter-tag">{{OPENER_TAG}}</div>
+      <div class="chapter-num-label">{{OPENER_CAPITULO_LABEL}}</div>
+      <div class="chapter-title">{{OPENER_TITULO}}</div>
+      <div class="chapter-intro">{{OPENER_INTRO}}</div>
+    </div>
+    <div class="chapter-footer-bar"></div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 4 — PÁGINA DE CONTENIDO CON PULL QUOTE     -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+
+    <div class="section-label">{{SECTION_LABEL}}</div>
+    <div class="section-title">{{SECTION_TITULO}}</div>
+    <div class="section-rule"></div>
+
+    <p class="body-text">{{PARRAFO_1}}</p>
+    <p class="body-text">{{PARRAFO_2}}</p>
+
+    <div class="pull-quote">
+      <div class="pull-quote-text">{{PULL_QUOTE_TEXTO}}</div>
+      <div class="pull-quote-author">{{PULL_QUOTE_AUTOR}}</div>
+    </div>
+
+    <p class="body-text">{{PARRAFO_3}}</p>
+
+    <div class="concept-box">
+      <div class="concept-label">Concepto clave</div>
+      <div class="concept-text">{{CONCEPTO_TEXTO}}</div>
+    </div>
+
+    <div class="insight-strip">
+      <div class="insight-icon">💡</div>
+      <div class="insight-body">
+        <div class="insight-label">Para recordar</div>
+        <div class="insight-text">{{INSIGHT_TEXTO}}</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. 4</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 5 — SECUENCIA DE PASOS                      -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+
+    <div class="section-label">Proceso</div>
+    <div class="section-title">{{STEPS_TITULO}}</div>
+    <div class="section-rule"></div>
+
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">{{PASO_1_TITULO}}</div>
+          <div class="step-desc">{{PASO_1_DESC}}</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">{{PASO_2_TITULO}}</div>
+          <div class="step-desc">{{PASO_2_DESC}}</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">{{PASO_3_TITULO}}</div>
+          <div class="step-desc">{{PASO_3_DESC}}</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">{{PASO_4_TITULO}}</div>
+          <div class="step-desc">{{PASO_4_DESC}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-box">
+      <div class="action-label">Aplica esto ahora</div>
+      <ul class="action-list">
+        <li>{{ACCION_1}}</li>
+        <li>{{ACCION_2}}</li>
+        <li>{{ACCION_3}}</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. 5</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 6 — COMPARATIVA (Malo vs. Bueno)           -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+
+    <div class="section-label">{{COMPARE_LABEL}}</div>
+    <div class="section-title">{{COMPARE_TITULO}}</div>
+    <div class="section-rule"></div>
+
+    <p class="body-text">{{COMPARE_INTRO}}</p>
+
+    <div class="compare-grid">
+      <div class="compare-col bad">
+        <div class="compare-header">{{COMPARE_COL_A_LABEL}}</div>
+        <div class="compare-body">
+          <div class="compare-item">{{COMPARE_A_1}}</div>
+          <div class="compare-item">{{COMPARE_A_2}}</div>
+          <div class="compare-item">{{COMPARE_A_3}}</div>
+        </div>
+      </div>
+      <div class="compare-col good">
+        <div class="compare-header">{{COMPARE_COL_B_LABEL}}</div>
+        <div class="compare-body">
+          <div class="compare-item">{{COMPARE_B_1}}</div>
+          <div class="compare-item">{{COMPARE_B_2}}</div>
+          <div class="compare-item">{{COMPARE_B_3}}</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="body-text">{{COMPARE_CONCL}}</p>
+
+    <!-- Data table opcional -->
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{{TABLE_COL_1}}</th>
+          <th>{{TABLE_COL_2}}</th>
+          <th>{{TABLE_COL_3}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{TABLE_R1_C1}}</td>
+          <td>{{TABLE_R1_C2}}</td>
+          <td>{{TABLE_R1_C3}}</td>
+        </tr>
+        <tr>
+          <td>{{TABLE_R2_C1}}</td>
+          <td>{{TABLE_R2_C2}}</td>
+          <td>{{TABLE_R2_C3}}</td>
+        </tr>
+        <tr>
+          <td>{{TABLE_R3_C1}}</td>
+          <td>{{TABLE_R3_C2}}</td>
+          <td>{{TABLE_R3_C3}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. 6</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 7 — MÉTODO / RESUMEN VISUAL                 -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+
+    <div class="section-label">Resumen</div>
+    <div class="section-title">{{METODO_TITULO}}</div>
+    <div class="section-rule"></div>
+
+    <p class="body-text">{{METODO_INTRO}}</p>
+    <div class="sp12"></div>
+
+    <div class="method-grid">
+      <div class="method-card" data-num="1">
+        <div class="method-card-num">1</div>
+        <div class="method-card-title">{{MC_1_TITULO}}</div>
+        <div class="method-card-desc">{{MC_1_DESC}}</div>
+      </div>
+      <div class="method-card" data-num="2">
+        <div class="method-card-num">2</div>
+        <div class="method-card-title">{{MC_2_TITULO}}</div>
+        <div class="method-card-desc">{{MC_2_DESC}}</div>
+      </div>
+      <div class="method-card" data-num="3">
+        <div class="method-card-num">3</div>
+        <div class="method-card-title">{{MC_3_TITULO}}</div>
+        <div class="method-card-desc">{{MC_3_DESC}}</div>
+      </div>
+      <div class="method-card" data-num="4">
+        <div class="method-card-num">4</div>
+        <div class="method-card-title">{{MC_4_TITULO}}</div>
+        <div class="method-card-desc">{{MC_4_DESC}}</div>
+      </div>
+      <div class="method-card" data-num="5">
+        <div class="method-card-num">5</div>
+        <div class="method-card-title">{{MC_5_TITULO}}</div>
+        <div class="method-card-desc">{{MC_5_DESC}}</div>
+      </div>
+      <div class="method-card" data-num="6">
+        <div class="method-card-num">6</div>
+        <div class="method-card-title">{{MC_6_TITULO}}</div>
+        <div class="method-card-desc">{{MC_6_DESC}}</div>
+      </div>
+    </div>
+
+    <div class="insight-strip">
+      <div class="insight-icon">🎯</div>
+      <div class="insight-body">
+        <div class="insight-label">La idea central</div>
+        <div class="insight-text">{{METODO_KEY_INSIGHT}}</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. 7</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- PÁGINA 8 — CIERRE + CTA                            -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="page-content">
+
+    <div class="section-label">Cierre</div>
+    <div class="section-title">{{CIERRE_TITULO}}</div>
+    <div class="section-rule"></div>
+
+    <p class="body-text">{{CIERRE_PARRAFO_1}}</p>
+    <p class="body-text">{{CIERRE_PARRAFO_2}}</p>
+
+    <div class="sp12"></div>
+
+    <div class="cta-block">
+      <div class="cta-label">{{CTA_LABEL}}</div>
+      <div class="cta-title">{{CTA_TITULO}}</div>
+      <div class="cta-desc">{{CTA_DESC}}</div>
+      <a class="cta-email">{{CTA_EMAIL}}</a>
+    </div>
+
+    <div class="sp20"></div>
+    <div class="divider"></div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+      <div>
+        <div style="font-size:14px; font-weight:700; color:var(--ink);">{{AUTOR_NOMBRE}}</div>
+        <div style="font-size:12px; color:var(--muted);">{{AUTOR_ROL}}</div>
+        <div style="font-size:12px; color:var(--muted);">{{AUTOR_EMAIL}}</div>
+      </div>
+      <img
+        src="/Users/oz/Documents/CAS-CEO/creactive-studio/content-engine/carrusel/public/brand/logo.png"
+        style="height:32px; width:auto; opacity:.6;" alt="CreActive Studio" />
+    </div>
+
+  </div>
+  <div class="page-footer">
+    <a href="{{WEB}}">{{WEB}}</a>
+    <span class="page-num">Pág. {{TOTAL_PAGS}}</span>
+  </div>
+</div>
+
+
+</body>
+</html>

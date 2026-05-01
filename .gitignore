@@ -1,0 +1,48 @@
+# OS / Editor
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Secrets — NUNCA commitear
+.env
+.env.local
+.env.*.local
+.mcp.json
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# Build outputs
+.next/
+dist/
+out/
+build/
+.turbo/
+.cache/
+*.tsbuildinfo
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git internos anidados
+**/.git/
+**/.worktrees/
+
+# Scraper outputs (se regeneran)
+tools/scraper-output/
+
+# Outputs generados de carrusel
+content-engine/carrusel/output/
+content-engine/carrusel/node_modules/
+
+# Inbox procesado (no persistir)
+# inbox/ se mantiene intencionalmente

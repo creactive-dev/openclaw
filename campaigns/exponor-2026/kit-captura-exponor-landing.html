@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit de Captura Exponor 2026 — CreActive Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:     #FF3231;
+      --red-h:   #E62D2C;
+      --blue:    #578BDE;
+      --teal:    #2FB8C5;
+      --text-primary: #0F172A;
+      --text-body:    #334155;
+      --text-muted:   #64748B;
+      --surface:      #FFFFFF;
+      --surface-alt:  #F8FAFC;
+      --surface-muted:#F1F5F9;
+      --border:       #E2E8F0;
+      --shadow-sm:    0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md:    0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg:    0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--surface);
+      color: var(--text-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 40px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-logo img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+    .nav-cta {
+      background: var(--red); color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600; font-size: 14px;
+      padding: 10px 22px; border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px -1px rgba(255,50,49,0.25);
+      transition: all 200ms ease;
+    }
+    .nav-cta:hover {
+      background: var(--red-h);
+      box-shadow: 0 6px 12px -2px rgba(255,50,49,0.35);
+      transform: translateY(-1px);
+    }
+
+    /* ─── HERO ─── */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      min-height: 92vh;
+      display: flex; align-items: center;
+      background: var(--surface); /* base blanco garantizado */
+    }
+    /* La foto ocupa solo el lado derecho — el texto nunca la toca */
+    .hero-bg {
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 48%;
+      z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 30%;
+      display: block;
+    }
+    /* Fade solo en el borde izquierdo de la imagen */
+    .hero-bg-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255,255,255,1)   0%,
+        rgba(255,255,255,0.6) 35%,
+        rgba(255,255,255,0)   100%
+      );
+    }
+    /* Fade inferior */
+    .hero-bg-overlay-bottom {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+      background: linear-gradient(to top, var(--surface) 0%, transparent 100%);
+    }
+    .hero {
+      position: relative; z-index: 1;
+      /* Ocupa exactamente el 52% izquierdo donde no está la foto */
+      width: 52%;
+      /* Padding izquierdo: centra el contenido dentro de la columna */
+      padding: 140px 56px 96px max(40px, calc((100vw * 0.52 - 560px) / 2));
+      margin: 0;
+      flex-shrink: 0;
+    }
+    @media (max-width: 900px) {
+      /* Foto cubre todo el hero como fondo */
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        top: 0; right: 0; bottom: 0; left: 0;
+      }
+      .hero-bg img {
+        object-position: 60% center;
+      }
+      /* Overlay uniforme y fuerte — la foto es contexto, no protagonista */
+      .hero-bg-overlay {
+        background: rgba(255,255,255,0.88);
+      }
+      .hero-bg-overlay-bottom {
+        display: block;
+        height: 80px;
+      }
+      .hero {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 100px 20px 56px;
+        width: 100%;
+      }
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(47,184,197,0.08);
+      border: 1px solid rgba(47,184,197,0.25);
+      color: var(--teal);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px; font-weight: 600;
+      padding: 5px 14px; border-radius: 100px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .badge-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--teal);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      font-weight: 800;
+      line-height: 1.06;
+      letter-spacing: -2px;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+    }
+    h1 .accent { color: var(--blue); }
+
+    .hero-sub {
+      font-size: clamp(17px, 2vw, 21px);
+      color: var(--text-muted);
+      max-width: 580px;
+      margin-bottom: 44px;
+      line-height: 1.55;
+    }
+
+    .hero-ctas {
+      display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+    }
+    .btn-primary {
+      background: var(--red); color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: 16px;
+      padding: 15px 32px; border-radius: 8px;
+      text-decoration: none; display: inline-block;
+      box-shadow: 0 4px 6px -1px rgba(255,50,49,0.25);
+      transition: all 200ms ease;
+    }
+    .btn-primary:hover {
+      background: var(--red-h);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px -2px rgba(255,50,49,0.35);
+    }
+    .btn-secondary {
+      background: transparent; color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600; font-size: 15px;
+      padding: 14px 28px; border-radius: 8px;
+      border: 2px solid var(--border);
+      text-decoration: none; display: inline-block;
+      transition: all 200ms ease;
+    }
+    .btn-secondary:hover {
+      border-color: var(--blue); color: var(--blue);
+    }
+
+    .hero-stats {
+      display: flex; flex-wrap: wrap; gap: 40px;
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .stat-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 38px; font-weight: 800;
+      color: var(--blue); letter-spacing: -1.5px; line-height: 1;
+    }
+    .stat-label {
+      font-size: 13px; color: var(--text-muted); margin-top: 5px;
+    }
+
+    /* ─── DIVIDER ─── */
+    hr { border: none; border-top: 1px solid var(--border); }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 88px 40px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    .section-tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 14px;
+    }
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+    h2 .accent { color: var(--blue); }
+    .section-lead {
+      font-size: 18px; color: var(--text-muted);
+      max-width: 580px; line-height: 1.65; margin-bottom: 56px;
+    }
+
+    /* ─── PAIN ─── */
+    .alt-bg { background: var(--surface-alt); }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .pain-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: all 200ms ease;
+      cursor: default;
+    }
+    .pain-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(87,139,222,0.25);
+      transform: translateY(-2px);
+    }
+    .pain-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      background: rgba(87,139,222,0.08);
+    }
+    .pain-icon svg { width: 20px; height: 20px; stroke: var(--blue); stroke-width: 1.5; fill: none; }
+    .pain-card h3 {
+      font-size: 16px; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 8px;
+    }
+    .pain-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+    /* ─── FEATURES ─── */
+    .features-list { display: flex; flex-direction: column; gap: 0; }
+    .feature {
+      display: grid; grid-template-columns: 56px 1fr;
+      gap: 24px; align-items: start;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .feature:last-child { border-bottom: none; }
+    .feature-num {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--blue); color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .feature h3 {
+      font-size: 19px; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 7px;
+    }
+    .feature p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+
+    /* ─── TIMELINE ─── */
+    .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 0; }
+    .tl-item {
+      display: grid; grid-template-columns: 130px 1fr;
+      gap: 0; position: relative; padding-bottom: 36px;
+    }
+    .tl-line {
+      position: absolute;
+      left: 130px; top: 20px; bottom: 0;
+      width: 1px; background: var(--border);
+    }
+    .tl-item:last-child .tl-line { display: none; }
+    .tl-date {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px; font-weight: 700;
+      color: var(--blue); text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding-right: 24px; padding-top: 4px; text-align: right;
+    }
+    .tl-body {
+      padding-left: 28px; position: relative;
+    }
+    .tl-body::before {
+      content: '';
+      position: absolute; left: -5px; top: 8px;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--red);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--red);
+    }
+    .tl-body h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 5px; }
+    .tl-body p { font-size: 14px; color: var(--text-muted); line-height: 1.55; }
+
+    /* ─── PRICING ─── */
+    .price-card {
+      border: 2px solid var(--blue);
+      border-radius: 16px; padding: 48px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(87,139,222,0.04) 0%, rgba(47,184,197,0.04) 100%);
+    }
+    @media (max-width: 640px) { .price-card { grid-template-columns: 1fr; padding: 32px; } }
+    .price-amount {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 72px; font-weight: 800;
+      color: var(--text-primary); letter-spacing: -4px; line-height: 1;
+    }
+    .price-amount sup {
+      font-size: 28px; vertical-align: top;
+      margin-top: 14px; display: inline-block;
+      letter-spacing: 0; color: var(--blue);
+    }
+    .price-period { font-size: 15px; color: var(--text-muted); margin-top: 10px; }
+    .price-guarantee {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(22,163,74,0.08); border: 1px solid rgba(22,163,74,0.2);
+      color: #16A34A; font-size: 13px; font-weight: 600;
+      padding: 6px 14px; border-radius: 6px; margin-top: 16px;
+    }
+    .includes-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 18px;
+    }
+    .includes-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .includes-list li {
+      font-size: 15px; display: flex;
+      align-items: flex-start; gap: 10px; color: var(--text-body);
+    }
+    .check {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: rgba(87,139,222,0.12);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .check svg { width: 11px; height: 11px; stroke: var(--blue); stroke-width: 2.5; fill: none; }
+
+    /* ─── URGENCY ─── */
+    .urgency {
+      background: rgba(255,50,49,0.06);
+      border: 1px solid rgba(255,50,49,0.2);
+      border-radius: 10px; padding: 20px 24px;
+      display: flex; align-items: flex-start; gap: 14px;
+      margin-top: 28px;
+    }
+    .urgency-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255,50,49,0.1);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .urgency-icon svg { width: 18px; height: 18px; stroke: var(--red); stroke-width: 2; fill: none; }
+    .urgency p { font-size: 14px; color: var(--text-body); line-height: 1.55; }
+    .urgency strong { color: var(--text-primary); }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+    .about-text p { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
+    .credentials { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+    .cred {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 12px 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .cred-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+    .cred-text { font-size: 14px; color: var(--text-body); font-weight: 500; }
+    .cred-text span { color: var(--blue); font-weight: 700; }
+    .about-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .about-stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    .about-stat-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 32px; font-weight: 800;
+      color: var(--blue); letter-spacing: -1px; line-height: 1;
+    }
+    .about-stat-label { font-size: 12px; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+    /* ─── CTA FINAL ─── */
+    .cta-final {
+      background: var(--text-primary);
+      padding: 88px 40px;
+    }
+    .cta-final .container { text-align: center; }
+    .cta-final h2 { color: #fff; }
+    .cta-final h2 .accent { color: var(--teal); }
+    .cta-final .section-lead { color: rgba(255,255,255,0.6); margin: 0 auto 44px; }
+    .btn-cta-final {
+      background: var(--red); color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: 17px;
+      padding: 18px 48px; border-radius: 8px;
+      text-decoration: none; display: inline-block;
+      box-shadow: 0 4px 6px -1px rgba(255,50,49,0.3);
+      transition: all 200ms ease;
+    }
+    .btn-cta-final:hover {
+      background: var(--red-h);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -4px rgba(255,50,49,0.4);
+    }
+    .cta-note {
+      margin-top: 20px; font-size: 14px;
+      color: rgba(255,255,255,0.45);
+    }
+    .cta-note a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 150ms; }
+    .cta-note a:hover { color: #fff; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 28px 40px; text-align: center;
+      font-size: 13px; color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--blue); }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 640px) {
+      nav { padding: 12px 16px; }
+      nav .nav-logo img { height: 28px; }
+      nav .nav-cta { font-size: 13px; padding: 9px 16px; }
+
+      section { padding: 56px 20px; }
+      .cta-final { padding: 56px 20px; }
+      footer { padding: 24px 20px; }
+
+      /* Badge: una línea, texto más corto */
+      .badge {
+        font-size: 10px;
+        padding: 4px 10px;
+        gap: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+
+      /* H1 más compacto */
+      h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+      }
+
+      /* Subtítulo más chico */
+      .hero-sub {
+        font-size: 15px;
+        margin-bottom: 28px;
+      }
+
+      /* CTAs: apilados, botón primario a ancho completo */
+      .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .btn-primary {
+        text-align: center;
+        font-size: 15px;
+        padding: 14px 24px;
+      }
+      .btn-secondary {
+        text-align: center;
+        font-size: 14px;
+        padding: 12px 24px;
+      }
+
+      /* Stats: fila compacta */
+      .hero-stats {
+        gap: 20px;
+        margin-top: 32px;
+        padding-top: 24px;
+      }
+      .stat-num { font-size: 26px; }
+      .stat-label { font-size: 11px; }
+
+      /* Timeline */
+      .tl-item { grid-template-columns: 70px 1fr; }
+      .tl-line { left: 70px; }
+      .tl-date { font-size: 10px; padding-right: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><img src="./logo-creactive.png" alt="CreActive Studio Agency" /></div>
+  <a href="https://crm.creactivestudio.agency/widget/booking/jWoatPHeZLQyhDOh0oCj" target="_blank" class="nav-cta">Agendar llamada</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero-section">
+  <!-- Fondo con foto -->
+  <div class="hero-bg">
+    <img src="./exponor-feria-hero.jpg" alt="Pasillo de stands en Exponor con visitantes" />
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg-overlay-bottom"></div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="hero">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Exponor 2026 &mdash; 8 al 11 de junio &middot; Antofagasta
+    </div>
+
+    <h1>
+      Tu stand captura contactos.<br>
+      ¿Quién les <span class="accent">da seguimiento</span>?
+    </h1>
+
+    <p class="hero-sub">
+      La mayoría de las empresas en Exponor termina el evento con 50 tarjetas en un bolsillo y ningún sistema. Nosotros resolvemos eso antes del 8 de junio.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="https://crm.creactivestudio.agency/widget/booking/jWoatPHeZLQyhDOh0oCj" target="_blank" class="btn-primary">Quiero el Kit de Captura &rarr;</a>
+      <a href="#que-incluye" class="btn-secondary">Ver qué incluye</a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">$273K</div>
+        <div class="stat-label">CLP + IVA &middot; entrega en 1 semana</div>
+      </div>
+      <div>
+        <div class="stat-num">30d</div>
+        <div class="stat-label">de seguimiento automatizado post-evento</div>
+      </div>
+      <div>
+        <div class="stat-num">0</div>
+        <div class="stat-label">contactos que se enfrían sin seguimiento</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- PAIN -->
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-tag">El problema</div>
+    <h2>Lo que pasa <span class="accent">siempre</span> en las ferias</h2>
+    <p class="section-lead">Tu equipo pasa 4 días haciendo demos y conectando con potenciales clientes. Al terminar el evento...</p>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0119 9.414V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3>Datos en papel o Excel</h3>
+        <p>Los contactos se registran a mano. Se pierde información. No hay registro de qué conversaron ni qué necesitaban.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+        </div>
+        <h3>Tarjetas de presentación</h3>
+        <p>Cincuenta tarjetas en una bolsa. Nadie sabe quién es quién. La mitad se pierde en el viaje de vuelta a Santiago.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3>Contactos que se enfrían</h3>
+        <p>Dos semanas después del evento, el potencial cliente ya no recuerda tu empresa. La ventana de oportunidad se cerró.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- WHAT YOU GET -->
+<section id="que-incluye">
+  <div class="container">
+    <div class="section-tag">La solución</div>
+    <h2>Kit de Captura <span class="accent">Exponor</span></h2>
+    <p class="section-lead">Un sistema completo que captura cada contacto de tu stand y los mantiene calientes hasta que tu equipo de ventas esté listo para cerrar.</p>
+
+    <div class="features-list">
+      <div class="feature">
+        <div class="feature-num">01</div>
+        <div>
+          <h3>Formulario QR para el stand</h3>
+          <p>Página mobile-first con tu logo. El visitante escanea el QR, llena sus datos en 30 segundos: nombre, empresa, cargo, teléfono, necesidad específica. Sin papel, sin typos, sin perder información.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">02</div>
+        <div>
+          <h3>Registro en CRM en tiempo real</h3>
+          <p>Cada formulario enviado entra automáticamente a tu embudo "Exponor 2026" con todos los datos y la hora exacta. Ves quién llegó y cuándo mientras el evento está ocurriendo.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">03</div>
+        <div>
+          <h3>Seguimiento automatizado 30 días post-evento</h3>
+          <p>4 emails automáticos después del cierre del evento: agradecimiento personalizado, contenido de valor, recordatorio de oferta, cierre de conversación. Cada uno con el nombre del contacto y su necesidad específica.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">04</div>
+        <div>
+          <h3>Panel de control + reporte ejecutivo</h3>
+          <p>Al terminar ves exactamente cuántos contactos capturaste, de qué empresas, qué necesitan, y cuáles abrieron los emails de seguimiento. Reporte listo para presentar a gerencia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- TIMELINE -->
+<section class="alt-bg">
+  <div class="container">
+    <div class="section-tag">Cómo funciona</div>
+    <h2>Del acuerdo al stand<br>en <span class="accent">una semana</span></h2>
+    <p class="section-lead" style="margin-bottom:48px;">Llamada el lunes, sistema funcionando el viernes. Sin reuniones interminables.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-line"></div>
+        <div class="tl-date">Día 1</div>
+        <div class="tl-body">
+          <h3>Llamada de 20 minutos</h3>
+          <p>Definimos el formulario, los campos que necesitan, el branding y la secuencia de seguimiento. Eso es todo lo que necesitamos para arrancar.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-line"></div>
+        <div class="tl-date">Día 2&ndash;3</div>
+        <div class="tl-body">
+          <h3>Configuración completa + QR entregado</h3>
+          <p>Formulario con tu identidad visual, embudo activo, secuencia de emails configurada. Te entregamos el QR listo para imprimir en menos de 48 horas.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-line"></div>
+        <div class="tl-date">Día 4&ndash;5</div>
+        <div class="tl-body">
+          <h3>Prueba + ajustes</h3>
+          <p>Tu equipo testea el formulario, revisamos que todo llegue al CRM correctamente. Cualquier ajuste lo resolvemos el mismo día.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-line"></div>
+        <div class="tl-date">8&ndash;11 junio</div>
+        <div class="tl-body">
+          <h3>Exponor &mdash; el sistema corre solo</h3>
+          <p>Tu equipo se enfoca en las conversaciones. Los datos entran solos al CRM en tiempo real.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Julio</div>
+        <div class="tl-body">
+          <h3>30 días de seguimiento automático</h3>
+          <p>La secuencia de seguimiento corre sin que hagas nada. Los contactos calientes aparecen en tu embudo listos para convertir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- PRICE -->
+<section id="precio">
+  <div class="container">
+    <div class="section-tag">Inversión</div>
+    <h2>Precio fijo.<br><span class="accent">Sin sorpresas.</span></h2>
+
+    <div class="price-card" style="margin-top:48px;">
+      <div>
+        <div class="price-amount"><sup>$</sup>273.000</div>
+        <div class="price-period">CLP + IVA &middot; pago único &middot; sin costo mensual</div>
+        <div class="price-guarantee">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Sistema funcionando en menos de 1 semana
+        </div>
+      </div>
+
+      <div>
+        <div class="includes-label">Incluye</div>
+        <ul class="includes-list">
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Formulario QR personalizado con tu branding
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Embudo de ventas en CRM configurado
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Secuencia de 4 emails post-evento
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Panel de contactos capturados
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Reporte ejecutivo post-Exponor
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            Soporte WhatsApp durante el evento
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="urgency">
+      <div class="urgency-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <p><strong>Quedan menos de 6 semanas para Exponor.</strong> Para entregar el sistema con tiempo de pruebas, necesitamos al menos 2 semanas de configuración. La ventana para arrancar es ahora.</p>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- ABOUT -->
+<section class="alt-bg">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-tag">Quién lo hace</div>
+        <h2>CreActive <span class="accent">Studio</span></h2>
+        <p>Somos una consultora especializada en sistemas de automatización y marketing para empresas B2B. No solo diseñamos — ejecutamos y entregamos funcionando.</p>
+        <p>Implementamos automatizaciones para empresas de salud, legal y servicios en Chile y Colombia. El Kit de Captura usa la misma infraestructura que usamos con nuestros clientes de retainer mensual.</p>
+
+        <div class="credentials">
+          <div class="cred">
+            <span class="cred-dot"></span>
+            <span class="cred-text">PedidosYa &mdash; <span>70+ dark kitchens</span>, +300% crecimiento</span>
+          </div>
+          <div class="cred">
+            <span class="cred-dot"></span>
+            <span class="cred-text">Mallplaza &mdash; <span>4M de órdenes</span> de delivery gestionadas</span>
+          </div>
+          <div class="cred">
+            <span class="cred-dot"></span>
+            <span class="cred-text">5 clientes activos &mdash; <span>3 países</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">+300%</div>
+          <div class="about-stat-label">crecimiento operacional gestionado en PedidosYa</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">4M</div>
+          <div class="about-stat-label">órdenes de delivery coordinadas en Mallplaza</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">&lt;1</div>
+          <div class="about-stat-label">semana de entrega &mdash; sistema listo en días</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">$273K</div>
+          <div class="about-stat-label">CLP + IVA, precio fijo sin sorpresas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="cta-final" id="agendar">
+  <div class="container">
+    <div class="section-tag" style="color:var(--teal);">Siguiente paso</div>
+    <h2>20 minutos.<br>El sistema queda <span class="accent">definido</span>.</h2>
+    <p class="section-lead">Conversamos qué necesita tu empresa, te mostramos cómo funciona, y si tiene sentido arrancamos esta semana.</p>
+
+    <a href="https://crm.creactivestudio.agency/widget/booking/jWoatPHeZLQyhDOh0oCj" target="_blank" class="btn-cta-final">
+      Agendar llamada gratuita &rarr;
+    </a>
+
+    <p class="cta-note">
+      O escríbenos directo &mdash;
+      <a href="mailto:hola@creactivestudio.agency">hola@creactivestudio.agency</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://wa.me/56982717201" target="_blank">WhatsApp</a>
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img src="./logo-creactive.png" alt="CreActive Studio" style="height:28px;width:auto;margin-bottom:10px;opacity:0.7;" /><br>
+  <p>&copy; 2026 CreActive Studio SPA &middot; RUT 78.387.691-4 &middot; <a href="https://creactivestudio.agency">creactivestudio.agency</a></p>
+</footer>
+
+</body>
+</html>

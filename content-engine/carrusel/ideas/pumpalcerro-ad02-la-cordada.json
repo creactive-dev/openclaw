@@ -1,0 +1,39 @@
+{
+  "titulo": "AD02 — La Cordada",
+  "slug": "pumpalcerro-ad02-la-cordada",
+  "template_set": "pumpalcerro-ads",
+  "width": 1080,
+  "height": 1080,
+  "slides": [
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de acef7cd8-8905-48b0-a1d9-3efeebdb393d.jpg",
+      "headline": "No salimos solas. Salimos *juntas*.",
+      "subline": "Trekking grupal de mujeres · Ambiente 100% femenino · Guías expertas"
+    },
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/93cb720e-f6ec-46f6-8d19-be3dfea34f5a.jpg",
+      "headline": "Termas a *3.300 msnm*",
+      "subline": "Aguas termales naturales en plena Cordillera de los Andes. Incluidas."
+    },
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "headline": "*Astrotrekking* nocturno",
+      "subline": "El cielo más estrellado de Latinoamérica. Con guía y telescopio."
+    },
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/d74704ae-7b61-4be8-a67c-928604b8cbdd.jpg",
+      "headline": "Degustaciones *del valle*",
+      "subline": "Vinos y piscos artesanales de Valle del Elqui. Todo incluido."
+    },
+    {
+      "layout": "cta-brand",
+      "headline": "21-23 mayo · *Pocos cupos* disponibles · Reserva hoy",
+      "subline": "Desde $690.000 todo incluido · Cupo con $200.000",
+      "bg_color": "#fefaf6"
+    }
+  ]
+}

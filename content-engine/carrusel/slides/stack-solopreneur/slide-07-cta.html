@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #000000;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: #000000;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Red accent line top */
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #FF3231;
+    }
+
+    /* Content */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 72px;
+    }
+
+    .label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #FF3231;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    .headline {
+      font-size: 72px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 0.95;
+      letter-spacing: -3px;
+      margin-bottom: 52px;
+    }
+
+    .headline .accent { color: #FF3231; }
+
+    .cta-box {
+      display: inline-flex;
+      align-self: flex-start;
+      background: #FF3231;
+      padding: 20px 40px;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+
+    .cta-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    .nota {
+      font-size: 18px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 1.5;
+      max-width: 700px;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 52px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #111111;
+      padding-top: 18px;
+    }
+
+    .handle {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-img { height: 22px; width: auto; display: block; opacity: 0.4; }
+    .logo-text { font-size: 14px; font-weight: 600; color: #333333; display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="content">
+      <div class="label">Próximo paso</div>
+      <div class="headline">¿Cuál de estas ya usas en tu negocio?</div>
+      <div class="cta-box">
+        <div class="cta-text">Agenda una llamada</div>
+      </div>
+      <div class="nota">Te muestro cómo aplica este stack a tu operación específica.</div>
+    </div>
+
+    <div class="footer">
+      <div class="handle">@oscarvergara</div>
+      <img class="logo-img" src="../../public/brand/logo.png" alt="CreActive Studio"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">CreActive Studio</div>
+    </div>
+
+  </div>
+</body>
+</html>

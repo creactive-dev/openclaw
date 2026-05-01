@@ -1,0 +1,69 @@
+{
+  "titulo": "Claude Managed Agents — la infraestructura que ya no tienes que construir",
+  "slug": "claude-managed-agents",
+  "pilar": "2",
+  "template_set": "minimalista",
+  "patron_hormozi": "Paradoja",
+  "palabras_clave": [
+    "claude",
+    "agentes IA",
+    "automatización"
+  ],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "Construir agentes IA era difícil.",
+      "subheadline": "Anthropic acaba de cambiar eso. Y la mayoría todavía no lo sabe.",
+      "etiqueta": "IA práctica"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Antes",
+      "titulo": "Lo que tenías que construir tú",
+      "bullets": [
+        "Tu propio bucle de agente (horas de código)",
+        "Sandbox seguro para ejecutar herramientas",
+        "Infraestructura para tareas largas y asíncronas",
+        "Gestión de estado entre sesiones"
+      ]
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Ahora",
+      "titulo": "Lo que viene incluido",
+      "bullets": [
+        "Contenedor en la nube con Python, Node.js, Bash listo",
+        "Herramientas nativas: archivos, web, MCP servers",
+        "Sesiones con estado — el agente recuerda el contexto",
+        "Caché y compresión de prompts automáticos"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Arquitectura",
+      "titulo": "4 piezas. Eso es todo.",
+      "bullets": [
+        "Agente — el modelo + prompt + herramientas",
+        "Entorno — el contenedor configurado en la nube",
+        "Sesión — la instancia corriendo tu tarea",
+        "Eventos — lo que intercambia con tu app en tiempo real"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "Antes necesitabas un equipo para construir un agente. Ahora necesitas una API key y saber qué problema resolver.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "Claude Managed Agents está en beta ahora mismo. Los que lo implementen primero van a tener ventaja real.",
+      "cta": "Comenta AGENTE y hablamos de cómo aplicarlo en tu empresa.",
+      "nota": "Acceso habilitado por defecto para cuentas API de Anthropic"
+    }
+  ],
+  "captions": {
+    "instagram": "Construir un agente de IA requería un equipo de desarrolladores, infraestructura propia y meses de trabajo.\n\nAhora Anthropic lanzó Claude Managed Agents en beta — y cambia todo.\n\nAntes tenías que construir tú: el bucle del agente, el sandbox seguro, la gestión de estado entre sesiones, la capa de ejecución de herramientas. Era un proyecto de ingeniería completo antes de resolver el problema real.\n\nAhora viene incluido: contenedor en la nube con Python, Node.js y Bash listo, herramientas nativas (archivos, web, MCP servers), sesiones con estado y caché de prompts automático.\n\nEl arquitectura tiene solo 4 piezas — Agente, Entorno, Sesión y Eventos. Eso es todo lo que necesitas entender para empezar.\n\nLa barrera de entrada para construir agentes de IA reales acaba de bajar drásticamente.\n\nComenta AGENTE y te cuento cómo esto se puede aplicar a tu operación.\n\n#automatizacionIA #claudeAI #agentesIA #inteligenciaartificial #n8n #sistemasdenegocios #emprendedoreslatam #pyme #duenosdenegocios #marketing #negocios #creactivestudio #oscarvergara",
+    "linkedin": "La principal barrera para implementar agentes de IA en empresas no era el modelo — era la infraestructura.\n\nConstruir tu propio bucle de agente, sandbox seguro, gestión de estado y capa de herramientas representaba semanas de ingeniería antes de abordar el problema de negocio real.\n\nAnthropic acaba de eliminar esa barrera con Claude Managed Agents (beta): infraestructura administrada, herramientas nativas incluidas, sesiones con estado persistente. Una API key y enfoque en el problema. Eso es lo que se necesita ahora.\n\nLas empresas que empiecen a experimentar con esto en los próximos 6 meses van a tener una ventaja operacional difícil de recuperar después.\n\n¿Tu equipo ya está explorando agentes de IA para automatizar procesos internos?\n\n#InteligenciaArtificial #Automatizacion #AgentesIA #TransformacionDigital #Claude",
+    "threads": "Anthropic lanzó Claude Managed Agents en beta. Antes necesitabas un equipo para construir un agente de IA. Ahora necesitas una API key."
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1080px;
+      font-family: 'Manrope', sans-serif;
+      position: relative;
+      overflow: hidden;
+      background: #1c1717;
+    }
+
+    /* Top accent bar */
+    .accent-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: #e43d80;
+    }
+
+    /* Side accent line */
+    .side-accent {
+      position: absolute;
+      left: 52px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 120px;
+      background: #e43d80;
+      border-radius: 2px;
+      opacity: 0.3;
+    }
+
+    /* Logo — top right */
+    .logo {
+      position: absolute;
+      top: 36px;
+      right: 52px;
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    /* Content — centered */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 80px;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 128px;
+      line-height: 1;
+      margin-bottom: 48px;
+    }
+
+    .headline {
+      font-size: 58px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      max-width: 860px;
+    }
+
+    .headline .accent {
+      color: #e43d80;
+    }
+
+    /* Bottom decorative line */
+    .bottom-line {
+      position: absolute;
+      bottom: 52px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: #e43d80;
+      border-radius: 2px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="accent-bar"></div>
+    <div class="side-accent"></div>
+
+    <img class="logo" src="../../public/brand/pumpalcerro-logo.png" alt="Pumpalcerro"
+         onerror="this.style.display='none'">
+
+    <div class="content">
+      <div class="emoji">♨️</div>
+      <div class="headline">Termas a <span class="accent">3.300 msnm</span></div>
+    </div>
+
+    <div class="bottom-line"></div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "titulo": "Avatares IA — Las armas de las Big Tech ya están disponibles para ti",
+  "slug": "avatares-ia-big-tech",
+  "pilar": "2",
+  "template_set": "minimalista",
+  "patron_hormozi": "Verdad Simple",
+  "palabras_clave": [],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "*5 minutos* de video. Un avatar que trabaja para siempre.",
+      "subheadline": "Google, Meta y Microsoft llevan miles de millones a los avatares IA. Las herramientas ya llegaron a LatAm — y no necesitas su presupuesto.",
+      "etiqueta": "IA práctica"
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "El mercado se mueve",
+      "titulo": "$5.900M hoy. $57.900M en 2031. La apuesta ya se hizo sin ti.",
+      "analysis": "Google lanzó Veo 3 para video sintético ultrarrealista. Meta consolida avatares en su ecosistema abierto. Microsoft los integra en Teams y Azure. Apple rediseña Siri con multimodalidad. Las Big Tech no están explorando — están pavimentando la infraestructura.",
+      "bullets": [
+        "Google: Gemini + video generativo → avatares que ejecutan tareas autónomas en tiempo real.",
+        "Microsoft: avatares B2B para capacitación, onboarding y simulaciones de ventas en Teams."
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Las herramientas",
+      "titulo": "No necesitas el presupuesto de Google. Necesitas saber cuál herramienta usar.",
+      "analysis": "Cuatro herramientas accesibles ya están redefiniendo la producción de video para founders en LatAm.",
+      "bullets": [
+        "HeyGen: clona voz y rostro en 5 minutos. Lip-sync multilingüe. Plan freemium disponible.",
+        "Synthesia: +140 idiomas, orientado a formación corporativa y ventas. Plan enterprise.",
+        "DeepBrain AI: +2.000 avatares, +150 idiomas, 7.000 plantillas. Trial gratuito.",
+        "Kling AI: video 1080p de hasta 3 min a precio accesible para startups que comienzan."
+      ],
+      "mockup": "agent"
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Oportunidad LatAm",
+      "titulo": "El mercado hispanohablante está subatendido. Eso no es un problema. Es tu ventana.",
+      "bullets": [
+        "EdTech: un avatar reproduce una clase en cualquier idioma sin costo adicional de grabación.",
+        "E-commerce: variantes de anuncios en distintos idiomas en horas, no semanas.",
+        "Telemedicina: atención 24/7 en zonas rurales donde el especialista no llega.",
+        "Servicio al cliente: conversaciones más naturales que los chatbots, menos fricción, mejor conversión."
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "Las herramientas son accesibles. Los nichos en español están poco explorados. La demanda es real. La pregunta no es si entrar — es por dónde.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta-light",
+      "texto": "¿Estás usando avatares IA en tu negocio, o todavía grabando en el cuarto de invitados?",
+      "cta": "Comenta AVATAR",
+      "nota": "Te cuento cómo implementarlo en tu operación esta semana."
+    }
+  ],
+  "captions": {
+    "instagram": "Google lanzó Veo 3. Meta consolida su ecosistema de avatares. Microsoft los integra en Teams.\n\nEl mercado de avatares IA vale $5.900 millones hoy. En 2031: $57.900 millones.\n\nY mientras las Big Tech pavimentan la infraestructura, las herramientas para founders ya están disponibles — sin el presupuesto de Google.\n\nHeyGen: clonas tu voz y rostro en 5 minutos.\nSynthesia: contenido en 140+ idiomas.\nDeepBrain AI: 2.000+ avatares, 150 idiomas, trial gratuito.\n\nLo interesante para LatAm: el mercado hispanohablante está subatendido. Las herramientas líderes fueron construidas pensando en inglés primero.\n\nEso crea ventanas reales para founders en la región en EdTech, e-commerce, telemedicina y atención al cliente.\n\nLa pregunta no es si entrar. Es por dónde.\n\n¿Ya estás experimentando con avatares IA en tu negocio? 👇\n\n#AvatarIA #BigTech #LatAm #HeyGen #Synthesia #IAParaNegocios #Automatización",
+    "linkedin": "Las Big Tech tomaron una decisión en 2025-2026: los avatares digitales con IA son la próxima capa de interfaz humano-máquina.\n\nGoogle: Veo 3 para video sintético + Gemini como base de agentes con avatar.\nMeta: consolidación de herramientas de avatar ultrarrealista en su ecosistema.\nMicrosoft: avatares integrados en Teams y Azure AI para contextos B2B.\nApple: Siri multimodal con voz, imagen y texto en dispositivos iOS.\n\nEl mercado global proyecta pasar de $5.900M en 2023 a $57.900M en 2031 (30% CAGR).\n\nLo relevante para founders en LatAm: las herramientas accesibles ya existen.\n\nHeyGen, Synthesia, DeepBrain AI y Kling AI permiten crear avatares personalizados con lip-sync multilingüe a costos que cualquier startup puede asumir.\n\nY el nicho hispanohablante sigue subatendido: la mayoría de estas herramientas fueron diseñadas primero para inglés. Los acentos regionales, la culturalización del contenido y el contexto legal local siguen siendo oportunidades abiertas.\n\nEdTech, telemedicina, e-commerce y atención al cliente son los casos de uso con mayor tracción en la región.\n\nLa pregunta no es si esta tecnología llegará a LatAm. Ya llegó. La pregunta es qué estás construyendo con ella.\n\n¿Cómo está tu empresa explorando avatares IA?",
+    "threads": "Las Big Tech llevan miles de millones a los avatares IA.\n\nHeyGen: clonas tu voz y rostro en 5 minutos.\nSynthesia: 140+ idiomas.\nDeepBrain: 2.000 avatares, trial gratis.\n\nEl mercado hispanohablante está subatendido.\n\nEso no es un problema. Es tu ventana."
+  }
+}

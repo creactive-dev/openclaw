@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #000000;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: #000000;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      position: absolute;
+      top: 60px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .etiqueta {
+      font-size: 11px;
+      font-weight: 700;
+      color: #FF3231;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .slide-num {
+      font-size: 13px;
+      font-weight: 400;
+      color: #2a2a2a;
+      letter-spacing: 1px;
+    }
+
+    /* Content */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 130px 72px;
+    }
+
+    .headline {
+      font-size: 52px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 52px;
+    }
+
+    .headline .accent { color: #FF3231; }
+
+    /* Bullets */
+    .bullets { display: flex; flex-direction: column; gap: 28px; }
+
+    .bullet {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .bullet-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #222222;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #FF3231;
+      margin-top: 2px;
+    }
+
+    .bullet-text {
+      font-size: 26px;
+      font-weight: 400;
+      color: #cccccc;
+      line-height: 1.4;
+    }
+
+    .bullet-text strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 52px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #111111;
+      padding-top: 18px;
+    }
+
+    .handle {
+      font-size: 13px;
+      font-weight: 400;
+      color: #2a2a2a;
+    }
+
+    .logo-img { height: 20px; width: auto; display: block; opacity: 0.35; }
+    .logo-text { font-size: 13px; font-weight: 600; color: #2a2a2a; display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="header">
+      <div class="etiqueta">LA PREGUNTA INCÓMODA</div>
+      <div class="slide-num">04</div>
+    </div>
+
+    <div class="content">
+      <div class="headline">¿Por qué el 13% no mejoró?</div>
+      <div class="bullets">
+    <div class="bullet">
+      <div class="bullet-icon">1</div>
+      <div class="bullet-text">Automatizaron procesos que ya estaban rotos</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">2</div>
+      <div class="bullet-text">Implementaron sin definir el proceso primero</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">3</div>
+      <div class="bullet-text">Usaron IA como herramienta suelta, no como sistema</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">4</div>
+      <div class="bullet-text">Nadie definió qué debía decidir la IA vs. el humano</div>
+    </div></div>
+    </div>
+
+    <div class="footer">
+      <div class="handle">@oscarvergara</div>
+      <img class="logo-img" src="../../public/brand/logo.png" alt="CreActive Studio"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">CreActive Studio</div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "titulo": "Mi stack para operar 5 clientes sin equipo fijo",
+  "slug": "stack-solopreneur",
+  "template_set": "minimalista",
+  "palabras_clave": [],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "OPERACIÓN",
+      "headline": "Opero 5 clientes. *Sin equipo*. Este es mi stack.",
+      "subheadline": "Las herramientas que reemplazaron a un equipo de 5 personas."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "CRM / VENTAS",
+      "titulo": "GoHighLevel — el que nunca duerme",
+      "bullets": [
+        "Pipelines de clientes con seguimiento automático",
+        "Calendarios y recordatorios sin intervención manual",
+        "Formularios conectados a automatizaciones",
+        "Facturación y contratos integrados"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "AUTOMATIZACIONES",
+      "titulo": "n8n — el que conecta todo",
+      "bullets": [
+        "WhatsApp Business API para atención de clientes",
+        "Notificaciones automáticas entre sistemas",
+        "Integración GHL, Supabase y Claude API",
+        "Workflows que corren solos, sin intervención"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "BACKEND / IA",
+      "titulo": "Supabase + Claude API — el cerebro",
+      "bullets": [
+        "Base de datos y autenticación para productos SaaS",
+        "Claude API como motor de inteligencia en workflows",
+        "Vercel para deploy en minutos",
+        "Edge Functions para lógica sin servidor"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "CONTENIDO",
+      "titulo": "HeyGen + Content Engine — la voz",
+      "bullets": [
+        "Avatar IA que graba reels con mi voz",
+        "6 comandos para producir contenido semanal",
+        "De idea a pieza publicada en una sesión",
+        "7 reels por semana sin grabar nada"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La herramienta no te hace solopreneur. El sistema sí.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Cuál de estas ya usas en tu negocio?",
+      "cta": "Agenda una llamada",
+      "nota": "Te muestro cómo aplica este stack a tu operación específica."
+    }
+  ],
+  "captions": {
+    "instagram": "Opero 5 clientes activos.\nSin empleados. Sin equipo fijo.\n\nEste es el stack completo:\n→ GHL para CRM y seguimiento automático\n→ n8n para automatizaciones y WhatsApp\n→ Supabase + Claude API para productos\n→ HeyGen para contenido en video\n→ Un Content Engine que produce solo\n\nNo es magia. Es sistematización.\n\n¿Cuál de estas herramientas ya usas?\nCuéntame abajo — o agenda una llamada si quieres ver cómo aplica a tu negocio.\n\n#solopreneur #automatizacion #gohighlevel #n8n #claudeai #emprendedoreslatam #stacktecnologico #creactivestudio #oscarvergara",
+    "linkedin": "Opero 5 clientes activos sin equipo fijo.\n\nNo porque trabaje más horas. Porque cada proceso tiene sistema.\n\nStack actual:\n→ GoHighLevel: CRM, pipelines, seguimiento automático\n→ n8n: integraciones, WhatsApp, workflows entre plataformas\n→ Supabase + Claude API: backend de productos SaaS\n→ HeyGen: producción de video sin grabar\n\nEl solopreneur moderno no necesita un equipo. Necesita mejores sistemas.\n\n¿En qué parte de tu operación te falta un sistema?\n\n#automatizacion #solopreneur #ia #pymes #latam",
+    "threads": "Opero 5 clientes sin equipo.\nNo es que trabaje más horas.\nEs que cada proceso tiene sistema.\n\nGHL → n8n → Supabase + Claude → HeyGen.\nEso es todo."
+  }
+}

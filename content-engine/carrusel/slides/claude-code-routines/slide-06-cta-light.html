@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; overflow: hidden; background: #F8FAFC; }
+    .slide { width: 1080px; height: 1350px; background: #F8FAFC; font-family: 'Plus Jakarta Sans', sans-serif; position: relative; overflow: hidden; }
+
+    /* Grid */
+    .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
+
+    /* Glows */
+    .glow-red  { position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 1080px; height: 680px; background: radial-gradient(ellipse, rgba(255,50,49,0.10) 0%, rgba(255,50,49,0.03) 45%, transparent 70%); pointer-events: none; }
+    .glow-blue { position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(87,139,222,0.09) 0%, transparent 65%); pointer-events: none; }
+
+    /* Circuit detail */
+    .circuit-tr { position: absolute; top: 90px; right: 68px; width: 80px; height: 80px; border-top: 1px solid rgba(255,50,49,0.22); border-right: 1px solid rgba(255,50,49,0.22); border-radius: 0 6px 0 0; pointer-events: none; }
+    .circuit-tr::after { content: ''; position: absolute; top: -3px; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: rgba(255,50,49,0.50); }
+
+    /* Progress bar */
+    .progress-bar  { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(15,23,42,0.08); z-index: 20; }
+    .progress-fill { height: 100%; width: 100%; background: linear-gradient(90deg, #FF3231, rgba(255,50,49,0.3)); border-radius: 0 2px 2px 0; }
+
+    /* Content */
+    .content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 120px 68px 100px; z-index: 10; }
+    .label { font-size: 12px; font-weight: 700; color: rgba(15,23,42,0.35); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 40px; }
+    .headline { font-size: 68px; font-weight: 800; color: #0F172A; line-height: 0.95; letter-spacing: -2.5px; margin-bottom: 56px; }
+    .headline .accent { color: #FF3231; }
+
+    .cta-btn { display: inline-flex; align-self: flex-start; align-items: center; gap: 16px; background: #FF3231; padding: 22px 44px; border-radius: 100px; margin-bottom: 44px; box-shadow: 0 8px 40px rgba(255,50,49,0.28), 0 2px 12px rgba(255,50,49,0.18); }
+    .cta-btn-text { font-size: 22px; font-weight: 700; color: #ffffff; letter-spacing: -0.5px; }
+    .cta-arrow { width: 32px; height: 32px; background: rgba(255,255,255,0.22); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #ffffff; }
+    .nota { font-size: 18px; font-weight: 400; color: rgba(15,23,42,0.45); line-height: 1.55; max-width: 680px; }
+
+    /* Footer */
+    .footer { position: absolute; bottom: 44px; left: 68px; right: 68px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #E2E8F0; padding-top: 18px; z-index: 10; }
+    .handle { font-size: 20px; font-weight: 700; color: rgba(15,23,42,0.50); }
+    .logo-img  { height: 20px; width: auto; display: block; opacity: 0.35; }
+    .logo-text { font-size: 18px; font-weight: 700; color: rgba(15,23,42,0.35); display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="grid"></div><div class="glow-red"></div><div class="glow-blue"></div>
+    <div class="circuit-tr"></div>
+    <div class="content">
+      <div class="label">Próximo paso</div>
+      <div class="headline">El que programa bien sus Routines hoy opera diferente en 3 meses.</div>
+      <div class="cta-btn"><div class="cta-btn-text">Comenta ROUTINES y te mando el breakdown</div><div class="cta-arrow">→</div></div>
+      <div class="nota">Pro: 5/día · Max: 15/día · Team/Enterprise: 25/día — disponible hoy en research preview</div>
+    </div>
+    <div class="footer">
+      <div class="handle">@oscarvergarabarros</div>
+      <img class="logo-img" src="../../public/brand/logo.png" alt="CreActive Studio" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">CreActive Studio</div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+  "titulo": "Lanzamos Meta Ads con modelo de comisión — así funciona",
+  "slug": "meta-ads-modelo-comision",
+  "template_set": "minimalista",
+  "palabras_clave": ["comisión", "Meta Ads"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "¿Y si tu agencia cobrara solo si vende?",
+      "subheadline": "Lanzamos una campaña de Meta Ads con modelo de comisión. Así lo estructuramos.",
+      "etiqueta": "Framework"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El contexto",
+      "titulo": "Agencia de viajes, trip al Valle del Elqui",
+      "bullets": [
+        "Producto: experiencia grupal a $690K CLP por persona",
+        "Sin historial previo de pauta digital",
+        "Necesitaba llenar cupos en semanas, no meses"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Lo que armamos",
+      "titulo": "Landing + 6 creatividades + lead capture",
+      "bullets": [
+        "Landing con API de captura de leads + emails automáticos",
+        "6 ángulos creativos: escapada, testimonios, urgencia, FOMO, aventura, promo",
+        "3 audiencias segmentadas por interés y comportamiento",
+        "Pixel + seguimiento de conversiones desde día 1"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Modelo",
+      "number": "10-15%",
+      "label": "Comisión sobre utilidad por pasajero vendido",
+      "context": "Sin fee de gestión fijo — skin in the game real"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Por qué funciona",
+      "titulo": "Alineamos incentivos con el cliente",
+      "bullets": [
+        "Si no vende, no pagamos — confianza total",
+        "Si vende mucho, ganamos más — motivación real",
+        "El cliente no arriesga presupuesto en gestión",
+        "Nosotros controlamos calidad porque nos afecta directo"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La mejor forma de demostrar que sabes vender es *cobrar solo cuando vendes*.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Quieres lanzar pauta sin arriesgar en fees de agencia?",
+      "cta": "Comenta ADS y te explico el modelo",
+      "nota": "Solo para negocios con producto validado"
+    }
+  ],
+  "captions": {
+    "instagram": "Esta semana lanzamos una campaña de Meta Ads con un modelo que la mayoría de agencias no ofrece: comisión sobre ventas.\n\nSin fee de gestión. Sin retainer. Si no vendemos, no cobramos.\n\nEl caso: una agencia de viajes que necesitaba llenar cupos para un trip al Valle del Elqui a $690K por persona.\n\nLo que armamos:\n→ Landing con captura de leads + emails automáticos\n→ 6 creatividades con ángulos distintos\n→ 3 audiencias segmentadas\n→ Comisión del 10-15% sobre utilidad\n\n¿Por qué funciona? Porque alineamos incentivos. Si al cliente le va bien, a nosotros también.\n\nComenta ADS si quieres saber cómo aplicarlo a tu negocio.\n\n#metaads #marketing #pymes #comision #publicidad",
+    "linkedin": "Esta semana probamos algo que la mayoría de agencias de marketing evita: cobrar por resultados.\n\nLanzamos una campaña de Meta Ads para una agencia de viajes con modelo de comisión. 10-15% sobre la utilidad por cada pasajero vendido. Sin fee de gestión.\n\nEl razonamiento es simple: si estoy seguro de que puedo generar resultados, ¿por qué no poner skin in the game?\n\nArmamos landing con lead capture, 6 creatividades con ángulos distintos, 3 audiencias, y seguimiento desde día 1.\n\nEl modelo de comisión no es para todos. Funciona cuando:\n- El producto está validado\n- Los márgenes son claros\n- Ambas partes tienen incentivos alineados\n\nEs la primera prueba. Les cuento cómo sale.",
+    "threads": "La mayoría de las agencias cobran por gestionar.\n\nNosotros cobramos por vender.\n\nEsta semana lanzamos Meta Ads con comisión sobre ventas. Sin fee fijo.\n\nSi no vendemos, no cobramos. Así de simple.\n\n¿O no?"
+  }
+}

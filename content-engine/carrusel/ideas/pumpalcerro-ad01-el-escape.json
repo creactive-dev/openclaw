@@ -1,0 +1,16 @@
+{
+  "titulo": "AD01 — El Escape",
+  "slug": "pumpalcerro-ad01-el-escape",
+  "template_set": "pumpalcerro-ads",
+  "width": 1080,
+  "height": 1080,
+  "slides": [
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/d74704ae-7b61-4be8-a67c-928604b8cbdd.jpg",
+      "headline": "3 días en Valle del Elqui — *todo incluido*",
+      "subline": "Vuelo · Termas · Astrotrekking · Comidas · Vino · Solo mujeres",
+      "badge": "21-23 mayo · $690.000 · Reserva con $200.000"
+    }
+  ]
+}

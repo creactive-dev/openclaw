@@ -1,0 +1,61 @@
+{
+  "titulo": "¿Cuánto te ha costado fumar en los últimos 5 años?",
+  "slug": "ews-costo-fumar",
+  "template_set": "easyway",
+  "palabras_clave": ["$4.050.000", "$810.000", "5 años"],
+  "slides": [
+    {
+      "layout": "hero-light",
+      "etiqueta": "Precio vs. valor",
+      "headline": "Haz la cuenta de lo que te *costó* fumar.",
+      "subheadline": "El número va a sorprenderte. Hint: alcanza para mucho más que Netflix."
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Promedio Chile",
+      "number": "12",
+      "label": "cigarros al día",
+      "context": "El fumador promedio en Chile consume entre 10 y 15 cigarros diarios — unas 15 cajetillas al mes."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "La matemática",
+      "titulo": "El costo que *no quieres ver*",
+      "analysis": "15 cajetillas/mes × precio promedio = números que duelen.",
+      "bullets": [
+        "$67.500 al mes — más que Netflix + Spotify + gimnasio juntos",
+        "$810.000 al año — un viaje que no estás haciendo",
+        "$4.050.000 en 5 años — un fondo de emergencia, un auto usado, tu libertad"
+      ]
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Costos ocultos",
+      "titulo": "Y eso es *solo lo que se ve*",
+      "bullets": [
+        "Seguros de salud más caros para fumadores activos",
+        "Días de productividad perdidos en pausas y en recuperarte",
+        "El costo emocional de cada intento fallido de dejarlo",
+        "Lo que pagarías en salud en los próximos 10 años"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "El seminario Easyway",
+      "number": "1–2",
+      "label": "meses de cigarros",
+      "context": "El seminario cuesta lo mismo que 1 a 2 meses de tu consumo. Una inversión que se paga en el primer mes que no fumas."
+    },
+    {
+      "layout": "cta-light",
+      "texto": "Deja de *quemar* tu plata en tabaco.",
+      "cta": "Escríbenos al WhatsApp",
+      "nota": "+56 9 8342 3928 · easyway.cl · Garantía 100% de devolución"
+    }
+  ],
+  "captions": {
+    "instagram": "Antes de decir que el seminario es caro, hagamos la cuenta.\n\n📊 12 cigarros/día = 15 cajetillas/mes\n→ $67.500 al mes\n→ $810.000 al año\n→ $4.050.000 en 5 años\n\nY eso sin contar seguros, productividad perdida, ni el costo emocional de cada intento fallido.\n\nEl seminario Easyway cuesta lo mismo que 1 o 2 meses de cigarros. Con garantía de devolución del 100%.\n\nLa pregunta no es si puedes pagarlo.\nEs si puedes seguir sin hacerlo.\n\neasyway.cl · +56 9 8342 3928\n\n#Seatrevió #EasywayChile #DejarDeFumar",
+    "linkedin": "Un fumador promedio en Chile gasta $810.000 al año solo en tabaco.\n\nEn 5 años: $4.050.000.\n\nY eso sin sumar los costos ocultos: seguros de salud más caros, días de ausentismo, baja productividad, costo emocional de los intentos fallidos.\n\nEl seminario Easyway cuesta lo equivalente a 1 o 2 meses de cigarros. Una sola sesión de 6 horas. Garantía del 100% si no dejas de fumar en 3 meses.\n\nLa decisión más rentable que un fumador puede tomar.\n\n¿Quieres más información? contacto@easyway.cl · +56 9 8342 3928\n\n#BienestarLaboral #EasywayChile #CesaciónTabáquica",
+    "threads": "Un fumador en Chile gasta $4.050.000 en tabaco en 5 años. El seminario Easyway cuesta lo mismo que 1 o 2 meses de cigarros. Con garantía del 100%. Haz la cuenta."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "titulo": "China IA educación — No es geopolítica, es tu competencia",
+  "slug": "china-ia-educacion",
+  "pilar": "1",
+  "template_set": "minimalista",
+  "patron_hormozi": "Reencuadre Social",
+  "palabras_clave": [],
+  "slides": [
+    {
+      "layout": "hero-light",
+      "headline": "Esto no es geopolítica. Es tu competencia.",
+      "subheadline": "China declaró la IA materia obligatoria en toda su educación. Tu equipo compite con los graduados de ese sistema.",
+      "etiqueta": "Señal de mercado"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Lo que anunció China",
+      "titulo": "Un ministerio. Un sistema. Una fecha: 2030.",
+      "analysis": "El Ministerio de Educación de China publicó un plan nacional para integrar IA en todos los niveles educativos — desde primaria hasta universidad. No es optativo. Es currículo básico obligatorio.",
+      "bullets": [
+        "IA como asignatura general obligatoria en universidades. No como electivo — como requisito de base.",
+        "Sistemas inteligentes para el profesorado: corrección automática, tutorías IA y análisis de comportamiento en aula."
+      ]
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "La brecha",
+      "titulo": "Para 2030, un graduado chino lleva 12 años con IA. Tu equipo, ¿cuántos?",
+      "analysis": "No es un problema de herramientas. Es un problema de sistema. China no espera que la IA madure — construye la infraestructura de talento ahora.",
+      "bullets": [
+        "Mientras China forma a 1.4 mil millones de personas, la mayoría de empresas en LatAm todavía tratan la IA como un experimento.",
+        "La brecha no es de tecnología. Es de criterio, de hábito, de cultura de uso."
+      ],
+      "mockup": "dashboard"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Qué hacer hoy",
+      "titulo": "No necesitas un ministerio. Necesitas un sistema propio.",
+      "bullets": [
+        "Define qué herramientas de IA usa cada persona en tu equipo. Si no hay respuesta, ahí empieza el problema.",
+        "Pon IA en un proceso cada semana. No busques el caso de uso perfecto — empieza con el más obvio.",
+        "El criterio se construye usándola. Ningún curso reemplaza el hábito diario."
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "China no espera que la IA madure para adoptarla. Construye el sistema ahora. Eso es exactamente lo que deberías hacer.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta-light",
+      "texto": "¿Tu equipo tiene sistema de uso de IA, o cada quien improvisa?",
+      "cta": "Comenta SISTEMA",
+      "nota": "Te ayudo a definir el stack y el proceso en 30 minutos."
+    }
+  ],
+  "captions": {
+    "instagram": "China acaba de publicar su plan nacional de IA educativa.\n\nMeta: para 2030, todos los niveles — desde primaria hasta universidad — integran IA de forma obligatoria.\n\nNo es ciencia ficción. Es el currículo del Estado chino.\n\nY lo que me parece más revelador no es el anuncio. Es lo que implica para cualquier empresa que compite en el mercado global.\n\nEn 10 años, el graduado chino promedio llevará más de una década trabajando con IA de forma sistemática.\n\n¿Tu equipo?\n\nLa brecha no es de herramientas. Es de sistema, de hábito, de cultura de uso.\n\nLa buena noticia: no necesitas un ministerio para construir el tuyo.\n\nNecesitas decidir que empieza hoy.\n\n¿Tu empresa ya tiene un sistema de uso de IA, o cada persona improvisa con lo que encuentra? 👇\n\n#InteligenciaArtificial #China #IA #LatAm #Educación #Negocios #Automatización #Estrategia",
+    "linkedin": "China acaba de presentar su plan de acción nacional para integrar IA en todos los niveles de su sistema educativo — desde primaria hasta universidad — con fecha límite 2030.\n\nEl documento del Ministerio de Educación establece la IA como asignatura básica obligatoria (no electiva) en universidades, materiales didácticos adaptados a todas las disciplinas, y sistemas inteligentes para reducir la carga del profesorado.\n\nLo que me parece estratégicamente relevante para cualquier organización en LatAm:\n\n1. China no está esperando que la tecnología madure. Está construyendo la infraestructura de talento ahora, con una visión de 5 años.\n\n2. En 2030, un graduado chino va a llevar más de una década usando IA de forma sistemática y curricular. Ese es el perfil con el que competimos en el mercado global.\n\n3. La brecha que se está abriendo no es de herramientas — es de criterio y cultura de uso. Eso tarda años en construirse, no meses.\n\nLa pregunta no es si deberías integrar IA en tu organización. Es si ya tienes un sistema para hacerlo, o si cada persona improvisa con lo que encuentra.\n\n¿Cómo está estructurando tu empresa la adopción de IA en sus equipos?",
+    "threads": "China declaró la IA materia obligatoria en toda su educación. Desde primaria. Meta: 2030.\n\nEn 10 años, su graduado promedio lleva más de una década con IA sistemática.\n\nLa brecha no es de herramientas. Es de sistema.\n\n¿Tu equipo tiene uno?"
+  }
+}

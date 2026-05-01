@@ -1,0 +1,66 @@
+{
+  "titulo": "3 datos sobre IA en PyMEs LatAm que cambiaron cómo pienso",
+  "slug": "ia-pymes-latam-datos",
+  "template_set": "minimalista",
+  "palabras_clave": [],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "DATOS REALES",
+      "headline": "*87%* de PyMEs LatAm que instalaron IA reportan más productividad.",
+      "subheadline": "Estos números cambiaron cómo pienso sobre la adopción en la región."
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "DATO 1",
+      "number": "87%",
+      "label": "PyMEs LatAm que reportan mejoras de productividad tras implementar IA",
+      "context": "Fuente: Microsoft LatAm — encuesta 2026"
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "DATO 2",
+      "number": "+43%",
+      "label": "Incremento promedio de productividad reportado",
+      "context": "Promedio entre PyMEs sudamericanas con IA implementada"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "LA PREGUNTA INCÓMODA",
+      "titulo": "¿Por qué el 13% no mejoró?",
+      "bullets": [
+        "Automatizaron procesos que ya estaban rotos",
+        "Implementaron sin definir el proceso primero",
+        "Usaron IA como herramienta suelta, no como sistema",
+        "Nadie definió qué debía decidir la IA vs. el humano"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "LA BARRERA REAL",
+      "titulo": "Lo que frena la adopción (no es el costo)",
+      "bullets": [
+        "No saber por dónde empezar — el proceso, no la herramienta",
+        "Miedo a que no funcione 'para mi tipo de negocio'",
+        "Falta de alguien que lo implemente, no que lo explique",
+        "Expectativas mal calibradas: IA no es resultado inmediato"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La IA acelera lo que ya tienes. Bueno o malo.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "Guarda esto. En 6 meses será el argumento que necesitas.",
+      "cta": "Comenta IA",
+      "nota": "Te mando el análisis de dónde puede impactar más en tu negocio."
+    }
+  ],
+  "captions": {
+    "instagram": "87% de las PyMEs LatAm que implementaron IA reportan mejoras de productividad.\nPromedio: +43%.\n\nEl número que me llama la atención no es ese.\nEs el 13% que no mejoró.\n\nLa mayoría falló por lo mismo: automatizaron procesos rotos.\nLa IA no arregla procesos. Los acelera — buenos o malos.\n\nEl costo no es la barrera. La falta de un proceso claro, sí.\n\nGuarda esto. En 6 meses vas a necesitar estos números.\n\nComenta IA si quieres saber dónde impactaría más en tu negocio.\n\n#inteligenciaartificial #iaparanegocios #pymeslatam #automatizacion #productividad #emprendedoreslatam #creactivestudio #oscarvergara",
+    "linkedin": "87% de PyMEs latinoamericanas que implementaron IA reportan mejoras de productividad. Incremento promedio: 43%.\n\nPero el dato que más me importa es el 13% restante.\n\nNo mejoraron porque automatizaron los procesos equivocados. La IA no tiene criterio propio — sigue instrucciones. Si el proceso es malo, la IA lo ejecuta más rápido.\n\nEl obstáculo real no es la herramienta ni el presupuesto. Es saber qué automatizar primero.\n\nFuente: Microsoft LatAm, 2026.\n\n#inteligenciaartificial #transformaciondigital #pymes #latam #automatizacion",
+    "threads": "87% de PyMEs LatAm que implementaron IA reportan más productividad.\n+43% en promedio.\n\nEl 13% que no mejoró automatizó procesos rotos.\n\nLa IA no arregla nada. Acelera lo que ya tienes."
+  }
+}

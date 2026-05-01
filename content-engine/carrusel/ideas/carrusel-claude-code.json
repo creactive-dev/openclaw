@@ -1,0 +1,52 @@
+{
+  "titulo": "Cómo crear carruseles con Claude Code",
+  "tipo": "tutorial",
+  "template_set": "tutorial",
+  "slides": [
+    {
+      "layout": "hero",
+      "etiqueta": "Tutorial",
+      "headline": "Así creamos *carruseles* con Claude Code",
+      "subheadline": "Sí, este mismo carrusel lo hizo Claude. Te explico cómo."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Instala el stack",
+      "titulo": "Instala el *stack*",
+      "bullets": [
+        "Node.js 18+ instalado en tu máquina",
+        "Puppeteer para renderizar HTML a PNG",
+        "Claude Code abierto en tu proyecto"
+      ]
+    },
+    {
+      "layout": "code",
+      "etiqueta": "Paso 02 — Crea el proyecto",
+      "codigo": "mkdir -p content-engine/carrusel\ncd content-engine/carrusel\nnpm init -y\nnpm install puppeteer",
+      "explicacion": "En menos de 2 minutos tienes el ambiente listo. Sin configuración extra, sin dependencias raras."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Define tu design system",
+      "titulo": "Diseña el *sistema*",
+      "bullets": [
+        "Colores de marca en variables CSS",
+        "Tipografía: serif para headlines, sans para body",
+        "Templates HTML por tipo: hero, content, code, cta",
+        "Un JSON por carrusel con el contenido de cada slide"
+      ]
+    },
+    {
+      "layout": "code",
+      "etiqueta": "Paso 04 — Genera el carrusel",
+      "codigo": "# Claude Code escribe el brief\n# Tú lo revisas y apruebas\nnode generate.js ideas/carrusel-claude-code.json\n# PNGs listos en output/",
+      "explicacion": "De idea a 6 slides PNG en menos de 30 segundos. Claude escribe el brief, tú lo apruebas."
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Quieres el *template* para tu marca?",
+      "cta": "Escríbenos",
+      "nota": "Link en bio — te lo armamos en una sesión"
+    }
+  ]
+}

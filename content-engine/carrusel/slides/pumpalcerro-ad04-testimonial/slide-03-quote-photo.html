@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1080px;
+      font-family: 'Manrope', sans-serif;
+      position: relative;
+      overflow: hidden;
+      background: #1c1717;
+    }
+
+    /* Background photo */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1080px;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+    }
+
+    /* Dark overlay for quote readability */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(28, 23, 23, 0.70);
+    }
+
+    /* Decorative quote mark */
+    .quote-mark {
+      position: absolute;
+      top: 48px;
+      left: 52px;
+      font-size: 200px;
+      font-weight: 800;
+      color: #e43d80;
+      line-height: 1;
+      opacity: 0.18;
+      user-select: none;
+      pointer-events: none;
+      font-family: Georgia, serif;
+    }
+
+    /* Top label — centered */
+    .label {
+      position: absolute;
+      top: 52px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(244, 206, 53, 0.15);
+      border: 1.5px solid rgba(244, 206, 53, 0.55);
+      color: #f4ce35;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px 28px;
+      border-radius: 50px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Logo — top right */
+    .logo {
+      position: absolute;
+      top: 40px;
+      right: 52px;
+      height: 50px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    }
+
+    /* Content — vertically centered */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 160px 72px 100px;
+    }
+
+    .quote-text {
+      font-size: 44px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      margin-bottom: 44px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .quote-text .accent {
+      color: #f4ce35;
+    }
+
+    .author-line {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .author-dash {
+      width: 32px;
+      height: 3px;
+      background: #e43d80;
+      flex-shrink: 0;
+    }
+
+    .author {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f95798;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .stars {
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <img class="bg-image" src="file:///Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campa%C3%B1a%20Ads%20Piezas/Copia%20de%20IMG_1564.JPG" alt="">
+    <div class="overlay"></div>
+
+    <div class="quote-mark">"</div>
+
+    <div class="label">✨ Lo que dicen las Pumpitas</div>
+
+    <img class="logo" src="../../public/brand/pumpalcerro-logo.png" alt="Pumpalcerro"
+         onerror="this.style.display='none'">
+
+    <div class="content">
+      <div class="quote-text">Como una nueva <span class="accent">familia</span>, esa que uno elige tener</div>
+      <div class="author-line">
+        <div class="author-dash"></div>
+        <div class="author">Isabel</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; overflow: hidden; background: #080808; }
+    .slide { width: 1080px; height: 1350px; background: #080808; font-family: 'Plus Jakarta Sans', sans-serif; position: relative; overflow: hidden; }
+
+    .grid        { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
+    .glow-corner { position: absolute; top: -80px; right: -80px; width: 480px; height: 480px; background: radial-gradient(circle, rgba(255,50,49,0.08) 0%, transparent 65%); pointer-events: none; }
+    .glow-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 280px; background: linear-gradient(0deg, rgba(47,184,197,0.05) 0%, transparent 100%); pointer-events: none; }
+    .circuit-tr  { position: absolute; top: 90px; right: 68px; width: 80px; height: 80px; border-top: 1px solid rgba(255,50,49,0.18); border-right: 1px solid rgba(255,50,49,0.18); border-radius: 0 6px 0 0; pointer-events: none; }
+    .circuit-tr::after { content: ''; position: absolute; top: -3px; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: rgba(255,50,49,0.45); }
+
+    /* Header */
+    .header    { position: absolute; top: 52px; left: 68px; right: 68px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+    .etiqueta  { font-size: 14px; font-weight: 700; color: #FF3231; letter-spacing: 2.5px; text-transform: uppercase; }
+    .slide-num { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.28); letter-spacing: 1.5px; }
+
+    /* Progress bar */
+    .progress-bar  { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.06); z-index: 20; }
+    .progress-fill { height: 100%; width: {{progress_pct}}%; background: linear-gradient(90deg, #FF3231, rgba(255,50,49,0.4)); border-radius: 0 2px 2px 0; }
+
+    /* Content — flujo natural, mockup va entre headline y bullets */
+    .content  { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 130px 68px 100px; z-index: 10; }
+    .headline { font-size: 48px; font-weight: 800; color: #ffffff; line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 24px; }
+    .headline .accent { color: #FF3231; }
+
+    /* Analysis */
+    .analysis { font-size: 22px; font-weight: 400; color: rgba(255,255,255,0.58); line-height: 1.65; margin-bottom: 20px; padding: 16px 22px; border-left: 3px solid rgba(255,50,49,0.55); background: rgba(255,255,255,0.03); border-radius: 0 10px 10px 0; }
+
+    /* Card bullets */
+    .bullets { display: flex; flex-direction: column; gap: 12px; }
+    .bullet { display: flex; align-items: center; gap: 22px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px 26px; position: relative; overflow: hidden; }
+    .bullet::before { content: ''; position: absolute; left: 0; top: 16px; bottom: 16px; width: 3px; background: linear-gradient(180deg, rgba(255,50,49,0.7), rgba(255,50,49,0)); border-radius: 0 2px 2px 0; }
+    .bullet-icon { flex-shrink: 0; width: 38px; height: 38px; background: #FF3231; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #ffffff; }
+    .bullet-text { font-size: 22px; font-weight: 400; color: rgba(255,255,255,0.82); line-height: 1.35; }
+    .bullet-text strong { color: #ffffff; font-weight: 700; }
+
+    /* Footer */
+    .footer { position: absolute; bottom: 44px; left: 68px; right: 68px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 18px; z-index: 10; }
+    .handle   { font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.45); }
+    .brand    { font-size: 18px; font-weight: 700; color: rgba(255,255,255,0.35); }
+    .logo-img { height: 20px; width: auto; display: block; opacity: 0.28; }
+    .logo-text { font-size: 18px; font-weight: 700; color: rgba(255,255,255,0.35); display: none; }
+
+    /* ── MOCKUPS — posición inline, ancho completo ────────────────────────── */
+    .mockup { width: 100%; margin-bottom: 20px; }
+
+    /* Dashboard horizontal */
+    .mockup-dashboard { display: flex; align-items: stretch; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; overflow: hidden; height: 150px; }
+    .md-sidebar { flex: 0 0 170px; padding: 16px 20px; border-right: 1px solid rgba(255,255,255,0.07); display: flex; flex-direction: column; justify-content: space-between; }
+    .md-dots    { display: flex; gap: 6px; }
+    .md-dot     { width: 8px; height: 8px; border-radius: 50%; }
+    .md-dot.red   { background: rgba(255,59,48,0.70); }
+    .md-dot.amber { background: rgba(255,149,0,0.70); }
+    .md-dot.green { background: rgba(52,199,89,0.70); }
+    .md-sidebar-label { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.35); letter-spacing: 1px; text-transform: uppercase; }
+    .md-metrics { display: flex; flex: 1; }
+    .md-metric  { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid rgba(255,255,255,0.05); padding: 12px 8px; }
+    .md-metric:last-child { border-right: none; }
+    .md-num     { font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -1px; }
+    .md-num.accent { color: #2FB8C5; }
+    .md-lbl     { font-size: 11px; color: rgba(255,255,255,0.38); margin-top: 4px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .md-chart   { flex: 0 0 160px; padding: 16px; display: flex; align-items: flex-end; gap: 7px; border-left: 1px solid rgba(255,255,255,0.05); }
+    .db-bar     { flex: 1; border-radius: 3px 3px 0 0; background: rgba(255,50,49,0.22); }
+    .db-bar.hi  { background: rgba(255,50,49,0.65); }
+
+    /* Agent horizontal */
+    .mockup-agent-h { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; overflow: hidden; }
+    .ma-header-h { display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .ma-avatar-h { width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #2FB8C5, #578BDE); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; flex-shrink: 0; }
+    .ma-title-h  { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.55); }
+    .ma-status-h { font-size: 11px; color: #2FB8C5; margin-left: auto; }
+    .ma-messages { display: flex; align-items: flex-start; gap: 10px; padding: 14px 18px; overflow: hidden; }
+    .ma-bubble   { border-radius: 12px; padding: 10px 14px; font-size: 13px; line-height: 1.40; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
+    .ma-user { background: rgba(255,50,49,0.14); border: 1px solid rgba(255,50,49,0.18); color: rgba(255,255,255,0.72); }
+    .ma-ai   { background: rgba(47,184,197,0.10); border: 1px solid rgba(47,184,197,0.18); color: rgba(255,255,255,0.72); }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="grid"></div>
+    <div class="glow-corner"></div><div class="glow-bottom"></div>
+    <div class="circuit-tr"></div>
+    <div class="header"><div class="etiqueta">{{etiqueta}}</div><div class="slide-num">{{slide_num}}</div></div>
+    <div class="content">
+      <div class="headline">{{headline_html}}</div>
+      {{mockup_html}}
+      {{analysis_html}}
+      <div class="bullets">{{bullets_html}}</div>
+    </div>
+    <div class="footer">
+      <div class="handle">@easywaychile</div>
+      <img class="logo-img" src="../../public/brand/easyway/logo.png" alt="Easyway Chile" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">Easyway Chile</div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</body>
+</html>

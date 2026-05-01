@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: #ffffff;
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Large decorative number — top right */
+    .deco-number {
+      position: absolute;
+      top: 40px;
+      right: 60px;
+      font-family: 'Inter', sans-serif;
+      font-size: 200px;
+      font-weight: 900;
+      color: #f0f0f0;
+      line-height: 1;
+      letter-spacing: -8px;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Header ── */
+    .header {
+      position: absolute;
+      top: 60px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 1;
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .paso {
+      font-size: 13px;
+      font-weight: 700;
+      color: #39b3c5;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .etiqueta-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #c0c0c0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .slide-num {
+      font-size: 14px;
+      font-weight: 400;
+      color: #cccccc;
+      letter-spacing: 1px;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    /* ── Content ── */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 160px 80px;
+      z-index: 1;
+    }
+
+    .headline-wrap {
+      border-left: 4px solid #39b3c5;
+      padding-left: 28px;
+      margin-bottom: 44px;
+    }
+
+    .headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: 72px;
+      font-weight: 400;
+      color: #111111;
+      line-height: 1.05;
+      letter-spacing: -1px;
+    }
+
+    .headline .accent { color: #39b3c5; }
+
+    /* ── Bullets ── */
+    .bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bullet {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: #f8f8f8;
+      border-radius: 14px;
+      padding: 22px 26px;
+      border-left: 4px solid #39b3c5;
+    }
+
+    .bullet-icon {
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      background: #39b3c5;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .bullet-text {
+      font-size: 28px;
+      font-weight: 400;
+      color: #111111;
+      line-height: 1.4;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      position: absolute;
+      bottom: 50px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid rgba(0, 0, 0, 0.07);
+      padding-top: 20px;
+      z-index: 1;
+    }
+
+    .footer-dot {
+      width: 7px;
+      height: 7px;
+      min-width: 7px;
+      background: #ff3130;
+      border-radius: 50%;
+    }
+
+    .logo-img   { height: 26px; width: auto; display: block; }
+    .brand-text { font-size: 20px; font-weight: 400; color: #111111; letter-spacing: -0.2px; display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="deco-number">07</div>
+
+    <div class="header">
+      <div class="header-left">
+        <div class="paso">PASO 07</div>
+        <div class="etiqueta-label">¿QUÉ PASA DESPUÉS?</div>
+      </div>
+      <div class="slide-num">07</div>
+    </div>
+
+    <div class="content">
+      <div class="headline-wrap">
+        <div class="headline">Así funciona en la <span class="accent">práctica</span></div>
+      </div>
+      <div class="bullets">
+        
+    <div class="bullet">
+      <div class="bullet-icon">1</div>
+      <div class="bullet-text">Le dices qué necesitas en lenguaje normal</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">2</div>
+      <div class="bullet-text">Claude planifica y ejecuta la tarea</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">3</div>
+      <div class="bullet-text">Tú revisas y apruebas el resultado</div>
+    </div>
+
+    <div class="bullet">
+      <div class="bullet-icon">4</div>
+      <div class="bullet-text">El output queda listo para usar</div>
+    </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-dot"></div>
+      <img class="logo-img" src="../public/brand/logo.png" alt="CreActive Studio"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="brand-text">CreActive Studio</div>
+    </div>
+
+  </div>
+</body>
+</html>

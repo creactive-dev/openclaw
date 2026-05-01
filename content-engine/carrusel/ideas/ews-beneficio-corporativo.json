@@ -1,0 +1,61 @@
+{
+  "titulo": "El beneficio corporativo que más impacto tiene (y pocos ofrecen)",
+  "slug": "ews-beneficio-corporativo",
+  "template_set": "easyway",
+  "palabras_clave": ["bienestar", "ROI", "100%", "colaboradores"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "Bienestar corporativo",
+      "headline": "El beneficio corporativo que más *impacto* tiene.",
+      "subheadline": "No es el gimnasio. No es la fruta en la oficina. Es liberar a tu equipo del tabaco."
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Bienestar laboral",
+      "number": "87%",
+      "label": "valora el bienestar",
+      "context": "87% de los trabajadores considera el bienestar un factor clave al elegir o quedarse en una empresa."
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Formato corporativo",
+      "titulo": "Cómo funciona el *seminario* para empresas",
+      "bullets": [
+        "Grupos de hasta 20 colaboradores por jornada",
+        "Una sesión de 6 horas — presencial u online",
+        "Sin medicamentos, sin intervenciones invasivas",
+        "Se realiza en un solo día, compatible con la jornada laboral"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Retorno de inversión",
+      "titulo": "El ROI que tu *directorio* quiere ver",
+      "bullets": [
+        "Menos ausentismo por enfermedades respiratorias",
+        "Mayor productividad — sin pausas de cigarro",
+        "Reducción en costos de salud a largo plazo",
+        "Posiciona tu empresa como referente en bienestar real"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Garantía única",
+      "number": "100%",
+      "label": "garantía de devolución",
+      "context": "Si el colaborador no deja de fumar en los 3 meses siguientes al seminario, devolvemos el 100% del valor. Sin letra chica."
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Quieres *liberar* a tu equipo del tabaco?",
+      "cta": "Hablemos sobre tu empresa",
+      "nota": "contacto@easyway.cl · +56 9 8342 3928 · Agenda una reunión con RRHH"
+    }
+  ],
+  "captions": {
+    "instagram": "¿Tu empresa todavía no ofrece esto como beneficio?\n\nEl 87% de los trabajadores considera el bienestar tan importante como el sueldo.\n\nY pocos beneficios tienen el ROI medible de un programa de cesación tabáquica:\n→ Menos ausentismo\n→ Más productividad\n→ Reducción en costos de salud\n→ Equipo más sano = menos rotación\n\nCómo funciona para empresas:\n✓ Grupos de hasta 20 colaboradores\n✓ Una jornada de 6 horas\n✓ Presencial u online\n✓ Garantía del 100% si no resulta\n\n¿Eres de RRHH? Escríbenos y te contamos cómo funciona para tu empresa.\ncontacto@easyway.cl · +56 9 8342 3928\n\n#Seatrevió #BienestarCorporativo #EasywayChile #RRHH",
+    "linkedin": "El tabaquismo le cuesta a las empresas chilenas miles de millones al año en ausentismo, productividad y costos de salud.\n\nY sin embargo, muy pocas ofrecen programas de cesación tabáquica como beneficio.\n\nEasyway Chile ofrece seminarios corporativos:\n• Grupos de hasta 20 colaboradores\n• Una jornada de 6 horas (presencial u online)\n• 90% de tasa de éxito comprobada globalmente\n• Garantía del 100% si el colaborador no deja de fumar en 3 meses\n\nEl único método sin medicamentos, sin sufrimiento, y con una garantía económica real.\n\n¿Quieres explorar esto para tu empresa? DM o contacto@easyway.cl\n\n#BienestarLaboral #RRHH #CesaciónTabáquica #EasywayChile #BeneficiosCorporativos",
+    "threads": "El 87% de los trabajadores dice que el bienestar importa tanto como el sueldo. Y pocos beneficios tienen mejor ROI que liberar a tu equipo del tabaco. Easyway para empresas: 1 jornada, 20 personas, 100% garantía."
+  }
+}

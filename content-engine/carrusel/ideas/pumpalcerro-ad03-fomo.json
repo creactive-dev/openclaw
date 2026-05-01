@@ -1,0 +1,16 @@
+{
+  "titulo": "AD03 — FOMO",
+  "slug": "pumpalcerro-ad03-fomo",
+  "template_set": "pumpalcerro-ads",
+  "width": 1080,
+  "height": 1080,
+  "slides": [
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de acef7cd8-8905-48b0-a1d9-3efeebdb393d.jpg",
+      "headline": "Quedan *pocos cupos*. ¿Vienes?",
+      "subline": "21-23 mayo · Valle del Elqui · $690.000 *todo incluido*",
+      "badge": "Reserva tu cupo con $200.000"
+    }
+  ]
+}

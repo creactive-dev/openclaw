@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<!--
+  PROPUESTA COMERCIAL — KITCHAT
+  ==============================
+  Diseñada para enviar por WhatsApp como PDF (2 páginas, light theme).
+  Variables a reemplazar (buscar y reemplazar en tu editor):
+
+    {{NOMBRE_RESTAURANTE}}   → ej. "Sushi del Mar"
+    {{FECHA}}                → ej. "23 de abril de 2026"
+
+  Flujo de uso:
+    1. cp plantillas/propuesta-kitcha/template.html clientes/{slug}/outputs/propuestas/propuesta-kitcha-v1.html
+    2. Abrir en editor → Cmd+H → reemplazar las 3 variables
+    3. Chrome → Cmd+P → Guardar como PDF → enviar por WhatsApp
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchat — {{NOMBRE_RESTAURANTE}}</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F1F5F9;
+      color: #0F172A;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      background: #FFFFFF;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        break-after: page;
+        break-inside: avoid;
+      }
+
+      .page:last-child {
+        break-after: auto;
+      }
+    }
+
+    /* ======================== */
+    /* PÁGINA 1 — HERO          */
+    /* ======================== */
+
+    /* Radial glow de fondo */
+    .hero-glow {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 500px;
+      background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .p1-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 52px 60px 0;
+    }
+
+    /* Wordmark */
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 52px;
+    }
+
+    .wordmark-icon {
+      width: 36px;
+      height: 36px;
+      background: #22C55E;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -1px;
+      flex-shrink: 0;
+    }
+
+    .wordmark-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0F172A;
+      letter-spacing: -0.5px;
+    }
+
+    .wordmark-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: #22C55E;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-left: 4px;
+    }
+
+    /* Headline */
+    .hero-headline {
+      font-size: 46px;
+      font-weight: 900;
+      color: #0F172A;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+
+    .hero-headline .green {
+      color: #22C55E;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: #64748B;
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 44px;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .stat-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 20px 20px 16px;
+    }
+
+    .stat-number {
+      font-size: 36px;
+      font-weight: 900;
+      color: #22C55E;
+      letter-spacing: -1.5px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #475569;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .stat-desc {
+      font-size: 13px;
+      color: #94A3B8;
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    /* Features pill row */
+    .pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #F1F5F9;
+      border: 1px solid #E2E8F0;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      background: #22C55E;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Demo link + propuesta para */
+    .p1-footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 28px;
+      border-top: 1px solid #E2E8F0;
+      margin-top: auto;
+    }
+
+    .demo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #22C55E;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 11px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      letter-spacing: -0.2px;
+    }
+
+    .demo-link .arrow {
+      font-size: 16px;
+    }
+
+    .proposal-for {
+      text-align: right;
+    }
+
+    .proposal-for .for-label {
+      font-size: 11px;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .proposal-for .for-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    .proposal-for .for-date {
+      font-size: 12px;
+      color: #475569;
+      margin-top: 1px;
+    }
+
+    /* Footer pág 1 */
+    .page-footer {
+      flex-shrink: 0;
+      padding: 12px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #94A3B8;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    /* ======================== */
+    /* PÁGINA 2 — DECISIÓN      */
+    /* ======================== */
+    .p2-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 42px 60px 0;
+    }
+
+    .p2-section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #22C55E;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    /* Features 2x3 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .feat-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .feat-icon {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .feat-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    .feat-desc {
+      font-size: 11.5px;
+      color: #64748B;
+      line-height: 1.5;
+    }
+
+    /* Timeline */
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .t-step {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 14px 12px;
+      position: relative;
+    }
+
+    .t-step::after {
+      content: '→';
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #22C55E;
+      font-weight: 700;
+    }
+
+    .t-step:last-child::after {
+      display: none;
+    }
+
+    .t-when {
+      font-size: 10px;
+      font-weight: 700;
+      color: #22C55E;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .t-what {
+      font-size: 11.5px;
+      color: #475569;
+      line-height: 1.45;
+    }
+
+    /* Bottom row: inversión + planes + CTA */
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Planes */
+    .plans-block {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+    }
+
+    .plans-block-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .plan-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .plan-row:last-child {
+      border-bottom: none;
+    }
+
+    .plan-row.featured {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin: 3px -2px;
+    }
+
+    .plan-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1E293B;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .plan-name.featured-name {
+      color: #22C55E;
+    }
+
+    .rec-badge {
+      font-size: 9px;
+      font-weight: 700;
+      background: #22C55E;
+      color: #0A1628;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .plan-price {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0F172A;
+    }
+
+    .plan-price.featured-price {
+      color: #22C55E;
+      font-size: 16px;
+    }
+
+    .plan-sublabel {
+      font-size: 10px;
+      color: #475569;
+      font-weight: 400;
+    }
+
+    /* Inversión */
+    .inv-block {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+    }
+
+    .inv-block-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .inv-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 7px 0;
+      border-bottom: 1px solid #E2E8F0;
+      font-size: 13px;
+      color: #64748B;
+    }
+
+    .inv-line:last-child {
+      border-bottom: none;
+    }
+
+    .inv-line .inv-val {
+      font-weight: 600;
+      color: #0F172A;
+    }
+
+    .inv-line.inv-total {
+      padding-top: 10px;
+      margin-top: 2px;
+      border-top: 1px solid #CBD5E1;
+      font-weight: 700;
+      color: #0F172A;
+      font-size: 14px;
+    }
+
+    .inv-line.inv-total .inv-val {
+      color: #22C55E;
+      font-size: 16px;
+    }
+
+    .inv-note {
+      font-size: 11px;
+      color: #475569;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* CTA grande */
+    .cta-block {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.03) 100%);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .cta-left h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0F172A;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .cta-left p {
+      font-size: 12.5px;
+      color: #64748B;
+      line-height: 1.5;
+    }
+
+    .cta-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .cta-btn {
+      background: #22C55E;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 11px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+      letter-spacing: -0.2px;
+    }
+
+    .cta-sub {
+      font-size: 11px;
+      color: #475569;
+      text-align: center;
+    }
+
+    .p2-footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      margin-top: auto;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    .footer-left {
+      font-size: 11px;
+      color: #94A3B8;
+    }
+
+    .footer-right {
+      font-size: 11px;
+      color: #94A3B8;
+    }
+
+    /* ======================== */
+    /* MOBILE — max 768px       */
+    /* ======================== */
+    @media screen and (max-width: 768px) {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+        overflow: visible;
+        margin: 0 0 12px;
+        border-bottom: 8px solid #F1F5F9;
+      }
+
+      .page:last-child {
+        border-bottom: none;
+      }
+
+      .hero-glow {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .p1-inner {
+        padding: 28px 20px 0;
+      }
+
+      .p2-inner {
+        padding: 28px 20px 0;
+      }
+
+      .wordmark {
+        margin-bottom: 24px;
+      }
+
+      .hero-headline {
+        font-size: 28px;
+        letter-spacing: -0.8px;
+        margin-bottom: 14px;
+      }
+
+      .hero-sub {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .stats-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .stat-number {
+        font-size: 28px;
+      }
+
+      .stat-desc {
+        display: none;
+      }
+
+      .mockup-bleed {
+        width: calc(100% + 40px) !important;
+        margin-left: -20px !important;
+        height: 200px !important;
+        margin-bottom: 24px !important;
+      }
+
+      .p1-footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px 0 20px;
+        margin-top: 0;
+      }
+
+      .demo-link {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .proposal-for {
+        text-align: left;
+      }
+
+      .page-footer {
+        padding: 10px 20px;
+      }
+
+      .p2-section-label {
+        margin-bottom: 12px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .timeline-row {
+        grid-template-columns: 1fr !important;
+        gap: 0;
+        margin-bottom: 16px;
+      }
+
+      .t-step {
+        border-radius: 0;
+        border-bottom: none;
+      }
+
+      .t-step:first-child {
+        border-radius: 12px 12px 0 0;
+      }
+
+      .t-step:last-child {
+        border-radius: 0 0 12px 12px;
+        border-bottom: 1px solid #E2E8F0;
+      }
+
+      .t-step::after {
+        display: none;
+      }
+
+      .plans-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+      }
+
+      .cta-block {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+      }
+
+      .cta-right {
+        align-items: stretch;
+      }
+
+      .cta-btn {
+        text-align: center;
+        white-space: normal;
+        display: block;
+      }
+
+      .p2-footer-row {
+        padding: 10px 0 20px;
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 1 — HERO         -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="hero-glow"></div>
+
+    <div class="p1-inner">
+
+      <!-- Wordmark -->
+      <div class="wordmark">
+        <div class="wordmark-icon">K</div>
+        <span class="wordmark-text">kitchat</span>
+        <span class="wordmark-tag">para restaurantes</span>
+      </div>
+
+      <!-- Headline -->
+      <div class="hero-headline">
+        Tu restaurante vende más,<br>
+        <span class="green">sin el caos del WhatsApp</span>
+      </div>
+
+      <p class="hero-sub">
+        Menú digital con tu marca, pedidos organizados en tiempo real y clientes que vuelven
+        gracias a la IA. Sin comisiones. Sin apps de terceros.
+      </p>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-number">$340.000</div>
+          <div class="stat-label">en pedidos perdidos<br>al mes</div>
+          <div class="stat-desc">promedio restaurante de 80 pax</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2.4 hrs</div>
+          <div class="stat-label">al día en gestión<br>manual</div>
+          <div class="stat-desc">que podrías dedicar a tu cocina</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">68%</div>
+          <div class="stat-label">no vuelve si espera<br>sin información</div>
+          <div class="stat-desc">aunque la comida haya estado buena</div>
+        </div>
+      </div>
+
+      <!-- Mockup images — full bleed, phone front-left + laptop back-right -->
+      <div class="mockup-bleed" style="display:flex;align-items:flex-end;justify-content:center;width:calc(100% + 120px);margin-left:-60px;height:270px;background:#F8FAFC;margin-bottom:36px;overflow:hidden;">
+        <!-- Celular — adelante, izquierda -->
+        <img
+          src="/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/kitcha/Referencias/celular.png"
+          style="width:34%;height:100%;object-fit:contain;object-position:right bottom;position:relative;z-index:2;margin-right:-80px;"
+          alt="Menú móvil Kitchat"
+        />
+        <!-- Laptop — atrás, derecha -->
+        <img
+          src="/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/kitcha/Referencias/computador.png"
+          style="width:68%;height:100%;object-fit:contain;object-position:left bottom;position:relative;z-index:1;"
+          alt="Panel de pedidos Kitchat"
+        />
+      </div>
+
+      <!-- Demo + propuesta para -->
+      <div class="p1-footer-row">
+        <a class="demo-link" href="https://mcdonald-s-antofagasta-playa.kitchat.cl">
+          Ver demo en vivo <span class="arrow">↗</span>
+        </a>
+        <div class="proposal-for">
+          <div class="for-label">Propuesta para</div>
+          <div class="for-name">{{NOMBRE_RESTAURANTE}}</div>
+          <div class="for-date">{{FECHA}} · Validez 15 días</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page-footer">
+      <span>kitchat.cl</span>
+      <span>Pág. 1 / 2</span>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 2 — DECISIÓN     -->
+  <!-- ======================== -->
+  <div class="page">
+
+    <div class="p2-inner">
+
+      <!-- Features grid -->
+      <div class="p2-section-label">Qué incluye</div>
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon">🍽️</div>
+          <div class="feat-title">Menú white-label</div>
+          <div class="feat-desc">Tu URL: <em>turestaurante.kitchat.cl</em>. ¿Tienes dominio propio? Lo conectamos sin costo.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📋</div>
+          <div class="feat-title">Panel Kanban</div>
+          <div class="feat-desc">Pedidos en tiempo real con sonido de alerta. Nunca más un pedido perdido.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">💬</div>
+          <div class="feat-title">WhatsApp automático</div>
+          <div class="feat-desc">Confirmación, en camino y listo — sin escribir nada a mano.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">⭐</div>
+          <div class="feat-title">Reviews con IA</div>
+          <div class="feat-desc">Pide feedback 60 min después. Los positivos van a Google Reviews.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">👥</div>
+          <div class="feat-title">CRM de clientes</div>
+          <div class="feat-desc">Nuevo, recurrente y VIP. Historial completo de pedidos.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📊</div>
+          <div class="feat-title">Dashboard</div>
+          <div class="feat-desc">Ventas de hoy vs. ayer, top productos y ticket promedio.</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="p2-section-label">Del caos al orden — en 3 pasos</div>
+      <div class="timeline-row" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="t-step">
+          <div class="t-when">01 · 5 minutos</div>
+          <div class="t-what" style="font-weight:600;color:#0F172A;margin-bottom:4px;">Crea tu cuenta</div>
+          <div class="t-what">Ingresa tu email. Listo.</div>
+        </div>
+        <div class="t-step">
+          <div class="t-when">02 · 1–2 horas</div>
+          <div class="t-what" style="font-weight:600;color:#0F172A;margin-bottom:4px;">Sube tu menú</div>
+          <div class="t-what">Fotos, precios, categorías. En una tarde.</div>
+        </div>
+        <div class="t-step">
+          <div class="t-when">03 · Inmediato</div>
+          <div class="t-what" style="font-weight:600;color:#0F172A;margin-bottom:4px;">Recibe pedidos con poderes</div>
+          <div class="t-what">Cada pedido llega al panel con el chat y el detalle al lado. Sin perder nada.</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:#22C55E;font-weight:600;margin-top:-16px;margin-bottom:24px;letter-spacing:-0.2px;">Tu menú online en menos de 24 horas. Sin conocimientos técnicos.</p>
+
+      <!-- Planes — 3 cards estilo landing -->
+      <div class="p2-section-label">Planes disponibles · <a href="https://kitchat.cl" style="color:#22C55E;text-decoration:none;font-size:11px;">kitchat.cl ↗</a></div>
+
+      <div class="plans-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px;">
+
+        <!-- Pro -->
+        <div style="border:2px solid #22C55E;border-radius:12px;padding:14px;position:relative;background:#fff;">
+          <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#22C55E;color:#fff;font-size:9px;font-weight:700;padding:2px 10px;border-radius:20px;white-space:nowrap;letter-spacing:0.5px;">⭐ Más popular</div>
+          <div style="font-size:14px;font-weight:800;color:#0F172A;margin-bottom:2px;">Pro</div>
+          <div style="font-size:11px;color:#64748B;margin-bottom:10px;">1 local</div>
+          <div style="font-size:22px;font-weight:900;color:#22C55E;letter-spacing:-1px;line-height:1;">$49.900<span style="font-size:11px;font-weight:400;color:#94A3B8;">/mes</span></div>
+          <div style="font-size:10px;color:#94A3B8;margin-bottom:10px;">$449.004/año · pagas 10</div>
+          <div style="font-size:11px;color:#475569;line-height:1.7;">
+            ✓ Menú white-label<br>
+            ✓ Panel + WhatsApp auto<br>
+            ✓ Reviews con IA · CRM
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div style="border:1px solid #E2E8F0;border-radius:12px;padding:14px;background:#fff;">
+          <div style="font-size:11px;font-weight:600;color:#94A3B8;margin-bottom:6px;">Multi-sucursal</div>
+          <div style="font-size:14px;font-weight:800;color:#0F172A;margin-bottom:2px;">Business</div>
+          <div style="font-size:11px;color:#64748B;margin-bottom:10px;">hasta 3 locales</div>
+          <div style="font-size:22px;font-weight:900;color:#0F172A;letter-spacing:-1px;line-height:1;">$89.900<span style="font-size:11px;font-weight:400;color:#94A3B8;">/mes</span></div>
+          <div style="font-size:10px;color:#94A3B8;margin-bottom:10px;">$809.004/año · pagas 10</div>
+          <div style="font-size:11px;color:#475569;line-height:1.7;">
+            ✓ Todo Pro<br>
+            ✓ Panel multi-sucursal<br>
+            ✓ Onboarding personalizado
+          </div>
+        </div>
+
+        <!-- Business XL -->
+        <div style="border:1px solid #E2E8F0;border-radius:12px;padding:14px;background:#fff;">
+          <div style="font-size:11px;font-weight:600;color:#94A3B8;margin-bottom:6px;">Cadenas grandes</div>
+          <div style="font-size:14px;font-weight:800;color:#0F172A;margin-bottom:2px;">Business XL</div>
+          <div style="font-size:11px;color:#64748B;margin-bottom:10px;">hasta 5 locales</div>
+          <div style="font-size:22px;font-weight:900;color:#0F172A;letter-spacing:-1px;line-height:1;">$139.900<span style="font-size:11px;font-weight:400;color:#94A3B8;">/mes</span></div>
+          <div style="font-size:10px;color:#94A3B8;margin-bottom:10px;">$1.259.004/año · pagas 10</div>
+          <div style="font-size:11px;color:#475569;line-height:1.7;">
+            ✓ Todo Business<br>
+            ✓ 5 sucursales<br>
+            ✓ Soporte prioritario
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Oferta implementación -->
+      <div style="background:rgba(34,197,94,0.07);border:1px solid rgba(34,197,94,0.25);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+        <div style="font-size:22px;flex-shrink:0;">🎁</div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:#0F172A;margin-bottom:2px;">Paga el año y la implementación es gratis</div>
+          <div style="font-size:11.5px;color:#64748B;">Pagas 10 meses, recibes 12 — y nosotros configuramos todo: menú, WhatsApp y capacitación incluidos.</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-block">
+        <div class="cta-left">
+          <h3>Empieza a recibir pedidos hoy</h3>
+          <p>
+            Plan anual: implementación gratis<br>
+            + 2 meses sin costo incluidos.
+          </p>
+        </div>
+        <div class="cta-right">
+          <span class="cta-btn">Empezar a recibir pedidos →</span>
+          <span class="cta-sub">kitchat.cl</span>
+        </div>
+      </div>
+
+      <div class="p2-footer-row">
+        <span class="footer-left">kitchat.cl</span>
+        <span class="footer-right">Pág. 2 / 2</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

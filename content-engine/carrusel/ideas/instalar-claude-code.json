@@ -1,0 +1,103 @@
+{
+  "template": "tutorial",
+  "titulo": "Cómo instalar Claude Code en tu computador",
+  "slug": "instalar-claude-code",
+  "slides": [
+    {
+      "tipo": "hero",
+      "etiqueta": "TUTORIAL",
+      "headline": "Antes 3 horas. Ahora 8 minutos.",
+      "palabras_clave": ["8 minutos"],
+      "subheadline": "Te explico qué instalé en mi computador para transformar cómo opera mi agencia."
+    },
+    {
+      "tipo": "content",
+      "etiqueta": "¿QUÉ ES?",
+      "titulo": "No es otro chatbot. Este ejecuta.",
+      "palabras_clave": ["ejecuta"],
+      "bullets": [
+        "Lee tus archivos y entiende tu negocio",
+        "Escribe, edita y ejecuta tareas reales",
+        "Recuerda el contexto de tu proyecto completo",
+        "Lo controlas con lenguaje normal — sin código"
+      ]
+    },
+    {
+      "tipo": "content",
+      "etiqueta": "¿PARA QUÉ SIRVE?",
+      "titulo": "Lo que puedes delegar desde hoy",
+      "palabras_clave": ["delegar"],
+      "bullets": [
+        "Propuestas comerciales desde una reunión",
+        "Landing pages funcionales en una sesión",
+        "Reportes mensuales con un solo comando",
+        "Automatizaciones para tareas repetitivas"
+      ]
+    },
+    {
+      "tipo": "content",
+      "etiqueta": "ANTES DE EMPEZAR",
+      "titulo": "Lo que necesitas",
+      "palabras_clave": [],
+      "bullets": [
+        "Una Mac o PC con terminal",
+        "Node.js instalado — node.js.org (gratis)",
+        "Cuenta en claude.ai — plan Pro o Max",
+        "15 minutos de tu tiempo"
+      ]
+    },
+    {
+      "tipo": "code",
+      "etiqueta": "PASO 01 — INSTALACIÓN",
+      "descripcion": "Un solo comando en tu terminal",
+      "codigo": [
+        "# Instala Claude Code en tu computador",
+        "npm install -g @anthropic-ai/claude-code",
+        "",
+        "# Verifica que quedó instalado",
+        "claude --version"
+      ],
+      "explicacion": "Listo. Claude Code queda disponible en tu máquina desde cualquier carpeta."
+    },
+    {
+      "tipo": "code",
+      "etiqueta": "PASO 02 — PRIMER USO",
+      "descripcion": "Abre Claude en tu proyecto",
+      "codigo": [
+        "# Ve a la carpeta de tu negocio",
+        "cd mi-proyecto",
+        "",
+        "# Inicia Claude Code",
+        "claude",
+        "",
+        "# Claude lee todo automáticamente"
+      ],
+      "explicacion": "Claude entiende tu proyecto completo y está listo para trabajar en segundos."
+    },
+    {
+      "tipo": "content",
+      "etiqueta": "¿QUÉ PASA DESPUÉS?",
+      "titulo": "Así funciona en la práctica",
+      "palabras_clave": ["práctica"],
+      "bullets": [
+        "Le dices qué necesitas en lenguaje normal",
+        "Claude planifica y ejecuta la tarea",
+        "Tú revisas y apruebas el resultado",
+        "El output queda listo para usar"
+      ]
+    },
+    {
+      "tipo": "cta",
+      "headline": "¿Querés probarlo en tu negocio?",
+      "palabras_clave": ["negocio"],
+      "boton": "Síguenos para más tutoriales",
+      "secundario": "Guardá este post — lo vas a necesitar al instalarlo",
+      "engagement": true
+    }
+  ],
+  "captions": {
+    "instagram": "Antes: 3 horas para armar una propuesta comercial.\nAhora: 8 minutos.\n\nNo contraté a nadie.\nSolo instalé esto en mi computador 👇\n\nEn este carrusel te explico qué es Claude Code,\npara qué sirve y cómo instalarlo hoy mismo.\n\nSi tenés una agencia o negocio digital,\nguardá este post — lo vas a usar.\n\n#ClaudeCode #IAparaNegocios #Automatización\n#AgenciasDigitales #InteligenciaArtificial\n#ProductividadConIA #EmprendimientoLatam",
+    "linkedin": "Antes: 3 horas para armar una propuesta comercial.\nAhora: 8 minutos.\n\nNo contraté a nadie ni compré ningún software.\nSolo instalé una herramienta en mi computador.\n\nSe llama Claude Code. Es un agente IA que vive\nen tu máquina, lee tus archivos y ejecuta tareas reales.\n\nNo es otro chatbot. Actúa.\n\nEn el carrusel explico exactamente qué es,\npara qué sirve en una agencia o negocio digital,\ny cómo instalarlo en menos de 15 minutos.\n\n¿Ya lo estás usando? Cuéntame en los comentarios.",
+    "threads": "Antes: 3 horas para una propuesta.\nAhora: 8 minutos.\n\nSolo instalé Claude Code en mi computador.\n\nUn agente IA que no responde preguntas —\nejecutar tareas reales en tu negocio.\n\nTutorial completo en el carrusel 👆\nGuárdalo."
+  }
+}

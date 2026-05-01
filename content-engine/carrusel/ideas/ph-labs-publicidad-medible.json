@@ -1,0 +1,74 @@
+{
+  "titulo": "PH Labs — La publicidad física que se puede medir",
+  "slug": "ph-labs-publicidad-medible",
+  "template_set": "minimalista",
+  "palabras_clave": ["publicidad física", "medible"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "PHYGITAL LABS",
+      "headline": "Tu anuncio físico. *Por fin* medible.",
+      "subheadline": "Pantallas en espacios de alto tráfico. QR, NFC y sensores que convierten presencia física en datos reales."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "EL PROBLEMA",
+      "titulo": "La publicidad física siempre tuvo un hueco",
+      "bullets": [
+        "Pagabas por un cartel o flyer — sin saber cuántos lo vieron",
+        "No había forma de saber si tu anuncio funcionó",
+        "En Meta y Google compites en subasta contra todos",
+        "Más inversión, menos control de quién ve qué"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "CÓMO FUNCIONA",
+      "titulo": "Physical Presence, Digital Performance",
+      "bullets": [
+        "Pantallas en bares, barberías y salas de espera con tráfico real",
+        "Cada pantalla tiene QR, NFC o sensor — interacciones medibles",
+        "Tú eliges el local según el perfil de tu público objetivo",
+        "Cada escaneo, clic y conversión queda registrado"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "EL MODELO",
+      "titulo": "Dos tipos de cliente. Un sistema.",
+      "bullets": [
+        "Local físico: instala la pantalla + ofrece carga de móvil gratis a sus clientes",
+        "Marca anunciante: llega a su público en el contexto exacto donde está",
+        "El nicho del local define la audiencia — sin pagar por datos de terceros",
+        "Resultados medibles desde el primer anuncio"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "LA DIFERENCIA",
+      "titulo": "Hoy QR. Mañana NFC. Siempre medible.",
+      "bullets": [
+        "La tecnología es agnóstica al hardware — la pantalla es el punto de entrada",
+        "QR para escanear, NFC para tocar, sensores para detectar presencia",
+        "Mañana puede ser reconocimiento facial o audio — el sistema escala",
+        "Lo que no cambia: cada impacto se mide como si fuera digital"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La publicidad física siempre existió. Lo que faltaba era poder medirla.",
+      "author": "Phygital Labs"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Tienes un local con tráfico real o una marca que quiere más visibilidad?",
+      "cta": "Agenda una llamada gratis",
+      "nota": "Te mostramos cómo funciona en 20 minutos — sin compromiso."
+    }
+  ],
+  "captions": {
+    "instagram": "Hay algo que Meta y Google nunca te van a devolver:\n\nEl espacio físico donde está tu cliente.\n\nLa barbería donde espera 20 minutos mirando al techo.\nEl bar donde toma el café antes de trabajar.\nLa sala de espera donde saca el móvil y no sabe qué hacer con él.\n\nEse espacio existía. Solo que nadie lo había conectado con datos reales.\n\nEso es lo que hace Phygital Labs:\nPantallas en espacios de alto tráfico → QR y NFC → datos de cuánta gente interactuó → publicidad física que se mide como si fuera digital.\n\nSin pagar comisión a ningún algoritmo.\nSin competir en subasta con tu competencia.\nCon contexto real: el tipo de local define tu público.\n\nSi tienes un local con tráfico y quieres que trabaje por ti —\no si tienes una marca y quieres llegar donde está tu cliente —\nescríbenos.\n\nTe lo mostramos en 20 minutos.\n\n👉 Link en bio para agendar.\n\n#publicidadfisica #phygitallabs #marketingfisico #murcia #madrid #startups #qr #nfc #publicidad",
+    "linkedin": "La publicidad física siempre tuvo el mismo problema: no se podía medir.\n\nPagabas por un cartel, un flyer, una pantalla. Y no tenías ni idea de cuánta gente lo había visto, ni qué habían hecho después.\n\nPhygital Labs resuelve exactamente eso.\n\nPantallas en espacios de alto tráfico (bares, barberías, salas de espera) activadas con QR, NFC y sensores. Cada interacción queda registrada. Cada conversión, medida.\n\nEl resultado: publicidad física con trazabilidad digital. Sin depender de algoritmos. Sin competir en subasta.\n\nDos modelos de cliente:\n→ Local físico: instala la pantalla, ofrece carga de móvil gratis, genera ingresos pasivos\n→ Marca anunciante: llega a su público en el contexto exacto donde está, con datos reales\n\nSi te interesa saber cómo funciona, agenda una llamada de 20 minutos.\n\n#PublicidadFísica #PhygitalLabs #MarketingB2B #Innovación #Murcia #Madrid",
+    "threads": "La publicidad física nunca pudo medirse. Ponías un cartel y rezabas.\n\nPhygital Labs lo cambia: pantallas en bares y barberías con QR y NFC. Cada interacción registrada.\n\nPublicidad física. Resultados digitales. Sin algoritmos."
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; overflow: hidden; background: #050508; }
+    .slide { width: 1080px; height: 1350px; background: #050508; font-family: 'Plus Jakarta Sans', sans-serif; position: relative; overflow: hidden; }
+
+    .glow-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(0,180,216,0.14) 0%, rgba(255,50,49,0.06) 35%, transparent 65%); pointer-events: none; }
+    .glow-corner { position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,50,49,0.11) 0%, transparent 65%); pointer-events: none; }
+    .ring { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(255,255,255,0.04); pointer-events: none; }
+    .ring-1 { width: 440px; height: 440px; }
+    .ring-2 { width: 640px; height: 640px; border-color: rgba(255,255,255,0.025); }
+    .ring-3 { width: 840px; height: 840px; border-color: rgba(255,255,255,0.014); }
+
+    /* Progress bar */
+    .progress-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.06); z-index: 20; }
+    .progress-fill { height: 100%; width: 33%; background: linear-gradient(90deg, #FF3231, rgba(255,50,49,0.4)); border-radius: 0 2px 2px 0; }
+
+    /* Header */
+    .header { position: absolute; top: 52px; left: 68px; right: 68px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+    .etiqueta { font-size: 12px; font-weight: 700; color: #FF3231; letter-spacing: 3px; text-transform: uppercase; }
+    .slide-num { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.26); letter-spacing: 1.5px; }
+
+    /* Content */
+    .content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 140px 68px 100px; z-index: 10; }
+    .stat-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 52px 60px 48px; width: 100%; }
+    .number { font-size: 148px; font-weight: 800; line-height: 0.85; letter-spacing: -8px; margin-bottom: 24px; background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.72) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .label-row { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+    .label-bar { width: 32px; height: 3px; background: #FF3231; border-radius: 2px; flex-shrink: 0; }
+    .label { font-size: 28px; font-weight: 700; color: #FF3231; letter-spacing: -0.5px; }
+    .context { font-size: 20px; font-weight: 400; color: rgba(255,255,255,0.38); line-height: 1.55; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 24px; }
+
+    /* Footer */
+    .footer { position: absolute; bottom: 44px; left: 68px; right: 68px; display: flex; align-items: center; justify-content: space-between; z-index: 10; }
+    .handle { font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.35); }
+    .logo-img { height: 20px; width: auto; display: block; opacity: 0.28; }
+    .logo-text { font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.28); display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow-center"></div><div class="glow-corner"></div>
+    <div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div>
+    <div class="header"><div class="etiqueta">PROMEDIO CHILE</div><div class="slide-num">02</div></div>
+    <div class="content">
+      <div class="stat-card">
+        <div class="number">12</div>
+        <div class="label-row"><div class="label-bar"></div><div class="label">cigarros al día</div></div>
+        <div class="context">El fumador promedio en Chile consume entre 10 y 15 cigarros diarios — unas 15 cajetillas al mes.</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="handle">@easywaychile</div>
+      <img class="logo-img" src="../../public/brand/easyway/logo.png" alt="Easyway Chile" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">Easyway Chile</div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</body>
+</html>

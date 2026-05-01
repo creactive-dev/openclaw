@@ -1,0 +1,66 @@
+{
+  "titulo": "Claude Code Routines: automatización sin infraestructura",
+  "slug": "claude-code-routines",
+  "pilar": "4",
+  "template_set": "minimalista",
+  "patron_hormozi": "Lista Con Fricción",
+  "palabras_clave": ["claude code", "routines", "automatización", "IA", "solopreneur"],
+  "slides": [
+    {
+      "layout": "hero-light",
+      "headline": "Claude Code ya trabaja sin ti.",
+      "subheadline": "Routines: tareas programadas que corren en la infraestructura de Anthropic. Sin cron jobs. Sin servidor. Sin que tu Mac esté prendida.",
+      "etiqueta": "Construir sin equipo"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El problema anterior",
+      "titulo": "Automatizar tenía fricción real",
+      "analysis": "Si querías que Claude Code corriera en loop — revisar PRs, monitorear una API, ejecutar un pipeline — gestionabas tú la infraestructura. Cron job, servidor prendido, tu Mac disponible.",
+      "bullets": [
+        "Infraestructura propia para cada workflow",
+        "Tu máquina online 24/7 para que funcionara",
+        "Cada MCP server lo manejabas tú solo"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Cómo funciona",
+      "titulo": "Empaquetas. Programas. Anthropic lo corre.",
+      "analysis": "Defines la automatización, le asignas un schedule o trigger, y Anthropic la ejecuta en su nube. Viene con acceso a tus repos y connectors incluido. Tu equipo es la plataforma.",
+      "bullets": [
+        "Corre en la nube de Anthropic, no en tu equipo",
+        "Acceso directo a tus repos y tools (MCP)",
+        "Trigger por horario o por evento externo"
+      ],
+      "mockup": "agent"
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Usos concretos",
+      "titulo": "Qué automatiza un solopreneur con Routines",
+      "bullets": [
+        "Revisión automática de PRs en GitHub cada noche",
+        "Monitor de APIs que alerta si algo falla",
+        "Pipeline de CI que corre sin abrir el editor",
+        "Reportes de codebase generados cada semana sin pedirlos"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La IA no necesita que estés presente para trabajar. La pregunta es si ya le pusiste trabajo a hacer.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta-light",
+      "texto": "El que programa bien sus Routines hoy opera diferente en 3 meses.",
+      "cta": "Comenta ROUTINES y te mando el breakdown",
+      "nota": "Pro: 5/día · Max: 15/día · Team/Enterprise: 25/día — disponible hoy en research preview"
+    }
+  ],
+  "captions": {
+    "instagram": "Claude Code acaba de lanzar Routines.\n\nTareas programadas que corren en la infraestructura de Anthropic.\nSin que tu Mac esté prendida.\nSin cron jobs.\nSin servidor propio.\n\nPara el solopreneur que usa IA para operar: esto es exactamente lo que faltaba.\n\nDisponible hoy en research preview. Pro: 5/día. Max: 15/día. Team/Enterprise: 25/día.\n\n¿Qué automatizarías primero? Comenta abajo.\n\n#ClaudeCode #Automatización #IA #Solopreneur #AITools #AnthropicAI",
+    "linkedin": "Anthropic lanzó Routines para Claude Code hoy.\n\nLa premisa: empaquetas una automatización, le asignas un schedule o trigger, y Anthropic la ejecuta en su infraestructura. Tu Mac no necesita estar encendida.\n\nPara los que operamos con IA como parte del stack, esto elimina una fricción real. Antes necesitabas cron jobs y un servidor siempre online solo para que Claude corriera en loop.\n\nCasos de uso directos:\n→ Revisión automática de PRs en GitHub\n→ Monitoring de APIs sin intervención\n→ Pipelines de CI que corren solos\n→ Reportes de codebase programados\n\nLímites actuales: Pro (5/día), Max (15/día), Team/Enterprise (25/día).\n\nTodavía en research preview, pero el patrón es claro: la IA ya no necesita que estés presente para trabajar.\n\n¿Qué automatizarías primero?",
+    "threads": "Claude Code lanzó Routines.\n\nTareas que corren en la infra de Anthropic. Sin tu Mac. Sin cron jobs. Sin servidores.\n\nPara el que opera solo con IA: esto elimina la última excusa para no automatizar."
+  }
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>ARENA — Diagrama LinkedIn</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #0B1120;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Grid background sutil */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(87, 139, 222, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(87, 139, 222, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Glow central */
+  .glow-bg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(87, 139, 222, 0.07) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 64px;
+    gap: 0;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    background: rgba(47, 184, 197, 0.1);
+    border: 1px solid rgba(47, 184, 197, 0.25);
+    border-radius: 100px;
+    color: #2FB8C5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2FB8C5;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .title span {
+    background: linear-gradient(135deg, #578BDE, #2FB8C5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: #64748B;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 560px;
+  }
+
+  /* Diagram */
+  .diagram {
+    position: relative;
+    width: 680px;
+    height: 420px;
+  }
+
+  /* SVG lines */
+  .diagram svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Center node — Agent */
+  .center-node {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a2744, #0f1d38);
+    border: 2px solid rgba(87, 139, 222, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 0 40px rgba(87, 139, 222, 0.2), 0 0 80px rgba(87, 139, 222, 0.08);
+    z-index: 10;
+  }
+
+  .center-node .icon {
+    font-size: 28px;
+  }
+
+  .center-node .label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #578BDE;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  /* Failure ring */
+  .center-node::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 1.5px dashed rgba(255, 50, 49, 0.35);
+    animation: spin 12s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Hostile client nodes */
+  .client-node {
+    position: absolute;
+    width: 130px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.2s;
+  }
+
+  .client-node .emoji {
+    font-size: 22px;
+  }
+
+  .client-node .name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #E2E8F0;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .client-node .desc {
+    font-size: 11px;
+    color: #475569;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* Positions */
+  .node-1 { top: 10px; left: 20px; }   /* top-left */
+  .node-2 { top: 10px; right: 20px; }  /* top-right */
+  .node-3 { bottom: 10px; left: 20px; } /* bottom-left */
+  .node-4 { bottom: 10px; right: 20px; } /* bottom-right */
+
+  /* Fault indicator */
+  .fault-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(38px, -78px);
+    background: rgba(255, 50, 49, 0.12);
+    border: 1px solid rgba(255, 50, 49, 0.4);
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 20;
+    white-space: nowrap;
+  }
+
+  .fault-badge .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FF3231;
+  }
+
+  .fault-badge .text {
+    font-size: 11px;
+    font-weight: 600;
+    color: #FF3231;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* Stats footer */
+  .stats {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 44px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .stat-value {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFFFFF;
+  }
+
+  .stat-value span {
+    color: #2FB8C5;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: #475569;
+    font-weight: 500;
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  /* Watermark */
+  .watermark {
+    position: absolute;
+    bottom: 28px;
+    right: 36px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.12);
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="badge">
+        <div class="badge-dot"></div>
+        Testing de agentes IA
+      </div>
+      <div class="title">¿Tu agente pasa la<br>prueba <span>real</span>?</div>
+      <div class="subtitle">
+        Un agente puede funcionar perfecto en casa.<br>
+        Con clientes reales, es otra historia.
+      </div>
+    </div>
+
+    <!-- Diagram -->
+    <div class="diagram">
+
+      <!-- SVG arrows -->
+      <svg viewBox="0 0 680 420" preserveAspectRatio="none">
+        <defs>
+          <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="rgba(255,50,49,0.6)" />
+          </marker>
+        </defs>
+        <!-- top-left to center -->
+        <line x1="155" y1="105" x2="300" y2="185" stroke="rgba(255,50,49,0.25)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow-red)" />
+        <!-- top-right to center -->
+        <line x1="525" y1="105" x2="385" y2="185" stroke="rgba(255,50,49,0.25)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow-red)" />
+        <!-- bottom-left to center -->
+        <line x1="155" y1="315" x2="300" y2="240" stroke="rgba(255,50,49,0.25)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow-red)" />
+        <!-- bottom-right to center -->
+        <line x1="525" y1="315" x2="385" y2="240" stroke="rgba(255,50,49,0.25)" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow-red)" />
+      </svg>
+
+      <!-- Center: AI Agent -->
+      <div class="center-node">
+        <div class="icon">🤖</div>
+        <div class="label">Tu agente<br>IA</div>
+      </div>
+
+      <!-- Fault badge -->
+      <div class="fault-badge">
+        <div class="dot"></div>
+        <div class="text">Fallo detectado — turno 7</div>
+      </div>
+
+      <!-- Client nodes -->
+      <div class="client-node node-1">
+        <div class="emoji">😤</div>
+        <div class="name">El que exige<br>descuentos</div>
+        <div class="desc">"Lo vi más barato en Amazon"</div>
+      </div>
+
+      <div class="client-node node-2">
+        <div class="emoji">🤐</div>
+        <div class="name">El de<br>monosílabos</div>
+        <div class="desc">Solo responde "sí", "no", "quizás"</div>
+      </div>
+
+      <div class="client-node node-3">
+        <div class="emoji">🔄</div>
+        <div class="name">El que pide<br>devoluciones</div>
+        <div class="desc">Fuera de política, presiona igual</div>
+      </div>
+
+      <div class="client-node node-4">
+        <div class="emoji">🎓</div>
+        <div class="name">El "experto"<br>que cuestiona</div>
+        <div class="desc">Cree saber más que el agente</div>
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">46<span>+</span></div>
+        <div class="stat-label">desarrolladores testeando</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value">300<span>+</span></div>
+        <div class="stat-label">tests realizados</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value">95<span>/100</span></div>
+        <div class="stat-label">prompt de Anthropic</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="watermark">ARENA · autoritas.ai</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1080px;
+      font-family: 'Manrope', sans-serif;
+      position: relative;
+      overflow: hidden;
+      background: {{bg_color}};
+    }
+
+    /* Top accent bar */
+    .accent-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: #e43d80;
+    }
+
+    /* Subtle radial glow — pink */
+    .glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(228, 61, 128, 0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    /* Content — fully centered */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .logo {
+      height: 110px;
+      width: auto;
+      display: block;
+    }
+
+    .headline {
+      font-size: 46px;
+      font-weight: 800;
+      color: #1c1717;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      max-width: 860px;
+    }
+
+    .headline .accent {
+      color: #e43d80;
+    }
+
+    /* When bg is dark, flip text to white */
+    .slide[data-dark="true"] .headline {
+      color: #ffffff;
+    }
+
+    .cta-pill {
+      display: inline-flex;
+      align-items: center;
+      background: #f4ce35;
+      color: #1c1717;
+      font-size: 20px;
+      font-weight: 800;
+      padding: 18px 48px;
+      border-radius: 50px;
+      letter-spacing: 0.3px;
+      border: 3px solid #fcbf30;
+    }
+
+    .subline {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1c1717;
+      opacity: 0.55;
+      margin-top: -16px;
+    }
+
+    /* Bottom decorative line */
+    .bottom-line {
+      position: absolute;
+      bottom: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: #e43d80;
+      border-radius: 2px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="accent-bar"></div>
+    <div class="glow"></div>
+
+    <div class="content">
+      <img class="logo" src="../../public/brand/pumpalcerro-logo.png" alt="Pumpalcerro"
+           onerror="this.style.display='none'">
+      <div class="headline">{{headline_html}}</div>
+      {{subline_html}}
+    </div>
+
+    <div class="bottom-line"></div>
+
+  </div>
+</body>
+</html>

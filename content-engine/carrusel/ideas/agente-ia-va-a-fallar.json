@@ -1,0 +1,61 @@
+{
+  "titulo": "Tu agente IA va a fallar",
+  "slug": "agente-ia-va-a-fallar",
+  "pilar": "2",
+  "template_set": "minimalista",
+  "patron_hormozi": "Verdad Incómoda",
+  "palabras_clave": ["agentes IA", "testing", "producción", "LatAm", "clientes reales"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "Tu agente IA va a fallar.",
+      "subheadline": "No es un problema de código. Es un problema de testing.",
+      "etiqueta": "IA PRÁCTICA"
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "EL PROBLEMA",
+      "titulo": "Lo probaste en casa. Eso no cuenta.",
+      "analysis": "La mayoría de los agentes IA se testean en condiciones perfectas: preguntas limpias, flujos lineales, respuestas esperadas. Nada de eso es lo que pasa en producción.",
+      "bullets": [
+        "Clientes que no siguen el script que imaginaste",
+        "Preguntas que mezclan idiomas, frases cortadas, cambios de tema"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "LA SOLUCIÓN",
+      "titulo": "Clientes sintéticos hostiles. Antes del lanzamiento.",
+      "analysis": "En Kitcha y Nutrisco, entendimos que el agente necesita sobrevivir los peores usuarios posibles antes de llegar a los reales.",
+      "bullets": [
+        "El cliente que exige descuento que no existe",
+        "El indeciso que responde en monosílabos",
+        "El 'experto' que cuestiona todo lo que dices"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "BENCHMARK",
+      "number": "46+",
+      "label": "equipos testeando así",
+      "context": "con clientes sintéticos hostiles — la nueva práctica estándar"
+    },
+    {
+      "layout": "quote",
+      "quote": "Antes de que tu agente hable con un cliente real, que primero fracase con uno falso.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta-light",
+      "etiqueta": "PRÓXIMO PASO",
+      "texto": "¿Vas a lanzar un agente IA sin haberlo testeado así?",
+      "cta": "Comenta AGENT y te cuento cómo",
+      "nota": "Así lo hacemos en Kitcha y Nutrisco antes de cada deploy"
+    }
+  ],
+  "captions": {
+    "instagram": "Tu agente IA funciona perfecto cuando lo pruebas tú.\n\nEl problema es que tus clientes no van a seguir el script que imaginaste.\n\nEstán guardados. 👆\n\n#IAlatam #AgentesIA #Automatizacion #CreActiveStudio #Solopreneur",
+    "linkedin": "Construí agentes IA para clientes reales.\n\nY aprendí algo que nadie te dice cuando empiezas: testear en dev no es testear en producción.\n\nTus clientes llegan con frases que nunca anticipaste. Exigen descuentos que no existen. Responden en monosílabos. O peor — cuestionan todo lo que dice tu agente.\n\nEn Kitcha y Nutrisco aprendimos a resolverlo: clientes sintéticos hostiles antes del lanzamiento.\n\nEsta semana hablé con el creador de ARENA — una herramienta que hace exactamente esto a escala.\n\nGuarda este carrusel si estás a punto de lanzar un agente.\n\n¿Ya implementaste alguno en producción? Cuéntame qué pasó en los comentarios.",
+    "threads": "Construiste el agente. Lo testeaste. Funciona.\n\nLo lanzas y falla en el turno 3 con un cliente real.\n\nEl testing en dev no es testing de producción. Así lo resolvemos."
+  }
+}

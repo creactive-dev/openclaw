@@ -1,0 +1,39 @@
+{
+  "titulo": "AD04 — Testimonial",
+  "slug": "pumpalcerro-ad04-testimonial",
+  "template_set": "pumpalcerro-ads",
+  "width": 1080,
+  "height": 1080,
+  "slides": [
+    {
+      "layout": "quote-photo",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "quote": "Llegué luego de una gran pérdida y subir con las chicas me dio nuevos aires, alegría y mucha *confianza*",
+      "author": "Cecilia"
+    },
+    {
+      "layout": "quote-photo",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "quote": "Es un *espacio seguro* para hacer trekking, de pura buena onda",
+      "author": "Alejandra"
+    },
+    {
+      "layout": "quote-photo",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "quote": "Como una nueva *familia*, esa que uno elige tener",
+      "author": "Isabel"
+    },
+    {
+      "layout": "quote-photo",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "quote": "Se conocen lugares hermosos, en un ambiente seguro y de *respeto* por cada una",
+      "author": "Verónica"
+    },
+    {
+      "layout": "cta-brand",
+      "headline": "Valle del Elqui · 21-23 mayo · *Reserva tu cupo*",
+      "subline": "Pocos cupos disponibles · Desde $690.000 · Cupo con $200.000",
+      "bg_color": "#fefaf6"
+    }
+  ]
+}

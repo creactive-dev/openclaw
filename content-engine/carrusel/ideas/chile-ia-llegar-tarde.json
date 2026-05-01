@@ -1,0 +1,62 @@
+{
+  "titulo": "Chile IA — El mayor riesgo es llegar tarde",
+  "slug": "chile-ia-llegar-tarde",
+  "pilar": "3",
+  "template_set": "minimalista",
+  "patron_hormozi": "Verdad Incómoda",
+  "palabras_clave": ["IA Chile", "estrategia país", "adopción IA", "LatAm", "automatización"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "Chile debate. El mundo ya implementó.",
+      "subheadline": "El mayor riesgo de la IA no es la máquina rebelde. Es que llegues tarde.",
+      "etiqueta": "Estrategia IA"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El debate equivocado",
+      "titulo": "Todos hablan del apocalipsis. Nadie habla del costo de no hacer nada.",
+      "bullets": [
+        "La superinteligencia está lejos — hay consenso académico en eso. Pero la IA operacional ya transforma negocios hoy.",
+        "Las grandes empresas no harán IA apocalíptica — no es rentable. Pero sí harán IA que reemplaza a quienes no se mueven.",
+        "Dos 'inviernos de IA' (años 60 y 90) vinieron de expectativas irreales. El hype que paraliza la decisión es el verdadero riesgo."
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Lo que viene",
+      "titulo": "3 avances que no puedes ignorar si operas en LatAm",
+      "bullets": [
+        "Agentes de IA: cadenas de modelos con razonamiento por pasos (Chain of Thought). El servicio al cliente nunca vuelve a ser lo mismo.",
+        "Multimodal: el próximo CRM no analiza solo datos — analiza datos + conversaciones + reclamos + redes sociales, todo junto.",
+        "Democratización: la competencia entre modelos abiertos (Meta, DeepSeek) y comerciales bajará los costos de implementar IA drásticamente."
+      ]
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "El costo real",
+      "titulo": "Llegar tarde no es quedarse atrás. Es pagar para siempre.",
+      "bullets": [
+        "Los países que llegan tarde a las revoluciones tecnológicas no desaparecen — se convierten en compradores de tecnología, no en exportadores.",
+        "Chile puede liderar en LatAm. La ventana sigue abierta. Pero tiene fecha de vencimiento.",
+        "El riesgo no es que la IA decida por ti. Es que tu competidor la use primero — y tú no sepas que ya perdiste."
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "El mayor riesgo de la IA para Chile no es el apocalipsis. Es llegar tarde a la fiesta.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Tu negocio está usando IA, o todavía está debatiendo si debería?",
+      "cta": "Comenta DIAGNÓSTICO",
+      "nota": "Te muestro en 30 min qué automatizar primero."
+    }
+  ],
+  "captions": {
+    "instagram": "Chile sigue debatiendo si la IA es peligrosa.\n\nMientras tanto, EE.UU. y China ya la declararon prioridad nacional.\n\nEl diagnóstico de tres académicos de la U. de Chile es claro: el mayor riesgo no es la máquina rebelde.\n\nEs llegar tarde.\n\nLo que me llama la atención del artículo:\n→ La superinteligencia sigue lejos. Hay consenso en eso.\n→ Pero los agentes de IA ya razonan por pasos — y eso cambia todo.\n→ La democratización (Meta, DeepSeek) va a bajar los costos de implementar IA un orden de magnitud.\n→ Los países que no se mueven no desaparecen. Se convierten en compradores de tecnología, no en exportadores.\n\nChile puede liderar en LatAm. La ventana sigue abierta.\n\nPero tiene fecha de vencimiento.\n\n¿Tu negocio ya está usando IA o todavía está debatiendo si debería? 👇\n\n#InteligenciaArtificial #Chile #IA #LatAm #Automatización #Estrategia #Negocios #TransformaciónDigital",
+    "linkedin": "Tres académicos de la U. de Chile publicaron un análisis sobre el futuro de la IA en el país. El titular lo dice todo: \"el mayor riesgo no es el apocalipsis — es llegar tarde.\"\n\nLo que destaca el análisis:\n\n1. El debate sobre superinteligencia distrae. La IA operacional ya está transformando industrias sin necesitar ser \"inteligente\" en sentido filosófico.\n\n2. Los agentes de IA (Chain of Thought) son el salto real. No una sola IA omnisciente — una cadena de modelos con capacidades limitadas que, concatenados, logran razonamiento sofisticado.\n\n3. La democratización es inevitable. La competencia entre modelos abiertos (Meta, DeepSeek) y comerciales bajará los costos de implementación drásticamente en los próximos 24 meses.\n\n4. El riesgo geopolítico está eclipsando el debate existencial. EE.UU. y China ya asumieron la IA como prioridad nacional. El resto elige: innovar o pagar.\n\nPara Chile y LatAm, la conclusión es concreta: podemos liderar la adopción en la región. Pero la ventana no está abierta indefinidamente.\n\n¿Tu organización tiene una estrategia de adopción de IA, o está esperando que la tecnología madure más? La espera tiene un costo que raramente se mide.",
+    "threads": "Chile sigue debatiendo si la IA es peligrosa. EE.UU. y China ya la declararon prioridad nacional.\n\nEl mayor riesgo no es el apocalipsis. Es llegar tarde.\n\n¿Tu negocio tiene una estrategia de IA o todavía está en modo \"veamos qué pasa\"?"
+  }
+}

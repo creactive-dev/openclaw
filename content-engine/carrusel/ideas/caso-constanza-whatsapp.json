@@ -1,0 +1,70 @@
+{
+  "titulo": "Automatizamos WhatsApp para una nutricionista. Lo que pasó.",
+  "slug": "caso-constanza-whatsapp",
+  "template_set": "minimalista",
+  "palabras_clave": [],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "CASO REAL",
+      "headline": "3 días para mandar un plan. Ahora: *4 minutos*.",
+      "subheadline": "Esto es lo que instalamos en el negocio de Constanza Nutrición."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "EL PROBLEMA",
+      "titulo": "Así funcionaba antes",
+      "bullets": [
+        "Recibía formularios por WhatsApp, a mano",
+        "Copiaba los datos en una hoja de Google",
+        "Tardaba 3 días en entregar el plan nutricional",
+        "Los clientes preguntaban constantemente cuándo llegaba"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "LO QUE INSTALAMOS",
+      "titulo": "El sistema en 4 pasos",
+      "bullets": [
+        "Landing que captura los datos del cliente",
+        "n8n procesa el formulario automáticamente",
+        "Claude genera el plan base personalizado",
+        "WhatsApp entrega el plan al instante"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "RESULTADO",
+      "number": "4 min",
+      "label": "De 72 horas a 4 minutos de respuesta",
+      "context": "Sin que Constanza toque un formulario"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "QUÉ CAMBIÓ",
+      "titulo": "Lo que cambió para el negocio",
+      "bullets": [
+        "Atiende el doble de clientes al mes",
+        "Cero mensajes de 'cuándo llega mi plan'",
+        "El sistema trabaja aunque ella esté en consulta",
+        "Tiempo liberado para crear contenido y escalar"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "El sistema trabaja aunque Constanza esté con un paciente.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Tu negocio tiene un proceso así?",
+      "cta": "Comenta WHATSAPP",
+      "nota": "Te cuento cómo lo instalamos — sin equipo técnico, sin meses de espera."
+    }
+  ],
+  "captions": {
+    "instagram": "Una nutricionista tardaba 3 días en mandar un plan nutricional.\nA mano. Por WhatsApp.\n\nTres semanas después de trabajar juntos: el plan llega en 4 minutos. Solo.\n\nLo que instalamos:\n→ Landing que captura los datos\n→ n8n que procesa el formulario\n→ Claude que genera el plan base\n→ WhatsApp que lo entrega automático\n\nConstanza no toca un formulario desde hace dos meses.\n\nSi tu negocio tiene un proceso repetitivo que todavía haces a mano, comenta WHATSAPP.\nTe cuento si es automatizable — y cómo.\n\n#automatizacion #whatsappbusiness #n8n #iaparanegocios #emprendedoreslatam #sistemasdenegocios #creactivestudio #oscarvergara",
+    "linkedin": "Una nutricionista tardaba 3 días en entregar un plan nutricional.\nProceso: formulario por WhatsApp → copiar a Google Sheets → armar PDF → enviar.\nTodo manual.\n\nInstalamos un workflow con n8n + Claude API + WhatsApp Business.\nHoy el plan llega en 4 minutos. Sin que ella toque nada.\n\nEso es lo que hace la automatización bien implementada:\nNo reemplaza al profesional. Elimina el trabajo administrativo que lo rodea.\n\n¿Tienes un proceso así en tu operación? Lo analizo sin costo.\n\n#automatizacion #ia #whatsappbusiness #pymes #latam",
+    "threads": "Una nutricionista tardaba 3 días en mandar un plan nutricional.\nEra todo manual. WhatsApp, copiar datos, armar PDF.\n\nTres semanas después: automático en 4 minutos.\n\nSi tienes un proceso repetitivo que todavía haces a mano, comenta WHATSAPP."
+  }
+}

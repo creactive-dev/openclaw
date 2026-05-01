@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #39b3c5;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: #39b3c5;
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle top-center glow */
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(255, 255, 255, 0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    /* ── Header ── */
+    .header {
+      position: absolute;
+      top: 60px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .slide-num {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.35);
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    /* ── Content ── */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 160px 80px;
+      gap: 44px;
+    }
+
+    .deco-dot {
+      width: 16px;
+      height: 16px;
+      background: #ff3130;
+      border-radius: 50%;
+      box-shadow: 0 0 24px rgba(255, 49, 48, 0.6);
+    }
+
+    .headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: 80px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 1.0;
+      letter-spacing: -2px;
+      max-width: 880px;
+      text-align: center;
+      text-shadow: 0 2px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .headline .accent { color: #0d0d0d; }
+
+    .btn {
+      display: inline-block;
+      border: 2.5px solid rgba(255, 255, 255, 0.85);
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      padding: 22px 68px;
+      border-radius: 50px;
+      letter-spacing: -0.2px;
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    .nota {
+      font-size: 19px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.55);
+      text-align: center;
+      margin-top: -20px;
+    }
+
+    /* ── Engagement card ── */
+    .engagement {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      border-radius: 16px;
+      padding: 28px 36px;
+      text-align: left;
+    }
+
+    .engagement p {
+      font-size: 22px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.70);
+      line-height: 2.1;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      position: absolute;
+      bottom: 50px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 20px;
+    }
+
+    .logo-img   { height: 28px; width: auto; display: block; filter: brightness(0) invert(1); opacity: 0.85; }
+    .brand-text { font-size: 20px; font-weight: 400; color: rgba(255, 255, 255, 0.85); letter-spacing: -0.2px; display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="header">
+      <div class="slide-num">06</div>
+    </div>
+
+    <div class="content">
+      <div class="deco-dot"></div>
+      <div class="headline">¿Quieres ver <span class="accent">qué más</span> puede hacer?</div>
+      <div class="btn">Síguenos para más tutoriales</div>
+      <div class="nota">Guardá este post — lo vas a necesitar</div>
+      <div class="engagement">
+        <p>💾 Guarda este post si lo vas a aplicar</p>
+        <p>♻️ Compártelo con alguien que lo necesite</p>
+        <p>💬 Cuéntanos en comentarios: ¿ya usas IA en tu agencia?</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img class="logo-img" src="../public/brand/logo.png" alt="CreActive Studio"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="brand-text">CreActive Studio</div>
+    </div>
+
+  </div>
+</body>
+</html>

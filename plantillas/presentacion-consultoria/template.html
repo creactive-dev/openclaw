@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITULO_PRESENTACION}} — CreActive Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <style>
+    /* ===================================================
+       CREACTIVE STUDIO — DARK PRESENTATION THEME v1.0
+       Paleta: #0F172A bg / #FF3231 red / #578BDE blue / #2FB8C5 teal
+       Tipografía: Plus Jakarta Sans (headings 800) + DM Sans (body)
+       Uso: copiar este archivo a clientes/{slug}/outputs/
+            renombrar a presentacion-{tipo}-{fecha}.html
+            buscar y reemplazar todos los {{VARIABLES}}
+    =================================================== */
+    :root {
+      --bg:       #0F172A;
+      --bg-card:  #1E293B;
+      --bg-deep:  #080F1D;
+      --red:      #FF3231;
+      --blue:     #578BDE;
+      --teal:     #2FB8C5;
+      --text:     #F8FAFC;
+      --body:     #CBD5E1;
+      --muted:    #64748B;
+      --border:   rgba(255,255,255,0.07);
+      --gradient: linear-gradient(90deg, #FF3231 0%, #578BDE 50%, #2FB8C5 100%);
+    }
+
+    /* ---- Reset & base ---- */
+    .reveal-viewport { background: var(--bg); }
+    .reveal {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      color: var(--text);
+      text-transform: none;
+      text-shadow: none;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin: 0 0 8px;
+    }
+    .reveal a { color: var(--teal); text-decoration: none; }
+    .reveal strong { color: var(--text); }
+    .reveal .slides > section {
+      text-align: left;
+      padding: 44px 56px 36px;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* ---- Gradient top bar (fixed, shown on all slides) ---- */
+    .accent-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--gradient);
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    /* ---- Slide controls & progress ---- */
+    .reveal .progress { background: rgba(255,255,255,0.04); color: var(--teal); }
+    .reveal .controls button { color: var(--muted); }
+    .reveal .slide-number {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      color: var(--muted);
+      background: transparent;
+    }
+
+    /* =======================
+       HELPER CLASSES
+    ======================= */
+    .hl-red  { color: var(--red) !important; }
+    .hl-teal { color: var(--teal) !important; }
+    .hl-blue { color: var(--blue) !important; }
+    .small   { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+
+    /* ---- Slide header ---- */
+    .slide-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--teal);
+      margin-bottom: 6px;
+    }
+    .slide-h {
+      font-size: 1.8rem !important;
+      font-weight: 800 !important;
+      line-height: 1.1 !important;
+      margin: 0 0 20px !important;
+    }
+
+    /* ---- Slide footer ---- */
+    .sf {
+      position: absolute;
+      bottom: 14px; left: 56px; right: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 8px;
+    }
+    .sf strong { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: var(--muted); }
+
+    /* ---- Cards ---- */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .card.rl { border-left: 3px solid var(--red); }
+    .card.tl { border-left: 3px solid var(--teal); }
+    .card.bl { border-left: 3px solid var(--blue); }
+    .card-t { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.88rem; color: var(--text); margin-bottom: 5px; }
+    .card-b { font-size: 0.78rem; color: var(--body); line-height: 1.5; }
+
+    /* ---- Grid ---- */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    .g4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+
+    /* ---- Before/after compare ---- */
+    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+    .before {
+      background: rgba(255,50,49,0.06);
+      border: 1px solid rgba(255,50,49,0.25);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .after {
+      background: rgba(47,184,197,0.06);
+      border: 1px solid rgba(47,184,197,0.25);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .ba-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+    .before .ba-label { color: var(--red); }
+    .after  .ba-label { color: var(--teal); }
+    .ba-text { font-size: 0.82rem; line-height: 1.6; color: var(--body); }
+
+    /* ---- Data callout ---- */
+    .dc {
+      background: rgba(87,139,222,0.08);
+      border: 1px solid rgba(87,139,222,0.2);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .dc-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: var(--blue);
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .dc-text { font-size: 0.8rem; color: var(--body); line-height: 1.4; }
+
+    /* ---- Numbered steps ---- */
+    .steps { display: flex; flex-direction: column; gap: 10px; }
+    .step  { display: flex; gap: 12px; align-items: flex-start; }
+    .step-n {
+      min-width: 26px; height: 26px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1.5px solid var(--teal);
+      color: var(--teal);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700; font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-n.warn { border-color: var(--red); color: var(--red); }
+    .step-t { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--text); margin-bottom: 2px; }
+    .step-b { font-size: 0.78rem; color: var(--body); line-height: 1.45; }
+
+    /* ---- Check list ---- */
+    .chk { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    .chk li { display: flex; gap: 10px; font-size: 0.82rem; color: var(--body); line-height: 1.5; }
+    .chk li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ---- Quote ---- */
+    .quote {
+      border-left: 3px solid var(--blue);
+      padding: 10px 14px;
+      background: rgba(87,139,222,0.05);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: var(--body);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-top: 12px;
+    }
+    .qa { margin-top: 6px; font-style: normal; font-size: 0.72rem; color: var(--muted); }
+
+    /* ---- Pill badge ---- */
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; }
+    .pill-r  { background: rgba(255,50,49,0.12);  color: var(--red); }
+    .pill-t  { background: rgba(47,184,197,0.12); color: var(--teal); }
+    .pill-b  { background: rgba(87,139,222,0.12); color: var(--blue); }
+
+    /* ---- Risk tag ---- */
+    .rtag {
+      display: inline-block;
+      background: rgba(255,50,49,0.10); border: 1px solid rgba(255,50,49,0.35);
+      color: var(--red); font-size: 10px; font-weight: 700;
+      padding: 2px 8px; border-radius: 100px;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    /* ---- Email block ---- */
+    .eblock {
+      background: var(--bg-deep);
+      border: 1px solid rgba(87,139,222,0.25);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+    .esubject { color: var(--blue); font-weight: 700; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+    .ebody { color: var(--body); }
+
+    /* ---- Feature card ---- */
+    .fcard {
+      background: rgba(87,139,222,0.05);
+      border: 1px solid rgba(87,139,222,0.2);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    /* ---- Next steps ---- */
+    .ns-list { display: flex; flex-direction: column; gap: 8px; }
+    .ns {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 12px 14px;
+    }
+    .ns-circle {
+      width: 22px; height: 22px;
+      border-radius: 50%; border: 2px solid var(--teal);
+      flex-shrink: 0;
+    }
+    .ns-t { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.83rem; color: var(--text); }
+    .ns-b { font-size: 0.75rem; color: var(--body); margin-top: 1px; }
+    .ns-date { font-size: 10px; font-weight: 700; color: var(--teal); white-space: nowrap; margin-left: auto; }
+
+    /* ---- Agenda item ---- */
+    .ai { display: flex; gap: 12px; align-items: flex-start; }
+    .ai-num {
+      min-width: 30px; height: 30px;
+      border-radius: 8px;
+      background: rgba(47,184,197,0.12); border: 1px solid rgba(47,184,197,0.3);
+      color: var(--teal);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800; font-size: 13px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .ai strong { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.88rem; color: var(--text); margin-bottom: 2px; }
+    .ai span   { font-size: 0.75rem; color: var(--muted); }
+
+    /* ---- Risk card ---- */
+    .rc {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .rc-icon { font-size: 1.3rem; margin-bottom: 8px; }
+    .rc-t { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--red); margin-bottom: 5px; }
+    .rc-b { font-size: 0.75rem; color: var(--body); line-height: 1.5; }
+
+    /* === SLIDE 1 PORTADA === */
+    .portada-badge {
+      display: inline-block;
+      background: rgba(47,184,197,0.12);
+      border: 1px solid rgba(47,184,197,0.4);
+      color: var(--teal);
+      font-size: 11px; font-weight: 700;
+      padding: 4px 14px; border-radius: 100px;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      margin-bottom: 20px;
+    }
+    .portada-h {
+      font-size: 3rem !important;
+      font-weight: 800 !important;
+      line-height: 1.0 !important;
+      margin: 0 0 16px !important;
+    }
+    .portada-sub {
+      font-size: 1rem; color: var(--body);
+      margin-bottom: 36px;
+    }
+    .portada-meta {
+      display: flex; align-items: center; gap: 20px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .portada-meta-name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.9rem; color: var(--text); }
+    .portada-meta-sub  { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+    .portada-dot { width: 1px; height: 30px; background: var(--border); flex-shrink: 0; }
+
+    /* spacers */
+    .mt8  { margin-top: 8px;  }
+    .mt10 { margin-top: 10px; }
+    .mt12 { margin-top: 12px; }
+    .mt14 { margin-top: 14px; }
+    .mt16 { margin-top: 16px; }
+    .mt20 { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Gradient bar top — always visible -->
+  <div class="accent-bar"></div>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ============================================================
+           SLIDE 1 — PORTADA
+           Variables: SESSION_NUMERO, SESION_TIPO, PITCH_TITULO, PITCH_SUBTITULO,
+                      CLIENT_NOMBRE, CLIENT_CONTACTO, SESSION_FECHA, SESSION_CONTEXTO
+      ============================================================ -->
+      <section>
+        <div class="portada-badge">{{SESSION_TIPO}} #{{SESSION_NUMERO}}</div>
+        <h1 class="portada-h">{{PITCH_TITULO_L1}}<br><span class="hl-teal">{{PITCH_TITULO_L2}}</span></h1>
+        <p class="portada-sub">{{PITCH_SUBTITULO}}</p>
+        <div class="portada-meta">
+          <div>
+            <div class="portada-meta-name">CreActive Studio</div>
+            <div class="portada-meta-sub">Oscar Vergara Barros</div>
+          </div>
+          <div class="portada-dot"></div>
+          <div>
+            <div class="portada-meta-name">{{CLIENT_NOMBRE}}</div>
+            <div class="portada-meta-sub">{{CLIENT_CONTACTO}}</div>
+          </div>
+          <div class="portada-dot"></div>
+          <div>
+            <div class="portada-meta-name">{{SESSION_FECHA}}</div>
+            <div class="portada-meta-sub">{{SESSION_CONTEXTO}}</div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>creactivestudio.agency · hola@creactivestudio.agency</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 2 — AGENDA
+           Patrón: 4 compromisos/entregables numerados en grid 2×2.
+           Añadir .dc al final para recurso adicional o nota clave.
+           Personalizar: AGENDA_TITULO, items 01–04, DC_RECURSO.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">Agenda de hoy</div>
+        <h2 class="slide-h">{{AGENDA_TITULO}}<br><span class="hl-teal">{{AGENDA_SUBTITULO}}</span></h2>
+        <div class="g2 mt16">
+          <div class="ai">
+            <div class="ai-num">01</div>
+            <div>
+              <strong>{{AGENDA_01_TITULO}}</strong>
+              <span>{{AGENDA_01_DESC}}</span>
+            </div>
+          </div>
+          <div class="ai">
+            <div class="ai-num">02</div>
+            <div>
+              <strong>{{AGENDA_02_TITULO}}</strong>
+              <span>{{AGENDA_02_DESC}}</span>
+            </div>
+          </div>
+          <div class="ai">
+            <div class="ai-num">03</div>
+            <div>
+              <strong>{{AGENDA_03_TITULO}}</strong>
+              <span>{{AGENDA_03_DESC}}</span>
+            </div>
+          </div>
+          <div class="ai">
+            <div class="ai-num">04</div>
+            <div>
+              <strong>{{AGENDA_04_TITULO}}</strong>
+              <span>{{AGENDA_04_DESC}}</span>
+            </div>
+          </div>
+        </div>
+        <!-- Recurso adicional o nota al pie de la agenda -->
+        <div class="dc mt16">
+          <div class="dc-num" style="font-size:1.2rem; color: var(--teal);">{{DC_LABEL}}</div>
+          <div class="dc-text">{{DC_TEXTO}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE2}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 3 — DIAGNÓSTICO / MARCO ESTRATÉGICO
+           Patrón: 4 riesgos/problemas en grid 2×2 + quote de reunión.
+           Usar .rc (risk card) para cada problema. .rc-t en rojo = urgencia.
+           Personalizar: MARCO_TITULO, 4 bloques rc, QUOTE_TEXTO, QUOTE_AUTOR.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{MARCO_LABEL}}</div>
+        <h2 class="slide-h">{{MARCO_TITULO_L1}}<br><span class="hl-teal">{{MARCO_TITULO_L2}}</span></h2>
+        <div class="g2 mt14">
+          <div class="rc">
+            <div class="rc-icon">{{RIESGO_01_ICONO}}</div>
+            <div class="rc-t">{{RIESGO_01_TITULO}}</div>
+            <div class="rc-b">{{RIESGO_01_DESC}}</div>
+          </div>
+          <div class="rc">
+            <div class="rc-icon">{{RIESGO_02_ICONO}}</div>
+            <div class="rc-t">{{RIESGO_02_TITULO}}</div>
+            <div class="rc-b">{{RIESGO_02_DESC}}</div>
+          </div>
+          <div class="rc">
+            <div class="rc-icon">{{RIESGO_03_ICONO}}</div>
+            <div class="rc-t">{{RIESGO_03_TITULO}}</div>
+            <div class="rc-b">{{RIESGO_03_DESC}}</div>
+          </div>
+          <div class="rc">
+            <div class="rc-icon">{{RIESGO_04_ICONO}}</div>
+            <div class="rc-t">{{RIESGO_04_TITULO}}</div>
+            <div class="rc-b">{{RIESGO_04_DESC}}</div>
+          </div>
+        </div>
+        <div class="quote mt12">
+          {{QUOTE_TEXTO}}
+          <div class="qa">— {{QUOTE_AUTOR}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE3}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 4 — ENTREGABLE #1 (Antes/Después)
+           Patrón: comparativa antes/después + data callout de estado.
+           Ideal para: copy, messaging, diseño, procesos.
+           Personalizar: ENT1_TITULO, textos before/after, DC_ESTADO.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">Entregable #1</div>
+        <h2 class="slide-h">{{ENT1_TITULO}}</h2>
+        <div class="ba-grid">
+          <div class="before">
+            <div class="ba-label">❌ Antes — {{ENT1_ANTES_LABEL}}</div>
+            <div class="ba-text">
+              <strong>{{ENT1_ANTES_HEADLINE}}</strong><br><br>
+              {{ENT1_ANTES_CUERPO}}<br><br>
+              <span class="small">{{ENT1_ANTES_NOTA}}</span>
+            </div>
+          </div>
+          <div class="after">
+            <div class="ba-label">✓ Después — {{ENT1_DESPUES_LABEL}}</div>
+            <div class="ba-text">
+              <strong>{{ENT1_DESPUES_HEADLINE}}</strong><br><br>
+              {{ENT1_DESPUES_CUERPO}}<br><br>
+              <span class="small">{{ENT1_DESPUES_NOTA}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="dc mt12">
+          <div class="dc-num" style="color: var(--teal); font-size:1.1rem;">{{ENT1_DC_ESTADO}}</div>
+          <div class="dc-text">{{ENT1_DC_TEXTO}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE4}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 5 — ENTREGABLE #2 (Diagnóstico/Auditoría)
+           Patrón: 3 problemas con .step warn + regla clave en .dc.
+           Ideal para: auditoría de presencia digital, diagnóstico de proceso.
+           Personalizar: ENT2_TITULO, 3 pasos warn, DC_REGLA.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT2_LABEL}}</div>
+        <h2 class="slide-h">{{ENT2_TITULO_L1}}<br><span class="hl-red">{{ENT2_TITULO_L2}}</span></h2>
+        <div class="steps mt14">
+          <div class="step">
+            <div class="step-n warn">!</div>
+            <div>
+              <div class="step-t">{{ENT2_PROBLEMA_01_TITULO}}</div>
+              <div class="step-b">{{ENT2_PROBLEMA_01_DESC}}</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n warn">!</div>
+            <div>
+              <div class="step-t">{{ENT2_PROBLEMA_02_TITULO}}</div>
+              <div class="step-b">{{ENT2_PROBLEMA_02_DESC}}</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n warn">!</div>
+            <div>
+              <div class="step-t">{{ENT2_PROBLEMA_03_TITULO}}</div>
+              <div class="step-b">{{ENT2_PROBLEMA_03_DESC}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="dc mt12">
+          <div class="dc-num" style="font-size:1rem; color: var(--teal);">{{ENT2_DC_LABEL}}</div>
+          <div class="dc-text">{{ENT2_DC_TEXTO}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE5}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 6 — ANTES/DESPUÉS TEXTUAL (copy, headline, mensaje)
+           Patrón: comparativa texto + quote de validación.
+           Ideal para: headline, extracto LinkedIn, copy web, pitch elevator.
+           Personalizar: textos before/after, QUOTE.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT2B_LABEL}}</div>
+        <h2 class="slide-h">{{ENT2B_TITULO_L1}}<br><span class="hl-teal">{{ENT2B_TITULO_L2}}</span></h2>
+        <div class="ba-grid">
+          <div class="before">
+            <div class="ba-label">❌ Antes</div>
+            <div class="ba-text">
+              <strong>{{ENT2B_ANTES_TEXTO}}</strong><br><br>
+              Problemas:<br>
+              · {{ENT2B_PROBLEMA_01}}<br>
+              · {{ENT2B_PROBLEMA_02}}<br>
+              · {{ENT2B_PROBLEMA_03}}
+            </div>
+          </div>
+          <div class="after">
+            <div class="ba-label">✓ Propuesta (copiar y pegar)</div>
+            <div class="ba-text">
+              <strong>{{ENT2B_DESPUES_TEXTO}}</strong><br><br>
+              Por qué funciona:<br>
+              · {{ENT2B_RAZON_01}}<br>
+              · {{ENT2B_RAZON_02}}<br>
+              · {{ENT2B_RAZON_03}}
+            </div>
+          </div>
+        </div>
+        <div class="quote mt12">
+          {{ENT2B_QUOTE_TEXTO}}
+          <div class="qa">— {{ENT2B_QUOTE_AUTOR}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE6}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 7 — ANTES/DESPUÉS EXTENDIDO (extracto, proceso largo)
+           Patrón: ba-grid con columnas desiguales (1fr 1.1fr) + nota .dc.
+           Ideal para: extractos LinkedIn, copy de página completa.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT2C_LABEL}}</div>
+        <h2 class="slide-h">{{ENT2C_TITULO_L1}}<br><span class="hl-teal">{{ENT2C_TITULO_L2}}</span></h2>
+        <div class="ba-grid" style="grid-template-columns: 1fr 1.1fr;">
+          <div class="before">
+            <div class="ba-label">❌ Antes</div>
+            <div class="ba-text" style="font-size:0.76rem;">
+              {{ENT2C_ANTES_TEXTO}}
+            </div>
+          </div>
+          <div class="after">
+            <div class="ba-label">✓ Propuesta (listo para pegar)</div>
+            <div class="ba-text" style="font-size:0.76rem;">
+              {{ENT2C_DESPUES_TEXTO}}
+            </div>
+          </div>
+        </div>
+        <div class="dc mt12">
+          <div class="dc-num" style="font-size:0.9rem; color: var(--teal);">{{ENT2C_DC_LABEL}}</div>
+          <div class="dc-text" style="font-size:0.76rem;">{{ENT2C_DC_TEXTO}}</div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE7}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 8 — DIAGNÓSTICO DETALLADO + RECOMENDACIONES (2 columnas)
+           Patrón: columna izq (problemas con .card .rl) + col der (soluciones con .fcard).
+           Ideal para: auditoría de presencia, revisión de estructura, análisis de proceso.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT2D_LABEL}}</div>
+        <h2 class="slide-h">{{ENT2D_TITULO_L1}}<br><span class="hl-teal">{{ENT2D_TITULO_L2}}</span></h2>
+        <div class="g2 mt14">
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color: var(--red); margin-bottom:10px;">❌ {{DIAGNOSTICO_PROB_TITULO}}</div>
+            <div class="card rl mt8">
+              <div class="card-t">{{DIAGNOSTICO_PROB_01_T}}</div>
+              <div class="card-b">{{DIAGNOSTICO_PROB_01_D}}</div>
+            </div>
+            <div class="card mt8" style="border-left: 3px solid var(--muted);">
+              <div class="card-t">{{DIAGNOSTICO_PROB_02_T}}</div>
+              <div class="card-b">{{DIAGNOSTICO_PROB_02_D}}</div>
+            </div>
+            <div class="card mt8" style="border-left: 3px solid var(--muted);">
+              <div class="card-t">{{DIAGNOSTICO_PROB_03_T}}</div>
+              <div class="card-b">{{DIAGNOSTICO_PROB_03_D}}</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color: var(--teal); margin-bottom:10px;">✓ {{DIAGNOSTICO_REC_TITULO}}</div>
+            <div class="fcard mt8">
+              <div class="card-t" style="color: var(--teal);">{{DIAGNOSTICO_REC_01_T}}</div>
+              <div class="card-b" style="margin-top: 6px;">{{DIAGNOSTICO_REC_01_D}}</div>
+            </div>
+            <div class="fcard mt8">
+              <div class="card-t" style="color: var(--teal);">{{DIAGNOSTICO_REC_02_T}}</div>
+              <div class="card-b" style="margin-top: 6px;">{{DIAGNOSTICO_REC_02_D}}</div>
+            </div>
+            <div class="dc mt8" style="padding: 10px 14px;">
+              <div class="dc-num" style="font-size:0.85rem; color: var(--teal);">{{DIAGNOSTICO_DC_LABEL}}</div>
+              <div class="dc-text" style="font-size:0.74rem;">{{DIAGNOSTICO_DC_TEXTO}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE8}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 9 — ESTRATEGIA / CALENDARIO / PLAN DE CONTENIDO
+           Patrón: 3 pilares (.card) en col izq + primer post/acción en col der (.eblock).
+           Ideal para: estrategia de contenido, plan de acción, roadmap.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT3_LABEL}}</div>
+        <h2 class="slide-h">{{ENT3_TITULO_L1}}<br><span class="hl-teal">{{ENT3_TITULO_L2}}</span></h2>
+        <div class="g2 mt14">
+          <div>
+            <div class="card rl">
+              <div class="card-t">{{PILAR_01_TITULO}}</div>
+              <div class="card-b">{{PILAR_01_DESC}}</div>
+            </div>
+            <div class="card bl mt8">
+              <div class="card-t">{{PILAR_02_TITULO}}</div>
+              <div class="card-b">{{PILAR_02_DESC}}</div>
+            </div>
+            <div class="card tl mt8">
+              <div class="card-t">{{PILAR_03_TITULO}}</div>
+              <div class="card-b">{{PILAR_03_DESC}}</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color: var(--text); margin-bottom:10px;">{{PRIMER_PASO_TITULO}}</div>
+            <div class="eblock">
+              <div class="esubject">{{PRIMER_PASO_GANCHO}}</div>
+              <div class="ebody">{{PRIMER_PASO_CUERPO}}</div>
+            </div>
+            <div class="dc mt8">
+              <div class="dc-num" style="font-size:1.2rem;">{{DC_METRICA}}</div>
+              <div class="dc-text" style="font-size:0.76rem;">{{DC_METRICA_TEXTO}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE9}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 10 — GTM / CANALES DE ADQUISICIÓN
+           Patrón: canal 1 (email de venta .eblock + pasos) + canal 2 (alianza .fcard + dato).
+           Ideal para: estrategia comercial, plan de outreach, canales de crecimiento.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{ENT4_LABEL}}</div>
+        <h2 class="slide-h">{{ENT4_TITULO_L1}}<br><span class="hl-red">{{ENT4_TITULO_L2}}</span></h2>
+        <div class="g2 mt14">
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color: var(--text); margin-bottom:10px;">{{CANAL1_TITULO}}</div>
+            <div class="eblock">
+              <div class="esubject">{{CANAL1_EMAIL_ASUNTO}}</div>
+              <div class="ebody">{{CANAL1_EMAIL_CUERPO}}</div>
+            </div>
+            <div class="steps mt10">
+              <div class="step">
+                <div class="step-n">1</div>
+                <div><div class="step-b">{{CANAL1_PASO_01}}</div></div>
+              </div>
+              <div class="step">
+                <div class="step-n">2</div>
+                <div><div class="step-b">{{CANAL1_PASO_02}}</div></div>
+              </div>
+              <div class="step">
+                <div class="step-n">3</div>
+                <div><div class="step-b">{{CANAL1_PASO_03}}</div></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color: var(--text); margin-bottom:10px;">{{CANAL2_TITULO}}</div>
+            <div class="fcard">
+              <div class="card-t" style="color: var(--teal);">{{CANAL2_NOMBRE}}</div>
+              <div class="card-b" style="margin-top:6px;">{{CANAL2_DESC}}</div>
+            </div>
+            <div class="dc mt8">
+              <div class="dc-num">{{CANAL2_DATO}}</div>
+              <div class="dc-text">{{CANAL2_DATO_DESC}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE10}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 11 — PROPUESTA / OPORTUNIDAD + SINERGIA
+           Patrón: col izq (feature/oportunidad .fcard + quote) + col der (beneficio mutuo .card.tl + .dc win-win).
+           Ideal para: propuesta de colaboración, feature idea, alianza estratégica.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">{{PROP_LABEL}}</div>
+        <h2 class="slide-h">{{PROP_TITULO_L1}}<br><span class="hl-red">{{PROP_TITULO_L2}}</span></h2>
+        <div class="g2 mt14">
+          <div>
+            <div class="rtag">{{PROP_TAG}}</div>
+            <div class="fcard mt8">
+              <div class="card-t" style="font-size:0.95rem;">{{PROP_NOMBRE}}</div>
+              <div class="card-b" style="margin-top:8px;">{{PROP_DESC}}</div>
+            </div>
+            <div class="quote mt8">
+              {{PROP_QUOTE_TEXTO}}
+              <div class="qa">— {{PROP_QUOTE_AUTOR}}</div>
+            </div>
+          </div>
+          <div>
+            <div class="card tl">
+              <div class="card-t">{{SINERGIA_TITULO}}</div>
+              <div class="card-b" style="margin-top:6px;">{{SINERGIA_DESC}}</div>
+            </div>
+            <div class="dc mt8">
+              <div class="dc-num" style="font-size:1rem; color: var(--teal);">{{SINERGIA_DC_LABEL}}</div>
+              <div class="dc-text" style="font-size:0.76rem;">{{SINERGIA_DC_TEXTO}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio</strong>
+          <span>{{SF_FUENTE_SLIDE11}}</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 12 — RECURSOS + SIGUIENTES PASOS
+           Patrón: col izq (checklist .chk de entregables) + col der (.ns-list de próximos pasos con fechas).
+           Siempre el último slide. Termina con acción concreta para el cliente.
+      ============================================================ -->
+      <section>
+        <div class="slide-label">Handoff</div>
+        <h2 class="slide-h">Todo lo prometido.<br><span class="hl-teal">Siguientes pasos concretos.</span></h2>
+        <div class="g2 mt14">
+          <div>
+            <div style="font-size:0.78rem; font-weight:700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom:10px;">Recursos entregados</div>
+            <ul class="chk">
+              <!-- Añadir un <li> por cada entregable de la sesión -->
+              <li><strong>{{RECURSO_01_TITULO}}</strong> — {{RECURSO_01_DESC}}</li>
+              <li><strong>{{RECURSO_02_TITULO}}</strong> — {{RECURSO_02_DESC}}</li>
+              <li><strong>{{RECURSO_03_TITULO}}</strong> — {{RECURSO_03_DESC}}</li>
+              <li><strong>{{RECURSO_04_TITULO}}</strong> — {{RECURSO_04_DESC}}</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-size:0.78rem; font-weight:700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom:10px;">Siguientes pasos</div>
+            <div class="ns-list">
+              <!-- Añadir un .ns por cada acción, ordenados por fecha -->
+              <div class="ns">
+                <div class="ns-circle"></div>
+                <div>
+                  <div class="ns-t">{{NS_01_TITULO}}</div>
+                  <div class="ns-b">{{NS_01_DESC}}</div>
+                </div>
+                <div class="ns-date">{{NS_01_FECHA}}</div>
+              </div>
+              <div class="ns">
+                <div class="ns-circle"></div>
+                <div>
+                  <div class="ns-t">{{NS_02_TITULO}}</div>
+                  <div class="ns-b">{{NS_02_DESC}}</div>
+                </div>
+                <div class="ns-date">{{NS_02_FECHA}}</div>
+              </div>
+              <div class="ns">
+                <div class="ns-circle"></div>
+                <div>
+                  <div class="ns-t">{{NS_03_TITULO}}</div>
+                  <div class="ns-b">{{NS_03_DESC}}</div>
+                </div>
+                <div class="ns-date">{{NS_03_FECHA}}</div>
+              </div>
+              <div class="ns">
+                <div class="ns-circle"></div>
+                <div>
+                  <div class="ns-t">{{NS_04_TITULO}}</div>
+                  <div class="ns-b">{{NS_04_DESC}}</div>
+                </div>
+                <div class="ns-date">{{NS_04_FECHA}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sf">
+          <strong>CreActive Studio · hola@creactivestudio.agency</strong>
+          <span>creactivestudio.agency · Antofagasta, Chile / Colombia</span>
+        </div>
+      </section>
+
+    </div><!-- /slides -->
+  </div><!-- /reveal -->
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      progress: true,
+      controls: true,
+      controlsTutorial: false,
+      transition: 'fade',
+      transitionSpeed: 'fast',
+      backgroundTransition: 'none',
+      center: false,
+      width: 1280,
+      height: 720,
+      margin: 0,
+      minScale: 0.2,
+      maxScale: 2.0,
+    });
+  </script>
+</body>
+</html>

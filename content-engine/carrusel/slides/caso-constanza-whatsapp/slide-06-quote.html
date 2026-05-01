@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #000000;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: #000000;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Large decorative quote mark */
+    .quote-mark {
+      position: absolute;
+      top: 80px;
+      left: 60px;
+      font-size: 240px;
+      font-weight: 800;
+      color: #FF3231;
+      line-height: 1;
+      opacity: 0.12;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Header */
+    .header {
+      position: absolute;
+      top: 60px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .slide-num {
+      font-size: 13px;
+      font-weight: 400;
+      color: #2a2a2a;
+      letter-spacing: 1px;
+    }
+
+    /* Content */
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 140px 72px;
+    }
+
+    .quote-text {
+      font-size: 58px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      margin-bottom: 48px;
+    }
+
+    .quote-text .accent { color: #FF3231; }
+
+    .author-line {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .author-dash {
+      width: 28px;
+      height: 2px;
+      background: #FF3231;
+    }
+
+    .author {
+      font-size: 16px;
+      font-weight: 600;
+      color: #444444;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 52px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .handle {
+      font-size: 13px;
+      font-weight: 400;
+      color: #2a2a2a;
+    }
+
+    .logo-img { height: 20px; width: auto; display: block; opacity: 0.3; }
+    .logo-text { font-size: 13px; font-weight: 600; color: #2a2a2a; display: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <div class="quote-mark">"</div>
+
+    <div class="header">
+      <div class="slide-num">06</div>
+    </div>
+
+    <div class="content">
+      <div class="quote-text">El sistema trabaja aunque Constanza esté con un paciente.</div>
+      <div class="author-line">
+        <div class="author-dash"></div>
+        <div class="author">Oscar Vergara</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="handle">@oscarvergara</div>
+      <img class="logo-img" src="../../public/brand/logo.png" alt="CreActive Studio"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="logo-text">CreActive Studio</div>
+    </div>
+
+  </div>
+</body>
+</html>

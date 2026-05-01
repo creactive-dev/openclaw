@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Comercial — {{CLIENTE_NOMBRE}}</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8e8e8;
+      color: #1a1a1a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      background: #ffffff;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        break-after: page;
+        break-inside: avoid;
+      }
+
+      .page:last-child {
+        break-after: auto;
+      }
+    }
+
+    /* Barra de acento superior */
+    .accent-bar {
+      width: 100%;
+      height: 6px;
+      flex-shrink: 0;
+      background: linear-gradient(90deg, #fe3333 0%, #5390dc 50%, #2cb8c5 100%);
+    }
+
+    /* Footer */
+    .page-footer {
+      flex-shrink: 0;
+      padding: 16px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+
+    .page-footer a {
+      color: #5390dc;
+      text-decoration: none;
+    }
+
+    /* ======================== */
+    /* PÁGINA 1 — PORTADA      */
+    /* ======================== */
+    .cover-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 60px;
+      overflow: hidden;
+    }
+
+    .cover-logo {
+      width: 200px;
+      height: 60px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 80px;
+    }
+
+    .cover-doc-type {
+      font-size: 14px;
+      font-weight: 500;
+      color: #2cb8c5;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+
+    .cover-client {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .cover-subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #fe3333, #2cb8c5);
+      border-radius: 2px;
+      margin-bottom: 40px;
+    }
+
+    .cover-meta {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.8;
+    }
+
+    .cover-meta strong {
+      color: #1a1a1a;
+    }
+
+    /* ======================== */
+    /* PÁGINA 2 — DIAGNÓSTICO  */
+    /* ======================== */
+    .page-content {
+      flex: 1;
+      padding: 40px 60px 24px;
+      overflow: hidden;
+    }
+
+    .section-number {
+      font-size: 13px;
+      font-weight: 600;
+      color: #2cb8c5;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+
+    .section-title-line {
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #fe3333, #5390dc);
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+
+    .text-block {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .highlight-box {
+      background: #f7fafb;
+      border-left: 4px solid #2cb8c5;
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .solution-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .solution-card {
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .solution-card .card-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .solution-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .solution-card p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    /* ======================== */
+    /* PÁGINA 3 — ALCANCE      */
+    /* ======================== */
+    .module-block {
+      margin-bottom: 16px;
+    }
+
+    .module-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .module-number {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #fe3333, #5390dc);
+      color: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .module-name {
+      font-size: 17px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding-left: 44px;
+    }
+
+    .feature-list li {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #444;
+      padding: 2px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      background: #2cb8c5;
+      border-radius: 50%;
+    }
+
+    .sub-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #5390dc;
+      margin: 6px 0 2px 44px;
+    }
+
+    .stack-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    .stack-table th {
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 12px;
+      border-bottom: 2px solid #eee;
+    }
+
+    .stack-table td {
+      font-size: 13px;
+      color: #444;
+      padding: 6px 12px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .stack-table td:first-child {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    /* ======================== */
+    /* PÁGINA 4 — CRONOGRAMA   */
+    /* ======================== */
+    .phases-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .phase-card {
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+
+    .phase-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .phase-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .phase-badge.f1 {
+      background: #fe3333;
+    }
+
+    .phase-badge.f2 {
+      background: #5390dc;
+    }
+
+    .phase-badge.f3 {
+      background: #2cb8c5;
+    }
+
+    .phase-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .phase-card-weeks {
+      font-size: 12px;
+      color: #888;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .phase-deliverables {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .phase-deliverables li {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.5;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .phase-deliverables li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #ccc;
+    }
+
+    /* Tabla de inversión */
+    .investment-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 4px;
+    }
+
+    .investment-table th {
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 12px 16px;
+      background: linear-gradient(90deg, #1a1a1a, #333);
+    }
+
+    .investment-table th:last-child {
+      text-align: right;
+    }
+
+    .investment-table td {
+      font-size: 14px;
+      color: #444;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .investment-table td:last-child {
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .investment-table tr.total-row td {
+      font-weight: 700;
+      color: #1a1a1a;
+      font-size: 16px;
+      border-top: 2px solid #1a1a1a;
+      border-bottom: none;
+    }
+
+    .payment-plan {
+      background: #f7fafb;
+      border-radius: 10px;
+      padding: 14px 20px;
+      margin-top: 6px;
+    }
+
+    .payment-plan h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .payment-plan ul {
+      list-style: none;
+    }
+
+    .payment-plan li {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.8;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .payment-plan li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #5390dc;
+    }
+
+    /* ======================== */
+    /* PÁGINA 5 — TÉRMINOS     */
+    /* ======================== */
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    .terms-box {
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .terms-box.included {
+      background: #f0faf7;
+      border: 1px solid #d0ece4;
+    }
+
+    .terms-box.excluded {
+      background: #fdf6f4;
+      border: 1px solid #f0ddd8;
+    }
+
+    .terms-box h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .terms-box.included h4 {
+      color: #1a8a5c;
+    }
+
+    .terms-box.excluded h4 {
+      color: #c0392b;
+    }
+
+    .terms-box ul {
+      list-style: none;
+    }
+
+    .terms-box li {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+      padding: 2px 0;
+    }
+
+    .conditions-list {
+      margin: 24px 0;
+    }
+
+    .conditions-list li {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+      list-style: none;
+    }
+
+    .conditions-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: #fe3333;
+      border-radius: 2px;
+    }
+
+    .next-steps {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 20px 0;
+    }
+
+    .next-steps h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .next-steps ol {
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .next-steps li {
+      counter-increment: steps;
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.8;
+      padding-left: 32px;
+      position: relative;
+    }
+
+    .next-steps li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: linear-gradient(135deg, #fe3333, #2cb8c5);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signature-block {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .signature-block p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .signature-block .name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .signature-block .role {
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 1 — PORTADA      -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="cover-content">
+      <!-- Logo: reemplazar src con la ruta real del logo -->
+      <img src="/Users/oz/Documents/CAS-CEO/creactive-studio/content-engine/carrusel/public/brand/logo.png"
+        style="height:200px; width:auto; margin-bottom:80px;" alt="CreActive Studio" />
+
+      <div class="cover-doc-type">Propuesta Comercial</div>
+      <div class="cover-client">{{CLIENTE_NOMBRE}}</div>
+      <div class="cover-subtitle">{{CLIENTE_TAGLINE}}</div>
+
+      <div class="cover-divider"></div>
+
+      <div class="cover-meta">
+        <strong>Preparado por:</strong> Oscar Vergara Barros<br>
+        <strong>Fecha:</strong> {{FECHA}}<br>
+        <strong>Validez:</strong> 15 días corridos
+      </div>
+    </div>
+    <div class="page-footer">
+      <span>CreActive Studio</span>
+      <span>Pág. 1 / 5</span>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 2 — DIAGNÓSTICO  -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="page-content">
+      <div class="section-number">01</div>
+      <div class="section-title">El desafío</div>
+      <div class="section-title-line"></div>
+
+      <p class="text-block">
+        {{CLIENTE_NOMBRE}} está montando un dispensario de cannabis medicinal en Chile y necesita una operación digital
+        completa. Hoy no cuentan con una plataforma que permita a los pacientes agendar consultas médicas, ni con un
+        sistema interno para gestionar socios, stock, entregas y contratos.
+      </p>
+
+      <p class="text-block">
+        El desafío tiene dos dimensiones: una cara pública (que los pacientes puedan acceder a consultas médicas online
+        de forma simple y segura) y una cara operativa (que el equipo interno pueda gestionar todo el flujo del
+        dispensario desde un solo lugar).
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          <strong>Lo que necesitan:</strong> un ecosistema digital que conecte la experiencia del paciente (agendamiento
+          + telemedicina) con la operación interna del dispensario (socios, stock, recetas, entregas y fidelización) —
+          todo construido a medida y funcionando en 12 semanas.
+        </p>
+      </div>
+
+      <div class="section-number" style="margin-top: 36px;">Nuestra propuesta</div>
+      <div class="section-title" style="font-size: 22px; margin-bottom: 20px;">Dos módulos, una operación integrada
+      </div>
+
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="card-icon">🌐</div>
+          <h4>Web de agendamiento</h4>
+          <p>Landing pública con pago integrado, calendario GHL y envío automático del link de sesión médica.</p>
+        </div>
+        <div class="solution-card">
+          <div class="card-icon">⚙️</div>
+          <h4>Plataforma de gestión</h4>
+          <p>Webapp a medida para gestionar socios, stock, entregas con control de gramaje, contratos y fidelización.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer">
+      <a href="https://creactivestudio.agency">creactivestudio.agency</a>
+      <span>Pág. 2 / 5</span>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 3 — ALCANCE      -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="page-content">
+      <div class="section-number">02</div>
+      <div class="section-title">Alcance detallado</div>
+      <div class="section-title-line"></div>
+
+      <!-- Módulo 1 -->
+      <div class="module-block">
+        <div class="module-header">
+          <div class="module-number">01</div>
+          <div class="module-name">Web de agendamiento + telemedicina</div>
+        </div>
+        <ul class="feature-list">
+          <li>Landing pública para agendar consulta con prestador médico</li>
+          <li>Pago integrado con Mercado Pago — la cita se confirma al pagar</li>
+          <li>Calendario conectado a GHL Calendar</li>
+          <li>Envío automático del link de sesión (Google Meet / Zoom)</li>
+          <li>Notificaciones: confirmación, recordatorio y link de sesión</li>
+        </ul>
+      </div>
+
+      <!-- Módulo 2 -->
+      <div class="module-block">
+        <div class="module-header">
+          <div class="module-number">02</div>
+          <div class="module-name">Plataforma SaaS de gestión</div>
+        </div>
+
+        <div class="sub-label">Gestión de socios</div>
+        <ul class="feature-list">
+          <li>Creación por admin: nombre, RUT, dirección, teléfono, receta, gr permitidos</li>
+          <li>Perfil con historial de compras y saldo disponible según receta</li>
+        </ul>
+
+        <div class="sub-label">Contratos</div>
+        <ul class="feature-list">
+          <li>Diseño del template de contrato</li>
+          <li>Generación y firma digital vía GHL</li>
+        </ul>
+
+        <div class="sub-label">Stock</div>
+        <ul class="feature-list">
+          <li>Ingreso (bodega) → tránsito (sala de ventas) → egreso (entrega)</li>
+          <li>Control de inventario en tiempo real</li>
+        </ul>
+
+        <div class="sub-label">Control de entregas</div>
+        <ul class="feature-list">
+          <li>Validación automática contra gramaje máximo de receta</li>
+          <li>Bloqueo si el socio excede el límite — registro por entrega</li>
+        </ul>
+
+        <div class="sub-label">Etiquetas + Fidelización</div>
+        <ul class="feature-list">
+          <li>Impresión de etiquetas con datos del paciente (impresora Zebra)</li>
+          <li>Integración Boomerang.me vía API para gestión de puntos</li>
+        </ul>
+      </div>
+
+      <!-- Stack -->
+      <table class="stack-table">
+        <thead>
+          <tr>
+            <th>Componente</th>
+            <th>Herramienta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Webapp</td>
+            <td>Next.js + Supabase</td>
+          </tr>
+          <tr>
+            <td>CRM / Agendamiento / Contratos</td>
+            <td>GoHighLevel</td>
+          </tr>
+          <tr>
+            <td>Pagos</td>
+            <td>Mercado Pago</td>
+          </tr>
+          <tr>
+            <td>Fidelización</td>
+            <td>Boomerang.me (API)</td>
+          </tr>
+          <tr>
+            <td>Automatizaciones</td>
+            <td>n8n</td>
+          </tr>
+          <tr>
+            <td>Hosting</td>
+            <td>Vercel</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="page-footer">
+      <a href="https://creactivestudio.agency">creactivestudio.agency</a>
+      <span>Pág. 3 / 5</span>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 4 — CRONOGRAMA   -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="page-content">
+      <div class="section-number">03</div>
+      <div class="section-title">Cronograma de entrega</div>
+      <div class="section-title-line"></div>
+
+      <div class="phases-grid">
+        <div class="phase-card">
+          <div class="phase-card-header">
+            <span class="phase-badge f1">Fase 1</span>
+            <span class="phase-card-title">Agendamiento + setup GHL</span>
+            <span class="phase-card-weeks">Semanas 1 – 4</span>
+          </div>
+          <ul class="phase-deliverables">
+            <li>Landing de agendamiento con pago integrado (Mercado Pago)</li>
+            <li>GHL Calendar configurado con prestadores</li>
+            <li>Flujo automático: pago → confirmación → link de sesión</li>
+            <li>Template de contrato diseñado en GHL + flujo de firma digital</li>
+          </ul>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-card-header">
+            <span class="phase-badge f2">Fase 2</span>
+            <span class="phase-card-title">Plataforma de gestión</span>
+            <span class="phase-card-weeks">Semanas 5 – 10</span>
+          </div>
+          <ul class="phase-deliverables">
+            <li>Módulo de socios (CRUD + perfil con historial)</li>
+            <li>Módulo de stock (ingreso, tránsito, egreso)</li>
+            <li>Control de entregas con validación de gramaje</li>
+            <li>Generación e impresión de etiquetas (Zebra)</li>
+            <li>Integración Boomerang.me vía API</li>
+          </ul>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-card-header">
+            <span class="phase-badge f3">Fase 3</span>
+            <span class="phase-card-title">QA + onboarding</span>
+            <span class="phase-card-weeks">Semanas 11 – 12</span>
+          </div>
+          <ul class="phase-deliverables">
+            <li>Testing completo de todos los flujos</li>
+            <li>Sesión de onboarding con el equipo</li>
+            <li>Ajustes finales post-onboarding</li>
+            <li>Entrega formal de la plataforma</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Inversión -->
+      <div class="section-number" style="margin-top: 8px;">04</div>
+      <div class="section-title" style="font-size: 20px; margin-bottom: 8px;">Inversión</div>
+
+      <table class="investment-table">
+        <thead>
+          <tr>
+            <th>Concepto</th>
+            <th>Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Setup one-time</td>
+            <td>$3.500.000 CLP</td>
+          </tr>
+          <tr>
+            <td>Retainer mensual (desde mes 4)</td>
+            <td>$300.000 CLP/mes</td>
+          </tr>
+          <tr class="total-row">
+            <td>Total primer año (setup + 9 meses)</td>
+            <td>$6.200.000 CLP</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="payment-plan">
+        <h4>Plan de pago</h4>
+        <ul>
+          <li><strong>Al firmar:</strong> $500.000 CLP</li>
+          <li><strong>Meses 1 a 3 (desarrollo):</strong> $500.000 CLP/mes</li>
+          <li><strong>Post-entrega:</strong> saldo restante de $1.500.000 CLP en cuotas de $500.000 CLP/mes + retainer de $300.000 CLP/mes ($800.000 CLP/mes durante 3 meses)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer">
+      <a href="https://creactivestudio.agency">creactivestudio.agency</a>
+      <span>Pág. 4 / 5</span>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- PÁGINA 5 — TÉRMINOS     -->
+  <!-- ======================== -->
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="page-content">
+      <div class="section-number">05</div>
+      <div class="section-title">Términos y condiciones</div>
+      <div class="section-title-line"></div>
+
+      <div class="terms-grid">
+        <div class="terms-box included">
+          <h4>Incluido</h4>
+          <ul>
+            <li>Todo lo descrito en el alcance</li>
+            <li>Hosting y dominio durante el primer año</li>
+            <li>Soporte técnico dentro del retainer mensual</li>
+            <li>Sesión de onboarding con el equipo</li>
+          </ul>
+        </div>
+        <div class="terms-box excluded">
+          <h4>No incluido</h4>
+          <ul>
+            <li>Contenido (textos, fotos, videos) — los provee el cliente</li>
+            <li>Funcionalidades fuera del alcance descrito</li>
+            <li>Integraciones con sistemas no mencionados</li>
+            <li>Mantenimiento de hardware (impresoras, etc.)</li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="conditions-list">
+        <li>Cambios fuera del alcance se cotizan por separado</li>
+        <li>El cliente aprueba explícitamente cada fase antes de avanzar a la siguiente</li>
+        <li>Validez de esta propuesta: 15 días corridos</li>
+      </ul>
+
+      <div class="next-steps">
+        <h4>Próximos pasos</h4>
+        <ol>
+          <li>Aprobación de esta propuesta</li>
+          <li>Pago de la primera cuota ($500.000 CLP)</li>
+          <li>Reunión de kick-off</li>
+          <li>Inicio Fase 1</li>
+        </ol>
+      </div>
+
+      <div class="signature-block">
+        <p>Quedo atento a tus comentarios.</p>
+        <br>
+        <p class="name">Oscar Vergara Barros</p>
+        <p class="role">Fundador — CreActive Studio</p>
+        <p class="role">hola@creactivestudio.agency</p>
+      </div>
+    </div>
+    <div class="page-footer">
+      <a href="https://creactivestudio.agency">creactivestudio.agency</a>
+      <span>Pág. 5 / 5</span>
+    </div>
+  </div>
+
+</body>
+
+</html>

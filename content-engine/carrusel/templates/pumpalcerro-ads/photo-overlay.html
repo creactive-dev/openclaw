@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1080px;
+      font-family: 'Manrope', sans-serif;
+      position: relative;
+      overflow: hidden;
+      background: #1c1717;
+    }
+
+    /* Background photo */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1080px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Gradient overlay — covers full image for centered text legibility */
+    .gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(28, 23, 23, 0.52) 0%,
+        rgba(28, 23, 23, 0.62) 45%,
+        rgba(28, 23, 23, 0.80) 75%,
+        rgba(28, 23, 23, 0.90) 100%
+      );
+    }
+
+    /* Logo — top left */
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 52px;
+      height: 54px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+    }
+
+    /* Content area — centered vertically */
+    .content {
+      position: absolute;
+      top: 110px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 72px 80px;
+      text-align: center;
+    }
+
+    .headline {
+      font-size: 62px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.55);
+    }
+
+    .headline .accent {
+      color: #f4ce35;
+    }
+
+    .subline {
+      font-size: 28px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.45;
+      margin-top: 22px;
+      letter-spacing: 0.2px;
+      text-shadow: 0 1px 10px rgba(0,0,0,0.45);
+      max-width: 820px;
+    }
+
+    .subline .accent {
+      color: #f4ce35;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background: #e43d80;
+      color: #ffffff;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 50px;
+      letter-spacing: 0.3px;
+      margin-top: 32px;
+      box-shadow: 0 4px 16px rgba(228,61,128,0.40);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+
+    <img class="bg-image" src="{{bg_image}}" alt="">
+    <div class="gradient"></div>
+
+    <img class="logo" src="../../public/brand/pumpalcerro-logo.png" alt="Pumpalcerro"
+         onerror="this.style.display='none'">
+
+    <div class="content">
+      <div class="headline">{{headline_html}}</div>
+      {{subline_html}}
+      {{badge_html}}
+    </div>
+
+  </div>
+</body>
+</html>

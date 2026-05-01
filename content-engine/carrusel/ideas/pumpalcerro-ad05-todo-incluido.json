@@ -1,0 +1,51 @@
+{
+  "titulo": "AD05 — Todo Incluido",
+  "slug": "pumpalcerro-ad05-todo-incluido",
+  "template_set": "pumpalcerro-ads",
+  "width": 1080,
+  "height": 1080,
+  "slides": [
+    {
+      "layout": "info-card",
+      "emoji": "✈️",
+      "headline": "Vuelo Santiago ↔ La Serena *incluido*",
+      "subline": "Sin manejar, sin preocuparte. Solo disfrutar.",
+      "bg_color": "#fefaf6",
+      "text_color": "#1c1717"
+    },
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/d74704ae-7b61-4be8-a67c-928604b8cbdd.jpg",
+      "headline": "Termas a *3.300 msnm*",
+      "subline": "Aguas termales en plena Cordillera. Incluidas en tu cupo."
+    },
+    {
+      "layout": "info-card",
+      "emoji": "🍽️",
+      "headline": "Todas las *comidas* incluidas",
+      "subline": "Desayuno, almuerzo y cena. Sin gastos extra.",
+      "bg_color": "#1c1717",
+      "text_color": "#ffffff"
+    },
+    {
+      "layout": "photo-overlay",
+      "bg_image": "/Users/oz/Documents/CAS-CEO/creactive-studio/clientes/pumpalcerro/outputs/Campaña Ads Piezas/Copia de IMG_1564.JPG",
+      "headline": "*Astrotrekking* nocturno",
+      "subline": "El cielo más estrellado de Latinoamérica, solo para nosotras."
+    },
+    {
+      "layout": "info-card",
+      "emoji": "🍷",
+      "headline": "Degustación de *vinos y pisco*",
+      "subline": "Productos artesanales del Valle del Elqui.",
+      "bg_color": "#fefaf6",
+      "text_color": "#1c1717"
+    },
+    {
+      "layout": "cta-brand",
+      "headline": "$690.000 *todo incluido*",
+      "subline": "Reserva tu cupo con $200.000",
+      "bg_color": "#fefaf6"
+    }
+  ]
+}

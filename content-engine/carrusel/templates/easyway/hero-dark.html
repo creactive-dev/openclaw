@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; overflow: hidden; background: #050505; }
+    .slide { width: 1080px; height: 1350px; background: #050505; font-family: 'Plus Jakarta Sans', sans-serif; position: relative; overflow: hidden; }
+
+    /* Grid */
+    .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
+
+    /* Glows */
+    .glow-red  { position: absolute; top: 160px; left: -180px; width: 960px; height: 760px; background: radial-gradient(ellipse, rgba(255,50,49,0.22) 0%, rgba(255,50,49,0.07) 45%, transparent 70%); pointer-events: none; }
+    .glow-teal { position: absolute; bottom: -180px; right: -80px; width: 640px; height: 640px; background: radial-gradient(circle, rgba(0,180,216,0.12) 0%, transparent 65%); pointer-events: none; }
+    .vignette  { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.08) 55%, transparent 100%); pointer-events: none; }
+    .grain     { position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.013) 3px, rgba(255,255,255,0.013) 4px); pointer-events: none; }
+
+    /* Circuit details */
+    .circuit-tl { position: absolute; top: 110px; right: 68px; width: 100px; height: 100px; border-top: 1px solid rgba(255,50,49,0.22); border-right: 1px solid rgba(255,50,49,0.22); border-radius: 0 8px 0 0; pointer-events: none; }
+    .circuit-tl::after { content: ''; position: absolute; top: -4px; right: -4px; width: 7px; height: 7px; border-radius: 50%; background: rgba(255,50,49,0.55); }
+    .circuit-br { position: absolute; bottom: 80px; left: 68px; width: 60px; height: 60px; border-bottom: 1px solid rgba(47,184,197,0.20); border-left: 1px solid rgba(47,184,197,0.20); border-radius: 0 0 0 8px; pointer-events: none; }
+
+    /* Header */
+    .header    { position: absolute; top: 52px; left: 68px; right: 68px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+    .handle    { font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.50); letter-spacing: -0.3px; }
+    .slide-num { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.28); letter-spacing: 1.5px; }
+
+    /* Progress bar */
+    .progress-bar  { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.06); z-index: 20; }
+    .progress-fill { height: 100%; width: {{progress_pct}}%; background: linear-gradient(90deg, #FF3231, rgba(255,50,49,0.4)); border-radius: 0 2px 2px 0; }
+
+    /* Content */
+    .content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 140px 68px 100px; z-index: 10; }
+
+    /* Etiqueta */
+    .etiqueta-wrap { display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; border: 1px solid rgba(255,50,49,0.42); border-radius: 100px; padding: 7px 18px; margin-bottom: 48px; }
+    .etiqueta-dot  { width: 6px; height: 6px; border-radius: 50%; background: #FF3231; flex-shrink: 0; }
+    .etiqueta      { font-size: 14px; font-weight: 700; color: #FF3231; letter-spacing: 2.5px; text-transform: uppercase; }
+
+    /* Headline */
+    .headline         { font-size: 116px; font-weight: 800; color: #ffffff; line-height: 0.87; letter-spacing: -5.5px; margin-bottom: 52px; }
+    .headline .accent { color: #FF3231; }
+
+    /* Divider */
+    .divider { width: 64px; height: 4px; background: linear-gradient(90deg, #FF3231, rgba(255,50,49,0)); border-radius: 2px; margin-bottom: 44px; }
+
+    /* Subheadline */
+    .subheadline { font-size: 24px; font-weight: 400; color: rgba(255,255,255,0.64); line-height: 1.60; max-width: 780px; margin-bottom: 52px; }
+
+    /* Author block — inline, debajo del subheadline */
+    .author-block { display: flex; align-items: center; gap: 20px; }
+    .author-photo { width: 68px; height: 68px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,50,49,0.45); flex-shrink: 0; background: linear-gradient(135deg, rgba(255,50,49,0.3), rgba(0,180,216,0.2)); }
+    .author-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .author-info  { display: flex; flex-direction: column; gap: 4px; }
+    .author-name-row { display: flex; align-items: center; gap: 10px; }
+    .author-name  { font-size: 22px; font-weight: 700; color: rgba(255,255,255,0.85); }
+    .verified     { width: 22px; height: 22px; flex-shrink: 0; }
+    .author-handle { font-size: 16px; font-weight: 400; color: rgba(255,255,255,0.45); }
+
+    /* Footer — solo branding */
+    .footer { position: absolute; bottom: 44px; left: 68px; right: 68px; display: flex; align-items: center; justify-content: flex-end; z-index: 10; }
+    .brand  { font-size: 16px; font-weight: 700; color: rgba(255,255,255,0.28); }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="grid"></div>
+    <div class="glow-red"></div><div class="glow-teal"></div><div class="vignette"></div><div class="grain"></div>
+    <div class="circuit-tl"></div><div class="circuit-br"></div>
+    <div class="header"><div class="handle">@easywaychile</div><div class="slide-num">{{slide_num}}</div></div>
+    <div class="content">
+      {{etiqueta_html}}
+      <div class="headline">{{headline_html}}</div>
+      <div class="divider"></div>
+      {{subheadline_html}}
+      <div class="author-block">
+        <div class="author-photo"><img src="{{headshot_path}}" alt="Claudia Sarmiento" onerror="this.style.display='none'"></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name">Claudia Sarmiento</span>
+            <svg class="verified" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="11" fill="#1D9BF0"/>
+              <path d="M5.5 11.5L9 15L16.5 7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="author-handle">@easywaychile · Easyway Chile</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><div class="brand">Easyway Chile</div></div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</body>
+</html>

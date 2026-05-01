@@ -1,0 +1,69 @@
+{
+  "titulo": "Automatizamos WhatsApp para un SaaS de restaurantes — esto aprendimos",
+  "slug": "whatsapp-automatizado-restaurante",
+  "template_set": "minimalista",
+  "palabras_clave": ["WhatsApp", "automatizado"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "Tu restaurante responde WhatsApp a las 3am. Sin humanos.",
+      "subheadline": "Construimos un sistema de pedidos con WhatsApp automatizado. Así funciona.",
+      "etiqueta": "Sistemas"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El problema",
+      "titulo": "Restaurantes pierden pedidos todos los días",
+      "bullets": [
+        "Cliente escribe por WhatsApp y nadie responde a tiempo",
+        "Menú desactualizado en PDF o en la bio de Instagram",
+        "Cero datos de qué piden, cuándo y quién repite"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "La solución",
+      "titulo": "Menú digital + pedidos + WhatsApp en un solo sistema",
+      "bullets": [
+        "QR → menú digital siempre actualizado",
+        "Pedido directo desde el celular del cliente",
+        "Confirmación automática por WhatsApp vía Kapso API",
+        "Panel admin en tiempo real con estadísticas"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Resultado",
+      "number": "4 bugs → 0",
+      "label": "Hardening de seguridad + lógica en una sesión",
+      "context": "RLS + autenticación + WhatsApp estabilizado en un día"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Stack",
+      "titulo": "Lo que usamos para construirlo",
+      "bullets": [
+        "Supabase: base de datos, auth, realtime, edge functions",
+        "Kapso: WhatsApp Business API sin servidor propio",
+        "React + Vite: panel admin rápido y responsive",
+        "Vanilla JS: app del cliente — cero dependencias, carga instantánea"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "Un restaurante no necesita una app. Necesita que *WhatsApp trabaje para él* mientras duerme.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Tienes un restaurante y todavía respondes todo a mano?",
+      "cta": "Comenta MENÚ y te muestro el sistema",
+      "nota": "Funciona para dark kitchens, cafés y delivery"
+    }
+  ],
+  "captions": {
+    "instagram": "Esta semana estabilizamos el sistema de WhatsApp automatizado para nuestro SaaS de restaurantes.\n\nEl concepto: un restaurante escanea un QR, su cliente ve el menú actualizado, hace el pedido desde el celular, y recibe confirmación por WhatsApp. Automático.\n\nEl stack:\n→ Supabase (DB + auth + realtime)\n→ Kapso (WhatsApp Business API)\n→ React admin panel\n→ App del cliente en vanilla JS — carga instantánea\n\nEsta semana además:\n→ Seguridad RLS hardened\n→ 4 bugs de lógica resueltos en una sesión\n→ WhatsApp webhook → polling estabilizado\n\nSi tienes un restaurante y todavía respondes WhatsApp a mano, comenta MENÚ.\n\n#restaurantes #whatsapp #automatizacion #saas #pymes",
+    "linkedin": "¿Cuántos pedidos pierde un restaurante por no responder WhatsApp a tiempo?\n\nEsta semana cerramos una ronda de hardening en nuestro SaaS de menú digital con WhatsApp automatizado.\n\nEl sistema:\n1. QR en la mesa → menú digital siempre actualizado\n2. Cliente hace pedido desde su celular\n3. Confirmación automática por WhatsApp (Kapso API)\n4. Panel admin con estadísticas en tiempo real\n\nLo que hicimos esta semana:\n- Seguridad RLS hardened (row-level security en Supabase)\n- 4 bugs de lógica corregidos\n- Integración WhatsApp estabilizada end-to-end\n\nEl insight: un restaurante no necesita una app. Necesita que WhatsApp trabaje para él.\n\nEstamos buscando 5 restaurantes para el beta. Si te interesa, escríbeme.",
+    "threads": "Un restaurante no necesita una app.\n\nNecesita que WhatsApp responda solo.\n\nQR → menú → pedido → confirmación automática.\n\nSin descargas. Sin esperar al mesero.\n\nEsta semana lo dejamos funcionando. 4 bugs menos. Seguridad hardened.\n\n¿O no?"
+  }
+}

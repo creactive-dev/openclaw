@@ -1,0 +1,69 @@
+{
+  "titulo": "Entregamos una landing cinematográfica en 5 días",
+  "slug": "landing-cinematografica-5-dias",
+  "template_set": "minimalista",
+  "palabras_clave": ["5 días", "cinematográfica"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "headline": "Entregamos una landing cinematográfica en 5 días.",
+      "subheadline": "Sin equipo de diseño. Sin plantillas. Desde cero.",
+      "etiqueta": "Caso real"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El cliente",
+      "titulo": "Productora audiovisual en Santiago",
+      "bullets": [
+        "Necesitaba web profesional para cerrar clientes corporativos",
+        "Tenía videos increíbles pero ninguna presencia digital",
+        "Presupuesto: cero. Lo hicimos pro bono como caso de éxito"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Lo que hicimos",
+      "titulo": "Next.js + video hero + tour 360°",
+      "bullets": [
+        "Hero con video de fondo y efecto film grain",
+        "Tour 360° interactivo embebido con Kuula",
+        "Formulario de cotización + WhatsApp directo",
+        "Stats animados que cuentan la historia del estudio"
+      ]
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "Optimización",
+      "number": "572→51 MB",
+      "label": "Video comprimido con ffmpeg",
+      "context": "91% menos peso sin perder calidad perceptible"
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Proceso",
+      "titulo": "De reunión a deploy en 5 pasos",
+      "bullets": [
+        "Día 1: Discovery + brief escrito",
+        "Día 2-3: Estructura + diseño aprobado",
+        "Día 4: Build completo en Next.js + Tailwind",
+        "Día 5: Feedback del cliente aplicado + push a GitHub"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "La diferencia entre *tener un portafolio* y *tener una máquina de cerrar clientes* es un sistema detrás.",
+      "author": "Oscar Vergara"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Tu negocio necesita una web que trabaje por ti?",
+      "cta": "Comenta LANDING y te cuento cómo lo hacemos",
+      "nota": "Diagnóstico gratis — sin compromiso"
+    }
+  ],
+  "captions": {
+    "instagram": "Entregamos una landing cinematográfica en 5 días. Sin equipo de diseño, sin templates.\n\nEl cliente: una productora audiovisual en Santiago con videos increíbles pero cero presencia digital.\n\nLo que hicimos:\n→ Hero con video de fondo + efecto film grain\n→ Tour 360° interactivo\n→ Video comprimido de 572MB a 51MB (91% menos)\n→ Deploy listo para producción\n\nTodo con Next.js, Tailwind y un proceso que va de reunión a entrega en 5 días.\n\n¿Tu negocio necesita una web que cierre clientes? Comenta LANDING.\n\n#marketing #landing #webdesign #pymes #latinoamerica",
+    "linkedin": "La semana pasada entregamos una landing page cinematográfica en 5 días.\n\nEl cliente es una productora audiovisual en Santiago. Tenía contenido increíble pero ninguna presencia digital. Lo hicimos pro bono como caso de éxito.\n\nEl proceso:\n1. Discovery y brief escrito (día 1)\n2. Estructura y diseño aprobado (día 2-3)\n3. Build en Next.js + Tailwind (día 4)\n4. Feedback aplicado + push (día 5)\n\nDetalle técnico que me gustó: comprimimos el video hero de 572MB a 51MB con ffmpeg. 91% menos peso sin perder calidad perceptible.\n\nNo necesitas un equipo de 10 personas para entregar calidad. Necesitas un sistema.\n\n¿Estás buscando una web que trabaje por tu negocio? Escríbeme.",
+    "threads": "Entregamos una landing en 5 días.\n\nHero con video, tour 360°, formulario, WhatsApp.\n\nVideo original: 572MB.\nVideo final: 51MB.\n\n91% menos peso. Misma calidad.\n\nSin equipo de diseño. Sin templates. Un operador con sistema.\n\n¿O no?"
+  }
+}

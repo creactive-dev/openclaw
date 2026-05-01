@@ -1,0 +1,47 @@
+{
+  "titulo": "Cómo construimos el OS de CreActive con Claude Code",
+  "tipo": "behind-the-scenes",
+  "template_set": "tutorial",
+  "slides": [
+    {
+      "layout": "hero",
+      "etiqueta": "Detrás del código",
+      "headline": "Construimos el *OS* de una agencia. Con IA.",
+      "subheadline": "Así automatizamos operaciones, entregables y contexto de cliente — todo desde la terminal."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Qué es el Agency OS",
+      "titulo": "Un sistema que *ejecuta* la agencia",
+      "bullets": [
+        "Skills reutilizables: cada entregable tiene su comando propio",
+        "Contexto de cliente cargado automáticamente en cada sesión",
+        "Flujos completos: de brief a entrega sin cambiar de herramienta",
+        "Claude Code lee el codebase real y propone cambios con criterio"
+      ]
+    },
+    {
+      "layout": "code",
+      "etiqueta": "Instalación",
+      "codigo": "# 1. Instalar Claude Code globalmente\nnpm install -g @anthropic-ai/claude-code\n\n# 2. Entrar al proyecto y abrir Claude\ncd creactive-studio\nclaude\n\n# 3. Claude indexa el codebase completo\n> /init",
+      "explicacion": "Una instalación. Acceso total al codebase. Claude lee archivos reales, entiende el contexto y propone cambios que se aplican directo."
+    },
+    {
+      "layout": "content",
+      "etiqueta": "Lo que logramos",
+      "titulo": "De semanas a *horas*",
+      "bullets": [
+        "Propuestas comerciales generadas desde una transcripción",
+        "Landing pages con estructura, copy y código en una sesión",
+        "Reportes mensuales con un solo comando: /cli-reporte",
+        "El equipo entrega sin saber programar — solo dan el brief"
+      ]
+    },
+    {
+      "layout": "cta",
+      "texto": "*Tu agencia* también puede operar así.",
+      "cta": "Hablemos esta semana",
+      "nota": "Link en bio — primeras 3 sesiones con agenda abierta"
+    }
+  ]
+}

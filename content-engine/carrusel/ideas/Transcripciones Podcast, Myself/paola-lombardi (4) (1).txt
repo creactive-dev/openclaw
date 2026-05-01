@@ -1,0 +1,1325 @@
+Oscar Vergara (00:00.402)
+Y ahí estamos, sí, ahí estamos grabando, sí, les aparece a todos grabando. Buenísimo, buenísimo, buenísimo, buenísimo. Qué bueno, qué bueno poder estar ya materializando este proyecto. Este proyecto que es reunirnos todos los viernes como lo venimos haciendo desde antes, pero grabarlo, primero que nada, para que muchas otras personas lo puedan ver y explorar las cosas que nosotros exploramos en estos días viernes de conversación.
+
+Jorge Padilla Ogalde (00:05.043)
+Está grande, grande.
+
+Gaston Feijoo (00:05.4)
+Estamos grabando.
+
+Oscar Vergara (00:25.872)
+Pero además, poder sumar a alguien a la conversación. Es algo que no habíamos hecho, que habíamos hecho en otras instancias, pero jamás lo habíamos hecho con este formato podcast o conversación ya más viralizada, más para que la gente lo vea. No sé qué opináis tú, Gastoncito.
+
+Gaston Feijoo (00:42.7)
+Sí, podcast me suena muy serio para nosotros. Esto es como que alguien se olvidó el micrófono y la cámara prendida y estamos acá. bueno, Gastón Feijó por acá. Otro viernes más que nos juntamos a charlar, a ver varios temas con uno en común que por ahí es el tema de cómo nos reinventamos y con Jorge también presente. Buenas, Jorge.
+
+Oscar Vergara (00:44.626)
+Sí.
+
+Jorge Padilla Ogalde (01:04.633)
+Buena, buena, genial estar acá de nuevo dándole forma a esto que hemos venido conversando. La idea es poder hacer este podcast que no es tan formal como el nombre, pero la idea es poder transmitir conocimiento de cosas que realmente creemos que sabemos pero no sabemos. Entonces, como tantas conversaciones que hemos tenido estos tres personajes, hablando de inteligencia artificial, hablando de muchas materias que quizás algunos conocemos más que otros, pero lo importante es hoy día algo que nos une.
+
+el reinventarse. Y el reinventarse de todas formas porque Oscarito está entre Colombia y todo el mundo, yo estoy en el norte de Chile en Iquique y Gastón ahí con su polerón que lo distingue porque está en Santiago y hace más frío que donde estamos nosotros. Pero finalmente nos unen estos temas y parece que hoy día tenemos a alguien invitado, ¿no? Y ahora estamos dando más forma a esto. Efectivamente con alguien que nos va ayudar a entender algunos temas.
+
+Oscar Vergara (01:46.203)
+jajaja
+
+Gaston Feijoo (01:47.392)
+Exactamente.
+
+Oscar Vergara (01:55.931)
+Sí, sí.
+
+Lo que es que la reinvención, como tú decías, es algo que es constante, algo que no tiene que ver con el trabajo, no tiene que ver con lo que uno estudia, tiene que ver con la vida en general. quisimos de alguna manera invitar a alguien que nos pueda ayudar a hablar de reinvención. El invitado, la invitada, perdón, que tenemos hoy día, es una invitada de grueso calibre, podríamos decirlo, estoy usando palabras de la tele. Ya ves, ya ves, estamos haciendo las cosas bien. De grueso calibre porque...
+
+Es una persona que tiene mucha experiencia. Es una persona que ha colaborado no solamente a personas, sino que también a muchas empresas en esto del reinventarse, pero desde su mirada, desde lo que ella hace. Porque, de nuevo, el reinventarse está en muchas áreas. Entonces, en cualquier minuto se va sumar a esta reunión la querida Paola Lombardi. Estamos esperando que se suman a esta reunión. Así como lo hacemos todos en las reuniones de Teams.
+
+en las reuniones de meet que estamos esperando que se sume la invitada para la reunión. Pero la idea es conversar de eso, sobre la reinvención, sobre cómo lo aplicamos hoy día al trabajo, a la vida cotidiana, pero siempre de la mirada experta que nos pueda contribuir Paola en este caso. ¿Ustedes se han reinventado, no? ¿Usted siente que vienen de un proceso de reinvención?
+
+Gaston Feijoo (03:17.024)
+un poquito, un poquito nomás. Partiendo porque soy argentino y ni siquiera estoy en mi país, lo cual migrar es parte de reinventarse. Hemos pasado por el mundo corporativo, por la startup, por el emprendimiento propio.
+
+Oscar Vergara (03:33.49)
+por cambios de casa, cambios de comunas, por cambios de todo.
+
+Gaston Feijoo (03:37.686)
+Dios de todo, de todo.
+
+Oscar Vergara (03:39.154)
+¿Qué es lo más importante según tú, Jorge, a la hora de reinventarse? ¿Es como analizar todo bien?
+
+Jorge Padilla Ogalde (03:45.691)
+Yo creo que, bueno, nos va a ayudar nuestra invitada, Nos va a ayudar nuestra invitada. Pero yo creo que una de las cosas que yo hecho admiro de ustedes mismos, se lo he dicho en otras conversaciones que hemos tenido, es no tener miedo. No tenerle miedo a lo que va pasar. Es ponerle ganas e intentarlo. Pero a veces hay fracasos y eso a veces te da más miedo. Entonces, la idea es poder romper esa inercia de decir, lo voy a hacer, lo hago y espero los resultados, que a veces son de largo plazo, no inmediato.
+
+Oscar Vergara (03:47.366)
+Dejarse llevar.
+
+Jorge Padilla Ogalde (04:15.315)
+Y creo que por ahí va. Ahora, yo creo que reinventarse también tiene que ver con todas las etapas de la vida. Por ejemplo, alguien que está empezando la universidad y tiene 18 años también de cierto modo se está reinventando. Ahí solamente Paola nos va poder decir si eso es una reinvención o no. Pero todo lo que es nuevo mundo, finalmente, es una reinvención constante.
+
+Gaston Feijoo (04:36.057)
+Para el que hace poquito tiempo, menos de dos años creo, descubrió que ahora tiene un Nuevo mundo es papá, ejemplo. Eso es una reinvencion fuerte, fuerte reinvencion.
+
+Jorge Padilla Ogalde (04:42.821)
+Por ejemplo, eso es una reinvencion fuerte fuerte fuerte fuerte fuerte te cambia todo el cambiar de trabajo que quizás más de lo que nos puede contar con su experiencia paola el perder familiares hay un montón de cosas que están de por medio de cómo reinventarte
+
+Oscar Vergara (04:59.452)
+es que hay un montón de procesos que te invitan a reinventarte, procesos que también son de reinvención. Como decía Gastón, por ejemplo, el caso tuyo particular, que fuiste papá hace dos años aproximantes, claro, son muchos procesos que te obligan a cambiar como el paradigma completo de cómo funciona tu vida, de las cosas que estás haciendo, de las cosas que tienes que ejecutar para poder ejecutar el cambio, valga la redundancia, entonces se transforma en un proceso complejo.
+
+Jorge Padilla Ogalde (05:26.387)
+Pero de nuevo, sí, y me da risa porque el podcast se llama al hablemos Sin Saber y nosotros hablamos con tanta autoridad que como que sabemos de todo. Pero al final es el traspaso de conocimiento, el saber también es una experiencia, al y al cabo.
+
+Oscar Vergara (05:36.722)
+¿Sí? ¿Qué? ¿Qué? ¿Qué es lo que pasa?
+
+Gaston Feijoo (05:43.506)
+tal vez nos estamos engañando cuando decimos que esto es un podcast, tal vez esto es una sesión de autoayuda y tienen a tres personas que creen que saben y tienen que invitar a un cuarto para que ellos vean que en realidad no saben.
+
+Oscar Vergara (05:56.114)
+No sabemos nada, no sabemos nada. Y yo creo que una de las mejores formas de explorar es explorar desde la humildad de saber que uno no sabe todo. Y que muchas veces, por ejemplo, como sucede hoy en día, estamos hablando, por ejemplo, no sé, de inteligencia artificial, que es el boom hoy día en todas las redes sociales y a nivel mundial, lo que se puede hacer, lo que no se puede hacer, y todo el mundo anda hablando de todas las cosas que ha hecho o puede hacer con la inteligencia artificial.
+
+Pero sabemos de lo que leemos en un reportaje, sabemos de lo que le preguntamos a través de chat GPT o lo que vimos en un artículo de LinkedIn. explorar creo que es parte del reinventarse, como empezar a tocar temas y tratar de entender cómo funcionan las cosas. Oye, me avisa Paola que se está conectando en este momento, así que en cualquier minuto vamos a tener a nuestra invitada del primer capítulo de Hablemos Sin Saber. Demos un segundito.
+
+Jorge Padilla Ogalde (06:46.451)
+Oigan, no sé si les recuerda, pero finalmente una de las cosas que siempre vivimos cuando nosotros, bueno, no todos saben, los que nos van a escuchar seguramente, pero nosotros trabajamos juntos. un mismo equipo, gastó era de nuestro jefe, y finalmente vivimos muchas veces este como escenario en el que estaba una reunión, llegaba alguien del departamento marketing y después de 10 minutos tuvo un tema en la mesa, era experto en logística. Entonces, ese tipo de situaciones son las que queremos como...
+
+abordar aquí, de imitificar realmente lo que sabemos y creo que el reinventarse y con Paola, que Paola supuestamente yo creo que se va presentar también ahí a nivel de detalle, es una experta respecto al cómo, al cómo nos ayuda. Yo creo que la palabra clave es cómo. Nosotros costamos historia, el cómo, el qué herramientas podemos tener, seguramente va a ser el objetivo rescatar lo que nos pueda otorgar Paola.
+
+Oscar Vergara (07:38.258)
+Exacto, tal cual. No sé Gastón, si en tu caso tú haz tenido algún proceso de reinvención que tenga que ver más con, no solamente con el trabajo, sino con algo un poco más complejo, siempre la conversación se va a derivar al trabajo, inevitablemente, porque es como donde nosotros invertimos la mayor cantidad de nuestro tiempo, pero el trabajo finalmente nace del cómo nosotros somos como personas.
+
+Paola (08:03.097)
+Hola, hola, ¿me escuchan?
+
+Oscar Vergara (08:05.072)
+Miren, justo ahí se nos acaba de venir Paola Lombardi. ¿Cómo estás, Paola
+
+Jorge Padilla Ogalde (08:05.882)
+Mira, Paola.
+
+Jorge Padilla Ogalde (08:10.771)
+Hola, hola, perfecto.
+
+Oscar Vergara (08:11.014)
+Sí, te escuchamos perfecto. ¿Cómo estás?
+
+Jorge Padilla Ogalde (08:16.316)
+Parece que no nos escucha ella.
+
+Oscar Vergara (08:17.552)
+Sí, parece que ella no nos escucha.
+
+Paola (08:17.591)
+Yo no escucho
+
+Jorge Padilla Ogalde (08:24.175)
+Quizá... Ahí está, ahora sí. Te hicimos una fiesta de hecho, que gritábamos todos los tres juntos.
+
+Paola (08:25.123)
+Ahí está, ahí está. Sí.
+
+Oscar Vergara (08:26.222)
+Ahí sí, perfecto. Maravilloso.
+
+Paola (08:31.79)
+Yo también grite yo también grite no, no podía, decía que había que esperar, no sé qué, esperé un ratito, pero de hecho estoy con él. Bien, bien, ¿ustedes cómo están?
+
+Jorge Padilla Ogalde (08:39.507)
+¿Cómo estás, Paola?
+
+Oscar Vergara (08:42.73)
+Muy bien, muy bien, muy bien. Estábamos conversando, de hecho, del tema central de este primer capítulo de nuestro podcast, Hablemos Sin Saber, que es la reinvención. Entonces, estábamos conversando sobre los procesos que hemos llevado cada uno a reinventarse y creo que uno de estos procesos que enfrentamos todos es, de hecho, el cómo nos conectamos a esta reunión y a esta conversación. Cada uno está conectado. Paola está en Santiago, yo estoy en Antofagasta.
+
+Jorge Padilla Ogalde (08:42.867)
+Bien.
+
+Paola (08:48.825)
+ya
+
+Oscar Vergara (09:10.522)
+Es un proceso complejo, pero muy grato a la hora de conversarlo porque la idea de este encuentro es poder hablar contigo sobre el concepto de reinvención, pero apuntado a tu experiencia como coach, tú llevas más de 30 años ayudando a empresas, ayudando a personas, entonces, quisiéramos de alguna forma partir preguntándote la reinvención. ¿Qué tan ligada, qué tan de la mano está con lo que tú haces hoy día?
+
+como coach, en be coach y en toda la experiencia que has tenido a lo largo de tu trayectoria.
+
+Paola (09:47.289)
+Bueno, primero que nada agradecerles por la invitación, por encuentro de estas cosas que super entretenidas además cuando son espontáneas, naturales, sin chapitas, sin nada. Me gustan las cosas así. Gracias por hacerme sentir así y por permitirme que también yo lo haga así. Muchas gracias. Mira, yo creo que esta es como una nueva actividad en la vida de algunas personas, ¿no?
+
+Hay una generación más adulta que se siente joven, se siente con ganas de seguir viendo la vida y que, yo siempre digo, no se van a los cuarteles del silencio, sino que se van a ocupar su cerebro, su iniciativa sus mejores competencias adquiridas por la expertiz de la vida, por lo que han vivido, por que tienen hambre, que las cosas pasen distintas.
+
+Entonces, a mí me ha tocado mucho este último tiempo, bueno, ya es un buen tiempo, especialmente en la pandemia. Yo creo que la pandemia nos trajo eso, y reflexionaba sobre cómo lo estoy haciendo, si estoy en lugar correcto, estoy dónde quiero estar, estoy haciendo lo que me gusta, estoy feliz con lo que hago. Y yo creo que, si bien nos trajo cosas complejas, nos trajo también oportunidades de mirar y sentir la vida distinto, conectarnos con espacios más simples.
+
+Y ahí hay un espacio para la gente que... Yo creo que hay varios como nichos, Las personas que están... que se quieren jubilar, jubilar entre comillas, sus años de trabajo en una organización, salir con una luquita y de hacer algo distinto. Otras porque dicen, están todavía en el mundo laboral, haciendo algo que les gusta, pero quieren complementar esa vida con algo que les dé sentido diferente.
+
+Otras son un nicho super interesante de personas que estudian una carrera X y después quieren hacer otra cosa. Y eso a ustedes les debe pasar, ¿no? Conocer mucho. Ese es un nicho muy grande. Mucho más que que es. Mucho más que el primer nicho de las personas que se cuidan o que terminan una etapa laboral. Te digo, ahí hay un espacio.
+
+Gaston Feijoo (11:39.797)
+Otro.
+
+Jorge Padilla Ogalde (11:42.908)
+Sí.
+
+Oscar Vergara (11:59.634)
+Tú estás constantemente en contacto con personas que están de alguna manera buscando como seguir al siguiente nivel, como cambiar algo, mejorarlo, tratar de buscar un camino. O con una crisis también, exacto.
+
+Jorge Padilla Ogalde (12:13.139)
+una crisis o no porque al final lo que comentaba paola es me obligaron a estudiar algo yo quería hacer otro y quiero tengo que terminarlo y que hago después en el fondo hay toda una... yo le llamaría no sé si estoy en lo correcto no sé si un concepto muy académico pero yo le llamaría el motivo de la reinvencion porque hay gente que se reinventa porque lo reinventaron porque lo despidieron del trabajo se reinventa porque sufrió alguna pérdida o algo
+
+Paola (12:16.601)
+Bueno.
+
+Paola (12:31.799)
+No
+
+Jorge Padilla Ogalde (12:40.867)
+o se reinventa porque lo desea tal como dice Paola exactamente
+
+Gaston Feijoo (12:43.51)
+Está buscando una felicidad y para encontrar esa felicidad tiene que cambiar su camino.
+
+Paola (12:45.785)
+No.
+
+Jorge Padilla Ogalde (12:48.985)
+Exacto.
+
+Paola (12:49.972)
+de algo tienen hambre pero no saben qué comer, no? sí, y eso ocurre, pues, empiezan a probar, a probar distintos platos, distintos menús, van a distintos restaurantes, y lo llevamos con eso. de repente, hay situaciones que, eso es muy, yo lo encuentro de esos grandiosos, ¿sí? A mí me encanta ese tipo de personas, porque encuentro que siempre están buscando ahora
+
+Jorge Padilla Ogalde (12:53.619)
+Eeeh, esa es prástica.
+
+Gaston Feijoo (12:54.61)
+Buena analogía.
+
+Paola (13:18.591)
+si busco y encuentro como lo disfruto porque a veces no encuentro y me quejo. Y entonces todavía vería al frente quejándome que soy víctima de un papá, víctima de la sociedad, víctima. Sí, no sé si me entiendes. Eso también me pasa mucho que bueno, lo hago porque mi papá no le gustó, lo estudié porque mi papá me dijo o bueno, estoy acá porque no tengo otra alternativa, me quedo aquí en la queja. Vengo ahora de una charla con una empresa de las conversaciones difíciles. Yo les decía, vivimos la queja, hay gente que vive la queja.
+
+Oscar Vergara (13:24.165)
+SAC.
+
+Jorge Padilla Ogalde (13:30.387)
+Sí, sí.
+
+Oscar Vergara (13:31.676)
+que
+
+Oscar Vergara (13:47.61)
+Es súper fácil hacerlo.
+
+Paola (13:49.209)
+Y porque es fácil, porque tengo otros quejos al lado mío que somos cómplices de la queja. Entonces nos alimentamos de la queja, porque decir a alguien que le va bien, que está contento, que disfruta, te queda mirando y diciendo que raro, esto no me pasa a mí.
+
+Oscar Vergara (14:03.282)
+Y esa queja es la que... Claro, esa es la queja que alimenta la inacción, finalmente. El no movilizarse, el no buscar otras cosas porque antes de hacerlo inmediatamente pongo una traba. No voy a publicar el LinkedIn porque mis compañeros de trabajo se han a burlar de mí de esta nueva faceta de influencer. no se, como que uno está siempre asustado de hacer algo por el que diran por lo que va a pasar, etcétera.
+
+Jorge Padilla Ogalde (14:03.94)
+que raro que disfruten
+
+Paola (14:09.834)
+¡Es saco!
+
+Gaston Feijoo (14:27.131)
+El que dirán nos limita, el que dirán nos limita y reinventarse tiene que ver, creo yo, y esa es gracia de este podcast que hablamos mucho pero sabemos poco, entonces desde mi desconocimiento creo que el reinventarse tiene que ver con romper ese miedo de lo que los demás también pueden llegar a opinar. Es el desafío de si lo haré bien y qué van a opinar los demás de esto nuevo que voy a hacer.
+
+Paola (14:47.021)
+Sí, mira, y hay dos palabras que tuve cada usted en su fórmula de plantearon Una es el miedo y otro es el feedback. Los seres humanos nacemos con miedo y desarrollamos el miedo. Y vivimos con miedo. ¿Cómo somos capaces que el miedo nos movilice apreciativamente a lograr algo? Porque el miedo tiene una excepción muy bonita. Te cuida, te alerta. Es un mecanismo que defensa.
+
+Oscar Vergara (14:54.194)
+mmm
+
+Jorge Padilla Ogalde (15:08.437)
+mira.
+
+Oscar Vergara (15:09.304)
+mantiene consciente de alguna forma.
+
+Paola (15:11.097)
+Claro, exactamente. Pero también hay personas que están todo paralizando, que se van al lado oscuro, digamos, de la vida. Entonces, no se pueden, no se pueden, capa, no puedo, estoy muy viejo, soy mujer, vivo acá, soy provinciano, no sé tanto idioma, no estudio una carrera. Y todas esas creencias que nos alimentan, porque, y lo que hoy día le decía a esta gente, ¿no? Me vinculo con la misma gente que piensa como yo. Entonces, aumenta mi círculo de...
+
+de pocas posibilidades. Entonces, cuando yo salgo ahí y pruebo algo, ¿cómo viene el feedback? Porque si alguien me alimenta y me dice, oye, qué bien lo hiciste, qué rico, me encantó esto, te quedó fantástico, me encantó cómo lo hiciste, es una información que recibo y me hace bien. Los seres humanos vivimos de feedback. Es nuestro nutriente de la vida. No hay nadie que no vive de feedback. Todos, todos,
+
+Oscar Vergara (16:01.535)
+del hecho de ser una comunidad y necesitar el contacto con otras personas.
+
+Paola (16:05.28)
+Y el ser humano nos estimula. ¿cómo recibo el feedback? ¿Cómo escucho lo que escucho? ¿Escucho desde una queja? ¿Escucho una crítica? ¿Escucho una oportunidad? Esto ideal es decir a una persona cuando, no sé, tu pareja te dice, oye, mira, no estás muy... oye, subí un poquito de peso, mira, ya no me querí, pero viene alguien que te dice, claro, o viene, no sé, a usted, una buena moza, te dice, oye, te hay un poquito pasado, pero te dice tu polola
+
+Oscar Vergara (16:25.818)
+Marcelo Personal.
+
+Paola (16:33.825)
+No lo escuchas, pero te dice una de afuera y te dice, sí, ya me voy a cuidar. Entonces el otro día llegáis y con faja la pegamos, ¿no es cierto? No sé. Es así. sea, escuchamos, tenemos escucha selectiva, Entonces el feedback que nos mueve, nos puede mover, también nos puede paralizar. Entonces, ¿cómo damos el feedback? ¿Qué escuchamos, lo que escuchamos? El feedback pasa a ser que una, porque ¿qué feedback? Es solamente información. Pero ¿cómo interpreto lo que escucho?
+
+Oscar Vergara (17:03.324)
+cómo utilizo esto.
+
+Paola (17:03.617)
+¿Cómo? El beneficio de lo que quiero. La vida, mira, lo más normado son los problemas. Lo más normado. Y las personas que tenemos la capacidad de liderar, y todos, porque hasta una guagua, un chupete tiene que liderar el chupete, todos tenemos la capacidad de liderar, es cómo ocupo esa capacidad, ¿no? ¿En contra mía o a favor mía? Y el aceite de un alimento.
+
+Oscar Vergara (17:27.665)
+mmm
+
+Jorge Padilla Ogalde (17:27.699)
+Y ahí, Paola, yo creo que lo que dicen me hace todo el sentido del mundo. Y este podcast, tú lo ves, no hay pauta, hay nada, nos estamos yendo a distintos temas. Y yo quiero dejar como algunos conceptos que estás diciendo, me lo quiero llevar al cómo. Porque tú siempre ocupas mucho la palabra cómo. Y me encanta, porque todos estos libros de autoayuda y todo este tema te hablan del qué. Pero la mayoría no te dice el cómo.
+
+Paola (17:38.092)
+Sí, me canto.
+
+Jorge Padilla Ogalde (17:54.355)
+Yo sé que vamos a entrar a conocer más a Paola, me encanta que tampoco hayamos ido a presentar a Paola de una porque la encasilla en algo, pero yo creo que sí una Paola nos pueda ayudar en el cómo, ¿no? ¿Qué podíamos transmitir como esta escucha selectiva? Porque efectivamente yo estoy de acuerdo con lo que dices tú, es, le encanta escuchar el elogio, lo utiliza muy bien para alimentarse, pero cuando hay una crítica lo escucha más fuerte aún en encuentro. Y ese cómo lo tomo, es el cómo digo...
+
+Ok, gracias por la crítica, lo voy a tomar, lo voy a mejorar en mi y lo voy a tomar como algo positivo. ¿Hay técnicas para mejorar el cómo escucho?
+
+Paola (18:33.655)
+¿Sabes lo que pasa? Que ahí, Jorge, yo tengo una distinción del lenguaje. Yo creo, como el lenguaje genera realidades, como yo escucho la palabra, como la he aprendido, tengo una creencia apreciativa o limitante de esa palabra. Y desde ahí me alimento. Si yo creo que la... Mira, hay un encuentro muy bonito. Y es muy... es bien especial ¿Quién es? La diferencia...
+
+Oscar Vergara (18:51.538)
+mmm
+
+Paola (19:01.113)
+digamos el cuento de la a veces somos mosca y a veces somos abeja. ¿Has escuchado ese cuento? La abeja la abeja vive en las flores se alimenta de la flor. La mosca de la mierda. Entonces a veces somos mierda y a veces somos abeja. O a veces somos mosca y a veces. Pero tenemos que evitar los dos espacios para conocer la mierda, para saber si quiero seguir ahí o si quiero salir de ahí.
+
+Jorge Padilla Ogalde (19:06.707)
+Yo no.
+
+Gaston Feijoo (19:07.002)
+No.
+
+Oscar Vergara (19:11.314)
+mmm
+
+Gaston Feijoo (19:20.707)
+Moca.
+
+Oscar Vergara (19:21.362)
+Gracias, Amar.
+
+Oscar Vergara (19:27.794)
+tema de contrastes también.
+
+Paola (19:29.925)
+Claro, no siempre vamos a estar viviendo una flor, no siempre vamos a nutrirnos, pero tenemos que habitar ese espacio y tenemos que decir que no merezco ese espacio. Entonces cuando tú me dices el cómo, el cómo tiene que ver con primero, cómo las conversaciones que tenemos apreciativas de nosotros, cómo escuchamos lo que escuchamos. Sí, escuchamos oportunidades, escuchamos amenazas, escuchamos desafíos, escuchamos límites, escuchamos incredulidades, confianza.
+
+Jorge Padilla Ogalde (19:49.351)
+Sí.
+
+Paola (19:56.665)
+Y eso es tan importante en los mensajes. Los niños desde chicos nos enseñan, nos tiran mensajes. Y lo más curioso, yo ya les decía, también esto a toda las persona. Tenemos un mensaje que vamos construyendo desde lo que tenemos uso de razón y ese mensaje nos genera un recurso o nos genera una limitante. No sé si acuerdan, yo soy mayor, pero...
+
+Todos los papás lo hemos hecho como papá, ustedes también lo escucharon y también algunos que son papás, dicen, bueno, si vas a ir para allá, bueno, tú verás cómo te vuelves. Pero papá, que no puedo no se po. Tú verás y sales. Y ese es eso, ya dejas el cabro ahí, tira y afloja, dices papá, es muy tarde. No, a mejor no voy porque es puro problema. Entonces, ¿cómo somos claros en el mensaje? ¿Cómo leo eso? Mi papá me está dando la oportunidad que yo...
+
+Oscar Vergara (20:32.946)
+problema tuyo.
+
+Oscar Vergara (20:38.906)
+¡Que río!
+
+Jorge Padilla Ogalde (20:44.563)
+mmm
+
+Paola (20:49.399)
+me haga responsable, le tome una decisión y me venga lo que sea y yo busque la solución o él me está diciendo bueno yo no puedo así que no vayas.
+
+Jorge Padilla Ogalde (20:56.76)
+que que que que que logo
+
+Oscar Vergara (20:57.314)
+Me está forzando a decir que no, básicamente.
+
+Paola (21:00.393)
+Claro, eso es que leo o lo veo como oportunidad. Entonces, yo creo que...
+
+Gaston Feijoo (21:03.1)
+Hola, ¿tenés una forma de hablar tan clara? Me encanta escucharte porque es como no hay que descifrar el mensaje, es súper transparente lo que está diciendo y uno lo absorbe en un segundo.
+
+Jorge Padilla Ogalde (21:15.187)
+Yo justo iba comentar eso y le iba a decir en una palabra lo assertiva que es y de hecho yo hace mucho tiempo vengo buscando la forma de ser más assertivo y le voy a llevar ahora mismo potente mensaje del bebé. Yo soy papá de un niño de dos años y medio y estoy buscando que nos dejaban a Tareá en el jardín, entonces ahí de vacación y todo, que es la autonomía. Es cómo le genera autonomía a un niño que es hijo único, que vive con su abuela.
+
+Gaston Feijoo (21:21.883)
+Sí.
+
+Paola (21:31.874)
+Y
+
+Jorge Padilla Ogalde (21:43.731)
+y que si él quiere algo viene su abuela, su mamá o su papá a dárselo. Entonces, ahí en el mensaje, más de todo la lógica de que esa frase efectivamente la escuché muchas veces, me acordé perfecto de querer salir al carrete y  mi papa me dijo ya, pero ve tú cómo te devolví y ve tú cómo lo haces. Claro, efectivamente te pone una barrera esa forma de decirlo. Cuando en realidad lo que debes decir es anda, cuidado y trata de ver cómo resuelve él cómo te viene y si no me llamas. No sé, algo por ahí tiene, porque te incentiva a hacerlo, a ser autónomo y...
+
+Paola (21:47.321)
+No
+
+Oscar Vergara (21:57.466)
+¡Le mato yo!
+
+Paola (22:08.377)
+Claro.
+
+Jorge Padilla Ogalde (22:13.55)
+Tratar de romper miedos. Mira, que buena...
+
+Oscar Vergara (22:15.046)
+Lo que es el poder entregar la autonomía, porque yo creo que la autonomía se entrega, sobre todo si es que tienes un hijo o si estamos hablando de una corporacion etcétera, si vas a entregar autonomía tienes que entregar herramientas para que la persona sea autónoma. Entonces, eso de alguna manera me gustaría como linkearlo con algo que comentaste antes, que hoy mencionaste el feedback, mencionaste el uso de palabras, fueran, que las palabras de alguna forma tienen un poder distinto en diferentes personas, etcétera.
+
+Paola (22:28.632)
+Exactamente loco.
+
+Paola (22:42.393)
+Sí.
+
+Oscar Vergara (22:42.864)
+Y mi pregunta va a orientar un poco a cómo ves tú el panorama en el país actualmente, en términos de esta autonomía, de las herramientas, de cómo confiamos en el projimo a nivel gobierno, de cómo confiamos en el projimo a nivel organizacional en las empresas. ¿Cuál es el paradigma que hoy día se enfrenta en Chile? ¿Es un paradigma que ya está más resuelto? ¿Seguimos como haciendo lo que tú mencionabas con el comentario de, oye?
+
+Ahí está la base de datos de los clientes. resuélvelo y tráeme ventas. ¿Cómo lo ves tú que tienes contacto muy habitual con empresas, con altos ejecutivos que están buscando esto de alguna manera?
+
+Paola (23:20.921)
+Mira, es una súper buena pregunta, Oscar, porque yo, y no solamente acá, yo tuve la oportunidad de viajar ahora el verano. Me tomé unas buenas vacaciones hace rato que no viajaba tanto. Y sí, fui a España, fui a Estocolmo y fui a Estados Unidos. Y siempre voy a un solo lugar, pero esta oportunidad puntualmente porque mi hija salió, se tituló de médico y yo le había dicho cuando...
+
+Oscar Vergara (23:33.146)
+en vídeo.
+
+Paola (23:46.903)
+fuera si titulara yo le iba a hacer un viaje a Europa y ella decidió ir a España, esta oportunidad, ya, nosotros habíamos pasado el año pasado pero fue un viaje bien distinto y con toda la gente que, y a mí me encanta que conversaciones con la gente, yo creo que no solamente en Chile, pero en nuestro país tenemos que hacernos cargo, es que estamos viviendo en el miedo, sí, el miedo es la emoción que nos instala, que estamos instalados y globalmente tú le preguntas a la gente, yo tengo unos amigos que viven en Estocolmo.
+
+un país espectacular, ciudad, todo lo que tú quieras pero la gente también. Hay cosas que días antes había pasado, no se acuerdan que hubo un atentado y ellos viven un poca de distancia de ahí. Ahí está el miedo, entonces el paradigma es, yo te diría, de la emoción del miedo es que las cosas no van a cambiar, es que lo estamos haciendo mal, es que no se puede, es que... tanto paradigma instalado...
+
+Jorge Padilla Ogalde (24:25.875)
+Sí.
+
+Gaston Feijoo (24:26.437)
+claro.
+
+Paola (24:45.303)
+que alimentan el miedo. Entonces el miedo crece y el paradigma también se engloba, se pone más fortacho, ¿no? Crece muy grande, entonces estamos llenos de creencias que nos limitan para tener la competencia de decir yo puedo salir de acá, yo puedo cambiar las conversaciones. O sea, cuando una empresa la está pasando mal, cuando una familia está pasando mal, cuando un grupo humano la está pasando mal, si nosotros seguimos conversando desde la creencia que no se puede, que ya no, que no sé qué, que no tenemos plata.
+
+que la cosa está compleja, que el gobierno que tenemos, que mundo, que los jóvenes que hoy día la generación Z, hace unos años atrás de la Millennials. sea, pura, estamos en la queja constantemente, pura excusa. Y que son válidas porque la gente lo está viviendo, pero no podemos seguir inventando. sea, no son, son, no son, eh, cómo les quiero llamar, no son excusas, eh, así que, no son inocentes.
+
+Gaston Feijoo (25:24.443)
+escuchas
+
+Oscar Vergara (25:29.989)
+Existen,
+
+Gaston Feijoo (25:41.3)
+Puede ser paola que estas excusas las to...
+
+Paola (25:44.649)
+son de una base, tienen un argumento, tienen pilares, pero podemos erradicar eso. Tenemos que ser responsables porque nadie. Yo siempre he dicho no nosotros elegimos dónde estamos. Nadie está donde no quiere estar. Entonces, si yo estoy en una conversación como mucha gente que tú escuchas, usted le ha pasado también. Tú dices oye, escuchar una noticia. No, evité escuchar. Ya hace un año que no escucho. Así tú le dicen una firmeza y pregunta un.
+
+Jorge Padilla Ogalde (26:08.531)
+mmm
+
+Paola (26:12.823)
+terremoto en tailandia no tengo ni idea qué mal por ellos así escucho una persona pero que está indolente con el mundo ya no hemos puesto tan indolente que ni la noticia escucho
+
+Gaston Feijoo (26:23.867)
+Paola, ¿puede ser que hoy estas excusas, más que tomarlas como desafío, las usamos como limitantes?
+
+Paola (26:30.425)
+Yo creo en eso Gastón, yo creo en eso, yo creo directamente, una limitante, osea, la excusa funciona, por eso las ponemos, si no, osea son validas. Entonces, es una buena justificación para no hacer lo que necesito hacer. o le endoso al otro, manito conejo, estoy al frente, no, yo no tengo nada que ir a la embarrada hasta el frente. Bueno, mira, una cosa que a mí, y quiero colocarlo en una conversación porque hoy estamos llenos de ley, es la ley Karin ¿no?
+
+Oscar Vergara (26:58.802)
+mmm
+
+Paola (26:59.961)
+Esa ley es nefasta bajo mi juicio porque en vez de enseñarle a la gente a conversar, a crear conversaciones, a que las conversaciones difíciles se tienen que solucionar desde la conversación. Entrenemos a gente a crear conversaciones apreciativas. Exactamente. imaginate que a un niño le vas a que poner la ley Karin porque le contestó? Porque el profesor le dijo algo. osea, ¿cómo? Yo siempre he dicho, mira, siempre he dicho lo siguiente cuando un chico le dice la pregunta, ¿cómo te fue la prueba?
+
+Oscar Vergara (27:13.636)
+a resolver ellos mismos los problemas.
+
+Paola (27:29.657)
+La vieja puso un 4 y vos ni a que nota te sacaste? La vieja te puso y tu que nota te sacaste No, entonces tu vas a al colegio a solucionar la nota a tu hijo si tu hijo dejó de estudiar lo que le gustaba, lo hizo mal tal vez, no estudió como correspondía, no pidió ayuda, pensó que estudió bien. Cómo ayudamos a ese niño a decirle bueno, qué nota te dice que queréis sacar para la proxima para prueba? No sé, mejor nota. Qué nota? Un 7. Qué te falta para el 7? Qué necesitas tener? En qué te puedo ayudar?
+
+Oscar Vergara (27:31.442)
+Claro.
+
+Jorge Padilla Ogalde (27:39.187)
+Sí.
+
+Oscar Vergara (27:59.482)
+Dejadme ver bien.
+
+Paola (27:59.501)
+Pero si voy a a pelear con la profesora porque le sacó un 4, ¿qué conflicto genero ahí? No me hago claro que...
+
+Oscar Vergara (28:06.218)
+Y ahí también viene el hacer como esta situación de espejo con el otro de decir, oye, yo me saco un 4, pero la mayoría del curso se sacó un 4. ¿Qué es lo que pasa a nivel general? Es como, oye, no, pero se está viendo. Claro, es exacto. Exacto. Pero siempre se externalizarlo.
+
+Paola (28:15.703)
+También, claro. Claro.
+
+Gaston Feijoo (28:16.842)
+claro.
+
+Jorge Padilla Ogalde (28:19.123)
+Puedes ser el profe malo, y ahí empieza el profe malo, o al final... es claro.
+
+Paola (28:22.169)
+y que fue malo. Entonces bueno, conversen con el profesor, claro, pero yo papá, me pongo con este poder de autonomía también, entonces el hijo de Jorge, si no empieza a ir a conocer la autonomía, tengo un papá detrás que me sostiene todo y voy creciendo, no quiero un papá que esté todo el día al lado mío, quiero era un papá que me dejé crecer, pero cuando tenía que dejarme me dejé crecer, no me dejó crecer porque siempre estuvo ahí. Entonces eso es, y eso es el desafío de ser papá, de ser grande.
+
+de muchas cosas, ¿no? Claro, exactamente.
+
+Oscar Vergara (28:51.89)
+de ser lo que sea que seamos, prácticamente. Qué complejo. Qué complejo porque al final del día es eso. Podemos ser muchas cosas, podemos ser, no sé, como estamos haciendo ahora, podcasters, podemos ser coach, podemos ser vendeores, podemos ser papás, mamás, etcétera, pero cada una de esas cosas requiere enfrentar un desafío diferente. Y cuando estábamos, de alguna manera, como analizando tu perfil, revisando tus redes para conocerte un poco más y entender cómo te vas desarrollando,
+
+Una de las cosas que mí me llamó particularmente la atención es que tú eres coach y has sido coach de diferentes tipos de ramas. Has sido coach deportiva, del gobierno, etcétera. me viene esta pregunta autoreflexiva de el coaching o lo que tú haces tiene que ver con un comportamiento más humano indiferente del ámbito en el cual nos movamos. Cierto? Es algo más psicológico, es algo más de plantearse en la vida como que, oye, quiero avanzar y esto no me la va a ganar.
+
+¿Cómo lo enfrentas tú cuando tienes este abanico distinto de personas que hacen tanta cosa diferente, pero tenemos que ayudarles y coachearlas para llevarla adelante?
+
+Paola (29:59.565)
+Sí, mira, el coaching, yo estaba estudiando psicología cuando descubrí el coaching en una revista en un baño tirado. Estaba en la universidad, fue una fiesta y había una revista que decía coaching. Era como, ¿qué pasa? No me acuerdo de ese tipo de revista.
+
+Jorge Padilla Ogalde (30:10.835)
+¿Cuándo se leia en el baño
+
+Paola (30:14.553)
+cuando se leia decía, estaba tirara ahi asi es que yo la recogi yo iba a trabajaba en una consultora, ya, trabajaba. Entonces dije, ¡uy, qué increíble esta cuestión! Es lo que yo quiero. Solté la psicología, no terminé, no me titulé, y me dediqué al coaching, me formé, ¿sí? Y yo rescato el coaching y por eso lo defiendo y creo, es la metodología que te desafía para el futuro.
+
+Gaston Feijoo (30:14.818)
+¡Qué coño!
+
+Paola (30:43.289)
+No es la terapia, tú ves y te, igual que usar un fármaco porque necesitas ser acompañado con algo que te mantenga mejor, es necesario. Pero conversan porque todas estas distinciones conversan, Y son necesarias en momento que la persona lo necesite. No son...
+
+lo que lo que cuanto una persona requiere terapia cuando necesita coaching, el coaching lo que hace que para las personas que no tengan un tema puntual de salud mental que puede ser una angustia, una depresión, varias distinciones de la salud que son condiciones que no que no te acompañan dentro del coaching porque porque el coaching te mueve Oscar, te dice tú quieres ir para allá? qué estás haciendo para que eso ocurra?
+
+¿Qué estás dejando de hacer? Entonces lo que hace el coaching a través de un procedimiento, a través del coach, que es la persona, te acompaña porque la respuesta siempre la tiene la persona. Eso es muy curioso. La gente busca un coach como que buscar un mentor, un asesor y son distinciones totalmente distintas. El coach lo que hace es que dice, ok, tú querís ir para allá y ¿Qué vas a hacer? Yo voy a estar acá. Entonces yo lo que hago es movilizar la comodidad para que la persona se incomode.
+
+Oscar Vergara (32:00.754)
+.
+
+Jorge Padilla Ogalde (32:01.299)
+mmm
+
+Paola (32:01.593)
+Me encanta la incomodidad. Yo nací en la incomodidad y desarrollé mi incomodidad. A mí no me gustan las cosas que surjan con facilidad. A mí, yo soy súper resiliente. Yo siempre, yo soy una mujer... Mira, yo trabajaba, yo estudié en la universidad, mi primera carrera estudió producción física. Yo vivía en Quilpue y no tenía plata para irme a micro y me iba corriendo. Yo corría de Quilpue a Valparaíso. Y te lo digo así.
+
+Oscar Vergara (32:28.082)
+Por fin.
+
+Paola (32:29.771)
+Yo, mi papá me acuerdo textual, que quebró, tenía una empresa constructora y me llego a la casa y estaba vacía, vacía. Lleva la vida, estaba vacía, no había nada. Y yo no entendía. Entonces, es que tuve y voy a la universidad y justo veo un cartel, decía, clase de prueba de física y yo no la podía dar porque no decía, Paola Lombardi y dos compañeros más no la podíamos dar. Y voy a preguntar y era porque mi papá no había pagado todo el año la carrera. Imagínate.
+
+Oscar Vergara (32:40.845)
+reinvención misma.
+
+Paola (32:59.449)
+Tuve que ir hablar con la persona. ¿qué hice? Empecé. Trabajé. Vendía las feria de las pulgas en el Valparaíso paraíso, bicicletas por parte. Nunca había vendido bicicletas como esta vez. Me iba a las 6 de la mañana o los domingo y ponía la bicicleta. Entonces, yo sé lo que es el no tener y el querer tener. Entonces, a mí no me cuente que es imposible. O no. Yo creo que todo se puede. ¿Cómo lo hago para... esa convicción que tengo?
+
+construirla. Hay gente que por supuesto te tira a cargo, los miedosos, la gente que es más miedosa te dice no, no se va poder, pero el miedo lo tienes siempre, nosotros vivimos con el miedo y el miedo te cuida, pero cómo eres capaz de dar un paso más allá y decir que yo quiero esto y para eso tengo que estar en el desde yo tengo que hacer algo más. Mira, yo soy coach de dos equipos de futbol en Chile, del Everton y Audax Nindo me decía pero cómo?
+
+Jorge Padilla Ogalde (33:52.957)
+Mira.
+
+Paola (33:55.561)
+El Everton, esto fue el 2012, estuvo a punto de en segunda división y no cayó por este trabajo. No quedaron muy partidos. Yo les dije al directorio Antonio Bloise y a Antonio Martínez, compadre, arriba todos tienen ustedes que armar equipo. Vamos todo el partido, todos los directores y vamos a estar con los hinchas y vamos a estar ahí. Nunca una mujer se habia metido en un camarín de fútbol. Y esta me tocó con el Castañeda como entrenadora. Entonces.
+
+Muchas cosas que yo roto, creencias, porque yo creo que rompiendo creencias uno logra lo que quiere y lo disfruta. Esto no es capricho, es pasarla bien. Es decir, yo quiero esto, tengo un entorno que no me lo puede dar, pero no por eso no lo puedo lograr yo. O sea, hay hitos importantes de mucha gente y ustedes mismos tienen historias. Todos tenemos historias de resiliencia, pero no puede ser, es que lo hiciste porque querías algo más grande.
+
+Entonces, el cómo lo hacemos es muy importante. Yo siempre he dicho y se los cuento, esto es papel muy importante plantearlo. La gente floja no existe. Para mí es el tiene propósito, para la gente que no tiene propósito. Porque esa persona no es quien no quiera, no sabe cómo. Entonces, si tú acompañas a una persona, porque la persona no es quien no haga nada, el no hacer nada también es hacer algo. Cuando la gente se queda paralizada,
+
+Jorge Padilla Ogalde (35:03.792)
+gente floja no existe
+
+Paola (35:20.945)
+cómo buscar es porque tiene miedo a dar un paso y que no hace nada está tomado por el miedo está paralizado la comodidad que tenía en ese espacio le es más segura por eso no se mueve cómo lo acompañas ahora si tiene hambre lo va a hacer si no quiere esto también tiene que ver con la actitud acuerda que como profe que una competencia tiene tres ejes actitud conocimiento y habilidad si esa competencia no la mueve de esos tres ejes
+
+Gaston Feijoo (35:39.077)
+Sí.
+
+Paola (35:50.921)
+No me muevo la incompetencia, soy incompetente. Pero tengo que tener hambre a creer y lo primero que tenemos que tener hambre es actitud. ¿Quién no tiene actitud?
+
+No logra nada. No, no porque...
+
+Oscar Vergara (36:02.384)
+no lo hace, no logra nada. Hay algo en tu comentaste, tu comentaste el principio de que todos somos líderes o todos pueden ser líderes, incluso un bebé con su chupete tiene que liberar su chupete. Quizás me voy a meter en otro mundo totalmente distinto, enlazado con lo que estamos hablando, pero en esta. Sí, es que definitivamente, definitivamente, sí, es que son tantas cosas las que las que van conectando con lo que estamos hablando. Entonces.
+
+Paola (36:12.057)
+No.
+
+Jorge Padilla Ogalde (36:21.285)
+Creo que te llegó un recuerdo
+
+Paola (36:24.505)
+Sí, me encanta esto.
+
+Oscar Vergara (36:29.97)
+En esta dinámica de que todos somos líderes y de alguna manera todos podemos proyectar en otras personas y ayudar a otras personas a poder mejorar y a buscar ese siguiente paso. ¿Cómo ha sido para ti esta como aborigen, revolución de las redes sociales en general donde aparecen muchos líderes o autodenominados líderes? No quiero hacer comillas, pero ya las hice. Pero ¿cómo enfrentas tú desde tu posición de
+
+Paola (36:53.721)
+Sí. A mí es muy bien.
+
+Oscar Vergara (36:59.666)
+de coach que llevas, no sé, 30, más de 30 años como coachando y aprendiendo sobre esto, cuando muchas otras personas más pueden ser líderes y empiezan a tomar esa batuta de liderazgo pero con una autoridad un poco más como avasalladora, por decirlo de alguna manera. ¿Cómo ha sido para ti este proceso?
+
+Paola (37:17.175)
+Oye, Oscar, me encanta ese espacio porque yo soy crítica de eso. Yo soy bien irreverente de eso. O sea, yo creo que... Yo entrando cada vez más en la emocionalidad y conociendo la emocionalidad de la gente, respeto lo auténtico de los seres humanos, lo único y particular. El éxito para ti es distinto para mí. ¿Sí? ¿Me entiendo lo que te quiero decir?
+
+Oscar Vergara (37:23.163)
+mmm
+
+Jorge Padilla Ogalde (37:42.867)
+Sí.
+
+Oscar Vergara (37:46.204)
+Sí, claro, por supuesto.
+
+Paola (37:46.507)
+La gente idealizamos hitos. Entonces el liderazgo es hacer esto. El link es que todos winners, son todos campeones, son todos crack. Todos somos los que todos, todos saben que que crear una universidad de liderazgo en Chile porque tenemos los mas buenos
+
+Oscar Vergara (37:55.378)
+Ha dado el leído súper bien.
+
+Gaston Feijoo (37:56.998)
+Pero... Paola, ¿sabes que...?
+
+Jorge Padilla Ogalde (38:03.891)
+jajajajaj
+
+Paola (38:06.905)
+todos saben de todo y
+
+Gaston Feijoo (38:09.097)
+Nos pasaba... Nos pasaba... Creo que fue el viernes pasado que estábamos teniendo esa charla, pero sin grabarla, y hablábamos un poco justamente más de tu rubro, ¿no? De los coach. Y yo decía, forma de chiste, decía, debe ser desafiante porque tenés coach. O sea, yo sé que ti no te gustan los títulos, pero tú eres master coach corporativa, uno entra en tu LinkedIn y puede ver que tienes 30 años de trayectoria, más de 17.000 seguidores, osea...
+
+Es como que yo miro tu LinkedIn y digo, ok, acá hay una coach hecha, derecha, formada. Pero después aparecen personas y lo voy a hacer mitad en serio, mitad en chiste, que parece que levantaste una tapita y salió y Master Coach, Happiness, Felicidad, Full HD en 4K. Claro, y te hablan con una seguridad y yo digo, debe ser desafiante para ti y para otros tantos profesionales formados realmente como coach que después en el...
+
+Paola (38:47.129)
+y
+
+Paola (38:52.8)
+No
+
+Gaston Feijoo (39:03.976)
+vulgar colectivo de la gente se mete todo, toda esta gente en un mismo saco, Y no, ah, están los coachs. Y cuando uno mira y dice, bueno, pero si yo abro este saco de coach, hay coach, y hay, como dijo antes Oscar, coach. ¿Cómo, cómo haces para avanzar en un mundo, como tú dices hoy, donde todos son grandes influenciadores de LinkedIn, cómo te separas tú y para decir, sin, ofender a nadie, decir, a ver, yo soy de real coach, no.
+
+Paola (39:16.919)
+Claro.
+
+Gaston Feijoo (39:32.518)
+No, el que hizo un curso de media hora en YouTube y te dice que te va a dar la felicidad que capaz que él ni siquiera encontró.
+
+Paola (39:34.968)
+Bueno.
+
+Paola (39:39.319)
+Sí, mira, ese es un tema que me encanta que ahora traigan porque es una de cosas que yo más he cuestionado este el último tiempo. Y me genera mucho ripio a mí, me molesta y soy bien crítica de eso. Además, soy bien irreverente. Y yo lo cuestiono gente. Mira, hay un psicólogo chileno, no lo voy a nombrar por respeto a él, pero que es irreverente, desafortunadamente.
+
+Oscar Vergara (39:51.995)
+Muy curioso.
+
+Jorge Padilla Ogalde (39:59.54)
+¿Ya?
+
+Paola (40:08.657)
+descalificando los clientes. El tipo habla de los clientes tóxicos, de los líderes tóxicos. Y yo un día le contesté, en LinkedIn pero si de esa gente tú vives.
+
+Jorge Padilla Ogalde (40:16.912)
+Claro, se alimenta de eso.
+
+Paola (40:18.297)
+¿Tú vives pagando sueldo? Exactamente, ¿cómo hablas mal de una persona o de un estilo de liderazgo que tú lo criticas y lo pones como un argumento negativo y lo castigas psicológicamente, además con la propiedad de sentirte psicólogo y poder y universitario y la grande universidad de Chile, y la gente le da poder a ese comentario y tú ves que empiezan a hablar, osea, ¿que es ser tóxico?
+
+Oscar Vergara (40:18.707)
+O esa es la gente que nosotros apuntamos como coach a mejorar.
+
+Paola (40:47.481)
+Yo digo, ¿qué es ser tóxico? ¿Quién conoce la historia de esa persona si está sentada en un asiento de liderazgo, administrando millones de dólares, administrando cantidad de gente, haciendo que la empresa no quiebre? O sea, el tipo tiene que ser un enojon tiene que tener miedo, tiene que tener carácter, tiene que vivir la felicidad. ¡Es un ser humano! Pero por supuesto, Oscar, o sea, un tipo que vive las 8 emociones básicas todo el día.
+
+Gaston Feijoo (41:06.79)
+¡Es un ser humano!
+
+Oscar Vergara (41:07.122)
+Y amad, y amad, y amadle basta de todo.
+
+Quedate.
+
+Paola (41:15.829)
+Entonces, vienes a cuestionarle tú con qué hay derecho. Siéntate un ratito si tú estás de afuera y en vereda del frente criticando a un gallo. Sentarse en ese pellejo. Mira, yo vengo a una empresa ahora que que trabajo con ellos 40 años. 40 años esa empresa en Chile. Tres, socios, los creadores y dos socios y dos directores. Son directores entre socios y dos directores externos. Tiene hoy día le preguntaba a las personas cuánto, te tiene esta.
+
+esta gente, o cuántos trabajadores, 5.000, o sea, tienen una isla de Pascua, yo trabajé dos años en la isla de Pascua, tienen una habitación, ustedes tienen una isla como habitante, o habitan acá lo que habita todo el habitante de la isla de Pascua, o sea, viven, van al doctor, pueden sanarse, se compran un auto, sea, tienen relaciones, vinculan, tienen hijos, van a la universidad, ¿me entienden? Entonces, cuando yo le doy normas a otro,
+
+Oscar Vergara (41:51.762)
+Dimensionarlo es heavy.
+
+Jorge Padilla Ogalde (41:58.332)
+Mira.
+
+Oscar Vergara (42:04.46)
+en relaciones con otras personas, se comunica, etcétera.
+
+Paola (42:14.681)
+cuesta, hay que ser muy cararaja. ¿Estás bien? sea, yo... Claro, con qué cara, y qué tipo de liderazgo, tú también tienes el mismo... El tipo está ahí hablando de liderazgo y no sé, ¿estas separado? Y rompiste tu matrimonio y hiciste tal cosa. Eso no es liderazgo. ¡No, no, no! tiene tejado de vidrio
+
+Oscar Vergara (42:18.489)
+Me encanta eso, Sí, hay que tener cara de palo. Sí.
+
+Oscar Vergara (42:38.04)
+No podiste ser un buen líder en ese aspecto. Claro.
+
+Paola (42:41.049)
+No entiendo que que no tenga tejado vidrio, lo que ocurre es que sea consecuente, que sea capaz de sabes que yo, este modelo de mi vida, como yo siempre he yo tengo una cosa que a veces a la gente le molesta, yo no tengo esta referencia de responsable más que yo misma. Yo creo en lo que yo logrado y yo no lo puedo decir sin sabes que yo tengo una hija que tiene 25 años que hace, la única, yo no podía tener hijos antes de casarme y la Pili nació.
+
+por que Dios es grande, pero yo no puedo decir, bueno tú ahora, no se, yo me vivía los siete años, me fui a mi casa y vivi en una pieza, tú ahora haz lo mismo, anda y vive lo que es la vida, sácate la mugre, no puedo, eso es una otra realidad, el escenario de ella es totalmente distinta, ella aprenderá lo mejor de mí y la mejor versión que tengo yo y se la llevará para la vida, como yo aprendí de mis padres, pero no puedo decir, repite el patrón mío porque ese es el que funciona.
+
+Gaston Feijoo (43:25.931)
+No
+
+Jorge Padilla Ogalde (43:26.483)
+sacce.
+
+Paola (43:40.481)
+ puedo hacer así, seguro que no sirve.
+
+Oscar Vergara (43:41.786)
+No, porque ahí viene el trabajo de autoconstrucción también.
+
+Paola (43:45.197)
+Y además, como decía bien Jorge, ¿cómo hacemos que las personas tengan autonomía? Si yo quiero que mi paradigma el otro lo replica, no es así. No sirve eso. Por eso creo que a mí me genera mucho ruido, como ustedes bien plantean, lleno de recetas. No hay receta. Mira, no sirve. Son realidades.
+
+Gaston Feijoo (44:08.076)
+No, y una receta genérica además, que no entiende que somos todos diferentes, todos vivimos momentos diferentes, tuvimos experiencias diferentes, aparece alguien que te dice, seguí estos tres pasos y mañana voy a ir al lado del nutricionista, ¿viste? No, vos te levantás todos los días, a la día de la mañana, voy a inventar cualquier cosas, te tomás un vaso de agua, te comés una yema de huevo y en 15 días tenés el abdomen marcado, y salen todos a hacerlo y vos decís, no, o sea...
+
+Paola (44:32.311)
+Claro.
+
+Gaston Feijoo (44:35.582)
+Cada cuerpo tiene una receta que le funciona que no y además si fuera tan fácil lo haríamos todos. Entonces pueden decir, ¡Ay! Yo lo hice y no me funcionó.
+
+Paola (44:41.049)
+Claro, si tenemos dos clones. Claro, si tenemos todos clonados todos iguales, comen lo mismo, va a tener el mismo cuerpo Y no es así. por eso es importante, yo creo que hay que tomar distancia en eso. Y eso el coach lo hace. Ahí, Oscar, cuando pregunta, el coach lo que hace es respetar el proceso, la cultura de esa persona, el contexto de vida, su historia de vida. También yo, mira, yo cuando era chica...
+
+Gaston Feijoo (44:47.563)
+clas
+
+Paola (45:10.625)
+me terapie de chica, estábamos un colegio muy particular y nos trabajábamos mucho con psicólogos. Salí de la universidad, fui psicólogo, tuve ocho años de psicoanálisis. Yo creo en ese espacio. Yo hoy día tengo una escuela de formación de cosas. Claro, y porque tenés que mirarte. O sea, yo no puedo decir no, sabés que yo no tengo problemas. A mí me cansa escuchar gente, me duele los dolores de las personas, me cuesta mucho a veces llegar a ciertas personas que no salen de su espacio, pero yo tengo que terapiarme para poder...
+
+Oscar Vergara (45:22.546)
+Ten en el acompañamiento.
+
+Paola (45:40.705)
+tener los recursos necesarios emocionalmente, sostener lo que yo escucho. Te fijas? Entonces no puedo decir no, soy bacán, traiga para acá, si me pongo una carpa y listo, me resbala todo. No es así. Estamos conectados con la emocionalidad. Entonces yo sí creo, a como dé lugar, que las personas tienen que, tenemos los seres humanos la responsabilidad si queremos algo. Y por eso, y saber que eso no está en la zona de confort, está en la zona de la incomodidad. Y para crecer...
+
+Jorge Padilla Ogalde (45:51.173)
+jajaja
+
+Paola (46:10.327)
+hay que vivir y pasar por la incomodidad. Eso sí.
+
+Jorge Padilla Ogalde (46:13.307)
+Paola, en ese relato, hay varias ideas que hemos sacado. Una, en el sentido de que la gente se queja fácilmente y que vive del miedo y que tiene que tratar de salir de ahí para poder avanzar, para poder desplazarse. Y lo llevamos a un ejemplo recién. Por ejemplo, este ejemplo que diste tú del líder tóxico. Hay mucha gente que se siente que está siendo liderado por un líder tóxico en un diagnóstico que hacen en conjunto y que finalmente se queja de ser líder tóxico.
+
+Yo siempre he tenido la duda de que en estos cargos más estratégicos, y lo hemos conversado en otras reuniones que hemos tenido, es que hace ese coach con esa persona, porque efectivamente hay personas que tienen, están ahí porque son unos crack, derechamente administrando las compañías, pero la forma de comunicarse, la forma de manejar sus emociones, no está funcionando con ese manejo de la compañía. yo te voy a provocar con dos preguntas, una más provocadora que otra, pero sin decir nombre, ¿qué caso...?
+
+Paola (47:08.621)
+Dale.
+
+Jorge Padilla Ogalde (47:12.947)
+especial te ha tocado ver así que haya sido uno de tus casos que tengas tatuado y que digas oh este fue un caso muy muy bueno y que evolucionó muy bien y que hace un coach en ese nivel porque tienes personas con un nivel de ego gigantesco que viene alguien a decirle cómo tiene que ser o viene alguien a conversarle cuando en realidad él tiene cinco reuniones en paralelo y está escogiendo cuál va te dejo esas dos provocaciones ahí para avanzar
+
+Paola (47:38.425)
+Mira, yo quiero hacer la distinción de la metodología, el coaching no te dice como metodología lo que tienes que hacer, sino que te desafía a través de la indagación, que para mí también es importante preguntar y indagar, tiene una distinción muy extrema. Yo pregunto, cuando pregunto, pregunto para escuchar lo que quiero escuchar y cuando indago pregunto desde ti. Es una forma distinta de acercamiento al ser humano.
+
+Oscar Vergara (47:53.714)
+y
+
+Paola (48:06.553)
+cuando yo te indago quién eres, de dónde vienes, cuáles son tus intereses dónde hablas, cual es tu historia, ¿no? Claro, conocerte, pero si yo hago solamente preguntas, estoy haciendo una respuesta, pregunta, respuesta, no es eso, ¿sí? Entonces, el coach lo que hace, un buen coach lo que tiene que hacer es indagar quién tiene el frente.
+
+Oscar Vergara (48:11.634)
+te invito a desarrollar.
+
+Paola (48:28.057)
+y ese al frente tiene un mapa. usted, yo les digo en este momento a ustedes tres, describeme la pantalla que tienes, estamos en la misma pantalla, supuestamente, ¿no? Y cada uno me la va a interpretar de la distinta forma de donde ve.
+
+Y cuando veo, veo y observo distinto porque el acto de ver es un acto biológico. Pero la observación tiene que ver con tu corporalidad, con tu instinto, con tu olfato, con tu escucha, con tu tacto. Hay un modelo en PNL que se llama VAK, visual, auditivo, kinestésico. Nosotros somos seres integrales. es que bajamos la cortina y yo ahora soy solo cerebro, más rato soy emocionada. No es así.
+
+Jorge Padilla Ogalde (48:52.049)
+Percepción.
+
+Paola (49:09.195)
+Somos seres integrales. hoy día yo veo la ordenación cuando me dicen de un caso puntual. Tengo varios, yo creo que las personas que más cuesta hoy día a mí me ha costado acompañar son las personas que son soberbias en su forma, en el sentido de que así me ha funcionado y así quiero que mi empresa funcione. No va a cambiar esto.
+
+Oscar Vergara (49:33.65)
+Yeah
+
+Paola (49:36.511)
+Entonces yo le digo mirando, digo, bueno, quieres que yo haga acá? Porque yo creo en el cambio. Si tú quieres y cuando hay que hacer romper esa creencia, decir, oye, conversemos con porque tú tienes mucho, tú una empresa que le ha logrado estar donde está, no es que lo ha hecho mal, lo ha hecho más bien, pero a qué costo, La relación de los vínculos, de las confianza. Mira, hay dos temas hoy día muy fuertes.
+
+Gaston Feijoo (49:40.771)
+Claro.
+
+Jorge Padilla Ogalde (49:40.787)
+Claro.
+
+Jorge Padilla Ogalde (49:56.071)
+Claro.
+
+Gaston Feijoo (49:56.463)
+¡Claro!
+
+Paola (50:04.345)
+que tienen que pasar hoy, que están pasando los grupos humanos, las organizaciones humanas. Uno es la confianza, que es un valor que se está perdiendo, porque la gente no confía ya.
+
+Oscar Vergara (50:15.538)
+Y yo creo que tiene que ver un poco con lo que tú comentabas hace un momento de la conversación difícil. osea, si no nos comunicamos, si no tenemos conversaciones, si no expresamos lo que estamos sintiendo, tratando de que el otro pueda evitar ese dolor en uno y llegar a acuerdos, sin comunicación la confianza creo que no se logra.
+
+Paola (50:37.045)
+Sí, exactamente. lo lo primero que un coach tiene que saber que la persona que tú tienes al frente es un ser humano como bien dice un Gastón que tiene las mismas necesidades tuyas, tiene los mismos problemas tuyos, tú no eres un guru, no eres un, no eres el, no estás en el limbo, eres un cristiano igual que tú y que tú tienes habilidad, una metodología que lo puede hacer ver cosas que no estás viendo porque esta es parte del problema. Él está en una caja como la vicera de los caballos, es parte de las, no veo otra cosa. Tú le sacas la vicera a los caballos carrera y se desbocan, ¿no cierto? Aquí también es...
+
+y sacándole la visera de a poco para que vean que el paisaje es más grande que en la cancha de ping pong que está, en la mesa de ping pong. Pueden mirar otras cosas, pero eso es de a poco porque tiene un ritmo. con muchos jóvenes que entran en la universidad, un cabro de ingeniería comercial que está en la Adolfo Ibañez y baña es distinto a un cabro que está en la Universidad de Chile que tiene una mentalidad mucho más distinta, su filosofía es distinta, forma, su tatuaje son distintos, sus conversaciones son distintas. yo trabajé en la Andrés Bello mucho tiempo haciendo clases, es otro perfil.
+
+Oscar Vergara (51:29.958)
+Sí.
+
+Paola (51:36.397)
+el ingeniero que dice distinto al formático, al informático de la enfermera, es totalmente distinto. ahora, ¿tienen hilos conductores? Sí, tienen la emocionalidad igual que todos nosotros, lo que pasa es que cómo la manejan. Entonces, una empresa, cuando tú entras a acompañar a un equipo, a una persona, es leer esa cultura, cuáles son los miedos que nos tienen, que dónde... Mira, la gente se queda más en la carencia del ser humano que en la oportunidad. Y es un lenguaje para mí muy importante.
+
+Cambiar el lenguaje cambia el resultado. Y eso es así. Es así de simple. yo... Mira, yo hago mucho deporte. Yo soy una mujer que vivo... Para mí es mi pastilla. Yo hago mucha actividad física. Y para mí es algo muy importante. Entonces, si a mí me dicen no durante un mes, que me pasó, una lesión jugando a padre en los meniscos de la rodilla izquierda, casi me morí.
+
+Gaston Feijoo (52:17.681)
+y
+
+Paola (52:31.449)
+aléjenseme porque nadie me aguantaba porque mi canal de desarrollar mi enojo, mi rabia, mi miedo tiene que mucho con el deporte porque me enfrento a un espacio desafiante que a me ayuda mucho entonces cuando no lo hago me desboco y es natural porque tienes una pastilla que se llama deporte, otros toman otras cosas, comen una cerveza, otro se fuman un pito, lo que sea, pasa eso
+
+Oscar Vergara (52:50.482)
+No.
+
+Jorge Padilla Ogalde (52:50.49)
+Claro.
+
+Jorge Padilla Ogalde (52:55.507)
+jajaja
+
+Paola (53:01.593)
+tenemos que regular eso pero no podemos decir que mi regulación es tú usala porque lo que yo hago a ti te sirve eso no puede ser
+
+Oscar Vergara (53:09.794)
+Claro, es una plantilla para todos.
+
+Jorge Padilla Ogalde (53:10.802)
+Ahora de...
+
+Paola (53:14.009)
+no una receta. las organizaciones, lo primero que hacen coaching es conocer esa cultura y el desafío que yo he tenido más grande, yo he trabajado con personas que trabajan con su cuerpo. ya, entonces sacarlas a esas mujeres de ese espacio no fue fácil.
+
+Oscar Vergara (53:31.506)
+y
+
+Oscar Vergara (53:38.938)
+Me imagino, me imagino.
+
+Paola (53:40.355)
+porque tiene un paradigma, porque tiene una forma que las ha llevado y no lo hacen porque quieren. Lo hacen en realidad. Y tú, yo tengo una historia muy bonita, una niña que yo acompañé mucho rato, después estudió prevención. Prevención. Y trabajó en una empresa. Y después me llamó porque quería ser coach. sea, imagínese ese proceso. Eso brillante, eso es maravilloso.
+
+Oscar Vergara (53:44.69)
+son realidades totalmente distintas.
+
+Oscar Vergara (54:02.386)
+Wow.
+
+Jorge Padilla Ogalde (54:02.641)
+Que increíble, que increíble salir de ese espacio.
+
+Gaston Feijoo (54:07.174)
+chau.
+
+Oscar Vergara (54:08.986)
+Es una transformación, es una reinvención gigantesca.
+
+Paola (54:12.633)
+una mujer con hijos, tú dices chuta, y entonces conocer esa realidad no es menor. A mí me ha tocado conocer personas de distintas culturas, con tanto precariedad físicamente, precariedad emocionalmente y precariedad por recursos. La precariedad no tiene una sola distinción, tiene muchas, pero la más peligrosa es la mental.
+
+y la emocional por supuesto. cuando tú ves que una persona es tan sana en ese espacio pero tiene una precariedad desde el espacio físico, tiene muchas más posibilidades de salir de ese espacio. Pero si yo... es un desafío para un coach y además que tú te identificas con eso. Hay momentos que tú sientes, esto lo viví yo.
+
+Oscar Vergara (55:06.578)
+En esa línea hay cosas que tú algunas veces o procesos de coaching que tú has evitado o que has rechazado por lo mismo, porque te has generado un problema interno.
+
+Paola (55:15.073)
+Sí. En el coaching no puedes couchear a personas que tengan una situación de salud mental inadecuada, por ejemplo, un trastorno, Porque hay que esa persona esta tomando un fármaco, hay que pedirle que por termine ese proceso que es primordial.
+
+Oscar Vergara (55:27.248)
+mmm
+
+Oscar Vergara (55:35.73)
+porque de alguna manera no estás trabajando con la persona real, por decirlo de una forma.
+
+Paola (55:39.641)
+y además que el coaching como te decía te mueve, desafía que te mueve, que hagas acciones, el otro es como un flotador, la terapia te mantiene con un flotador para que te mantengas bien y puedes y tenga un ritmo cuando tú puedas salir de ahí y te ayude con el farmaco con terapias mensuales, que se yo el proceso que tenga la persona, entonces es contradictorio, uno te empuja y el otro te retiene, eso no habla de bien, la persona dice ¿a quién le hago caso? al coach, entonces ¿qué hago yo? cuando me pasa mucho eso, ¿qué pasa? oye mucho más.
+
+Jorge Padilla Ogalde (55:42.694)
+Claro.
+
+Oscar Vergara (55:51.922)
+de
+
+Gaston Feijoo (56:00.712)
+Claro.
+
+Paola (56:07.841)
+oye, mucho más gente que está con terapia. Pregúntale a tu terapeuta si estás preparado para hacer... porque es un proceso personal. También te vas a mover, te va a remover emociones. Pero por supuesto, oye, pregúntale si él acompaña este proceso.
+
+Gaston Feijoo (56:17.893)
+Vas a tocar fibras que...
+
+Paola (56:25.441)
+Si tú estás preparado emocionalmente para habitar un espacio de coaching y uno tiene que respetar eso. Si uno puede sentirse que es la gurú, que la cuestión es yo te voy a salvar, te dejar ahí arriba. No es así. No, eso es mentira.
+
+Oscar Vergara (56:37.202)
+Porque como tú decías anteriormente, una autoreflexión, un auto salvarse, cambiar requiere trabajo de uno mismo.
+
+Paola (56:45.145)
+Así es, mirarse y estoy preparado, tengo ganas, quiero. Hay muchas organizaciones que contratan coaches para ciertos niveles y la persona lo quiere. O sea, y no quiere y tú no puedes hacer nada.
+
+Gaston Feijoo (56:58.121)
+No se puede ayudar el que no se quiere dejar ayudar.
+
+Paola (57:00.275)
+Así es. Así es.
+
+Jorge Padilla Ogalde (57:01.907)
+Paola, una pregunta a raíz de lo que comentaste recién en la frase de que hoy dia hay mucho más gente que se terapea. Yo por ejemplo soy consultor y he estado con algunos de empresarios, dueños de empresas que son de una generación mayor y me dicen en el mensaje como, oye la crisis de pánico, decía el otro día uno. ¿Qué pasa de esta generación que hay crisis de pánico? ¿Ahí? Exacto, o sea...
+
+Paola (57:23.961)
+No.
+
+Oscar Vergara (57:27.794)
+no nos pasaba
+
+Paola (57:30.543)
+nada!
+
+Jorge Padilla Ogalde (57:31.007)
+Te fijas que esa es una realidad que está instalada, es como decir, algo ocurrió, lo que escuché mi vieja que dijo así como, ¡hoy dia todos nacen con TEA Como que, o que pasa con lo del TEA como que, pero tiene que ver desde lo comunicacional también, ahora todo es TEA si te fijas en el comunicacional y lo dejan todos en una misma bolsa cuando en realidad hay muchos aspectos distintos, pero, ¿qué te pasa a ti que en el sistema estuvo a hablar con eso? ¿Qué es distinto hoy día? ¿Por qué...
+
+¿Por qué nos terapiamos más? ¿O por qué hay más emociones? ¿O es algo que en tu experiencia se ha emprastado y hoy día hay más ruido nomás de esto? ¿Qué hay ahí dentro de esto que estás encontrado?
+
+Paola (58:10.009)
+Mira, a ver, yo les voy a decir algo, es una analogía que yo hago. pandemia, sea, el estallido social visibilizó a una sociedad que estaba por romper una creencia y explotó. a la gente que estaba invisibilizada se invisibilizó ella. Por eso es que el estallido social, porque una parte de la sociedad visibilizó una forma.
+
+No comparto la forma, pero se visibilizó. Casi una guerra civil, ¿no? Porque nosotros vivimos. Y fue heavy porque un cristiano que tenía un boliche fue quemado, así que acá no tenían a que ver en el cuento. Y yo creo que la pandemia visibilizó enfermedades que nosotros tenemos de siempre. Y nos mostró lo más oscuro de las personas. Entonces hoy día...
+
+Oscar Vergara (58:47.404)
+Importó nada.
+
+Paola (59:00.297)
+El decirlo es sano decirlo. Hoy día se habla de esto. Antes no se hablaba. Antes la pandemia y eso yo creo que el quiere fue la pandemia. La pandemia nos trajo crear conversaciones distintas. Antes no se hablaba porque o sea. Exactamente o la gente decía en la empresa no oye este tipo no se por. Que se yo alcohólico ya y que esta haciendo
+
+Oscar Vergara (59:12.246)
+el comentario no, está yendo al loquero.
+
+Paola (59:27.385)
+sea, tú crees que la persona que tú contrates no puede caer en un espacio distinto? Sí, pero nosotros no hacemos cargo. ¿qué tipo de trabajador o ser humano está contratando que tú percibes que no puede caer en ese espacio? Sí? O sea, tú te haces cargo de lo bonito de las personas, pero no del lado feo de las personas. sea, eso...
+
+Jorge Padilla Ogalde (59:38.546)
+Exacto.
+
+Paola (59:46.047)
+es una realidad que hoy día hay mucho más, sea, las mutuales, las mutuales que hoy día hacen charlas de todos los chicos, antes no, era lo justo, la Mutual era para ir a decir si, no sé si te pagaban la licencia, sé todo ese tema, pero hoy día está lleno, entonces yo creo que era que estaba escondido, Jorge, hoy día la pandemia, yo creo que eso nos trajo apreciativo, No hay más tabú, hoy día, ¿tú lo ves de usted mismo?
+
+Gaston Feijoo (59:53.93)
+¿Nadar?
+
+Gaston Feijoo (01:00:10.922)
+Ya no es mas tabú, antes era un tabú hablar...
+
+Paola (01:00:15.893)
+uno conversa los niños, las distinciones de las conversaciones de todos, o tú hoy día puedes conversar de todo y ya no es, no, esto no se habla, cuando yo chico me da dos coscachos sí, anda con coscachar a los... A lo mejor dan ganas, que con eso se arregle, pero no se va arreglar porque además yo creo que lo estímulo que hoy día tiene una persona...
+
+Jorge Padilla Ogalde (01:00:29.836)
+jajajajaj
+
+Paola (01:00:45.689)
+Son tantos, pero también esos mismos estímulos nos limitan. No sé si me explico. Mira, otro día venia en el avión y estaba la pantalla, ¿no? Y había un niñito, lo sentado al lado de una guaguita que tenía, no sé, un año. Y el niño lo único que hacía era esto. Y la mamá trataba de ponerle un monito porque era una buenas horas Y no sabía porque niñito se apretaba. Como veía el que la pantalla tenía, estaba mirando.
+
+Yo estaba en el pasillo y él estaba al lado y su hermano que estaba al otro lado, cambiaba. Entonces él trataba de eso. tú miraba esto y decía, qué increíble el niñito un año, tenía un año o un año y medio. Y trataba de apretar. Entonces la mamá se cansó porque él le cambiaba, le apretaba, le ponía los monos y volvía a apretar y le puso al final el teléfono. Entonces tú decías, oye, hoy dia los recursos. Si no me funciona acá, me funciona esto. Entonces el cabro dice, claro.
+
+Oscar Vergara (01:01:34.258)
+No,
+
+Paola (01:01:44.121)
+No esto y me pongan acá. No me funciona acá, tengo esto. Antes no era así. Entonces, al vamos limitando, Si hubo una buena oportunidad para esa señora, esa mamá de 8 o de 14 horas de viaje, pero también nos permitimos que el se aburra, no permitimos que el niño llore, porque no puede llorar porque el avión, 50 mil personas. Si lo reto, me van a retar que reto a mi hijo, capaz que me acusen. Claro, es esto que yo te es un plenificioso.
+
+Jorge Padilla Ogalde (01:01:49.127)
+exacto
+
+Jorge Padilla Ogalde (01:02:03.537)
+Se... se enoja, claro.
+
+Gaston Feijoo (01:02:07.914)
+Claro, soy mala madre. Lo reté y todo dicen, qué mala madre. Lo reto.
+
+Paola (01:02:13.301)
+Mientras más oportunidades, estamos en una jaula de oro, yo digo.
+
+Jorge Padilla Ogalde (01:02:18.063)
+Mira, muy buen análisis.
+
+Oscar Vergara (01:02:19.138)
+complejo, qué complejo, qué complejo eso que que que de alguna forma tengamos que avanzar porque como seres humanos siempre estamos avanzando pero hoy día el avanzar se transformaba en un problema de algunos casos porque claro vamos a tocarle la fibra al lado y al lado nos va empatizar y se transforma todo esto en un problema gigantesco y en esa línea paola pensando, pensándole el tiempo, pensando en no quitarte toda la tarde por supuesto este día viernes porque podría, podría bastar toda la tarde hay una pregunta que de alguna forma
+
+Paola (01:02:42.155)
+No, me quedé con que se quese
+
+Jorge Padilla Ogalde (01:02:42.227)
+¡Todo va estar toda la tarde!
+
+Oscar Vergara (01:02:48.786)
+la hago en nombre de las personas que puedan ver este podcast, capítulo y es... Si estoy pasando por un proceso de reinvención forzada como dijimos en algún minuto, de oye, me sacaron del trabajo, me quedé sin pega, llevo 15 años en una empresa y de repente ya no fui más un número en esta empresa...
+
+¿Cuáles son los consejos que tú, de alguna manera, no solamente a las personas que están enfrentando un cambio laboral o un cambio de estructura, sino que, en general, cuáles son los consejos que tú le puedes dar a la gente que hoy día están enfrentando un cambio, que están enfrentando esta oscuridad y tienen que dar un paso para seguir avanzando?
+
+Paola (01:03:29.665)
+Mira, no sé si yo no soy una palabra que te me genera ruido también los consejos, yo no doy consejos, no me gusta, pero lo que yo sí creo, Oscar, que es importante, que las personas, los seres humanos, busquemos lo mejor de nosotros. ¿Dónde yo puedo brillar? ¿Dónde yo soy feliz? ¿Dónde yo siento que soy yo?
+
+importándome nada, digamos, al mundo que está porque si yo estoy bien, a estar lo entorno mío va a estar bien, por lo tanto, me tengo que ocupar, me tengo que hacer cargo de mí. No puedo estar esperanzada que si me echan de... y con la jubilación o con la indemnización voy a hacer futuro. No, yo tengo que construir un futuro sabiendo que no tengo nada o tengo todo. Yo siempre he yo soy independiente, yo he sido empleada dos veces en mi vida.
+
+Y yo creo que la independencia a mí personalmente, a mí me ha hecho brillar. Yo hubiera sido empleada, yo trabajé en un banco y después fui gerente general de una empresa de comunicaciones. Yo creo que me hubiera atrofiado. muy carácter. yo no podría, no me gusta que me manten, no soy bastante más, yo soy más directiva. podría hacer que alguien me den instrucciones. No puedo, para esta lejos de mí. Entonces yo digo...
+
+Oscar Vergara (01:04:47.698)
+¿También entonces es un proceso de sincerarse?
+
+Paola (01:04:53.881)
+Claro, claro y las personas tienen cuando son cuando salen del mundo laboral tienen 24 horas que la han tenido siempre, pero las 24 horas se las destinan a alguien que ha espacio a un espacio que tal vez tan incómodo pero nadie está en un lugar que no quiere estar así que que hace que elegiste ese espacio que saca el beneficio de ese espacio pero no te quejes donde estuviste porque si te quejas donde tú elegiste estar
+
+Oscar Vergara (01:05:18.322)
+y
+
+Paola (01:05:22.957)
+O sea, ¿Nada es suficiente? ¿Dónde pueden estar? No, es que estoy ahí porque no tengo otra pega. Entonces, yo siempre he dicho, como la mosca y la abeja, no comas hay mierda vos? tú tienes la actitud... Mira, hay un autor que se llama Viktor Frankl, que es un psiquiatra que estuvo preso en la Segunda Guerra Mundial. No sé si os lo han leído. Tiene un libro que se llama El Hombre en busca del sentido.
+
+Oscar Vergara (01:05:23.89)
+Muerte.
+
+Paola (01:05:46.977)
+Es un libro maravilloso, es un libro maravilloso. Ese libro te muestra que la única libertad que tiene el ser humano es la elección. Nosotros tenemos otra lección, y la elección no es por hacer cosas, es la elección mental. Yo puedo elegir si todo el día me quejo o veo el lado oscuro o estoy mal o digo, ¿sabes qué? Estoy pasando mal, me siento, estoy triste, pero puedo buscar algo distinto. Puedo, depende de mí. Sí, depende de mí. Estando vivo...
+
+O sea, ¿cuánta gente uno tiene alrededor que tiene una enfermedad terminal y uno quiere tener vida y no que la que tiene vida se queja todo el día lo que tiene porque nunca es suficiente? Yo Nunca estamos conformes por lo que tenemos, lo hemos logrado. Siempre estamos buscando el pasto más verde del vecino. Siempre estamos buscando que el de allá, no sé, ¿cómo? Que tengo, tengo. Entonces yo creo que una persona que termina una vida laboral o que reinventarse tiene el mundo, tiene el mundo.
+
+Gaston Feijoo (01:06:23.887)
+¿Eh?
+
+Paola (01:06:44.813)
+Tiene que hacer redes. Yo siempre le digo a los cabros, cuando coucheo a los cabros que quieren entrar a la universidad o quieren empezar un emprendimiento. Búscate un referente que tú sientes que a ti te marcó para estudiar esta carrera o que tú quieres ser como él en el mundo laboral. anda y conversa con él, anda y golpeale la puerta. ¿Por qué esa persona se acostumbra? ¿Te va a decir claro? Escucha, porque a lo mejor tú tienes una fantasía de que el es lo que es.
+
+Oscar Vergara (01:07:05.838)
+Retroaliméntate, haz preguntas, indaga.
+
+Gaston Feijoo (01:07:13.802)
+claro.
+
+Oscar Vergara (01:07:14.564)
+Mirá, qué bueno ese concepto de la fantasía que uno instaura sobre las personas.
+
+Paola (01:07:15.064)
+¿Caté?
+
+Paola (01:07:20.194)
+Claro, oye.
+
+Gaston Feijoo (01:07:20.367)
+lo visualizas como un superhéroe y cuando charlas con él decís esto no lo que yo pensé que era
+
+Paola (01:07:24.857)
+Sabí que compadre la capa me la saco, y ya me pasó con una persona, estaba hablando con una persona y me hablaba de una relación que tenía con un trabajador y le decía, y me cuesta Paola, no sé qué, y le dije, ¿y dónde tú has desarrollado una habilidad comunicacional? Y me dice, un hijo de 30 años con trastornos intelectuales.
+
+Oscar Vergara (01:07:47.154)
+Llevo 30 años en esto.
+
+Paola (01:07:49.593)
+sea, imagínate la enseñanza. Ese es un gallo sabio de cómo se relaciona con un hijo en esas condiciones. yo dije, pero tú eres un maestro. Tú eres un maestro. O sea, no me digas que no puedes. Sí puedes. ¿Qué lo que haces con tu hijo que no puedes hacer con esta persona que trabaja contigo?
+
+Jorge Padilla Ogalde (01:07:56.722)
+Exacto.
+
+Gaston Feijoo (01:08:04.696)
+No. Paola, te...
+
+Jorge Padilla Ogalde (01:08:05.937)
+Que buena esa indagación. Que buena esa indagación.
+
+Oscar Vergara (01:08:06.002)
+Intagación C.
+
+Paola (01:08:07.618)
+sí, imagínate entonces entonces entonces porque veo un problema acá y acá que los veo los que he visto en esta relación con mi hijo si no es un deber ser he tenido que crear muchas formas he tenido que habitar desafío he tenido que equivocarme es un error entonces una persona que entra al mundo laboral anda y conversa con ese gallo que tú querís ser y pregúntale cómo logró tener lo que tiene
+
+Gaston Feijoo (01:08:35.423)
+Bueno, Paola yo te quiero hacer una pregunta, última y ya después, porque nos vamos a al tiempo, pero hay algo que te lo escuché y lo hablamos, Es como todas las personas son diferentes por experiencias que hemos tenido, por el carácter que tenemos, por lo que definimos como felicidad. Oscar puede tener cosas con las que él es súper feliz y si me las das a mí no es que yo pase a ser feliz, yo no soy feliz con eso viceversa. hablamos de esto, estábamos de acuerdo que todos son diferentes.
+
+Tú tienes una frase que a mí me encanta, la de formamos en serio, no en serie. Entonces digo, OK, entiendo que en todo esto del coaching hay algo muy de acercarse y entender a la persona que tenés enfrente. Y mi pregunta es, ¿cómo manejabas ese desafío cuando, por ejemplo, estabas con Audax o con Everton, donde tú no estás trabajando sobre una persona, estás trabajando sobre un grupo y que ese grupo además interpreta diferentes momentos? Porque tienes...
+
+Paola (01:09:09.913)
+Sí.
+
+Gaston Feijoo (01:09:33.881)
+jugadores que van a salir a la cancha pero por otro lado tienes un equipo técnico que está metido en el mismo desafío pero que no es el que va a patear la pelota cómo haces para... es ese desafío de hacer coaching a un grupo tan grande con tantas tareas diferentes?
+
+Paola (01:09:34.041)
+Sí.
+
+Paola (01:09:47.275)
+y diverso. En el fútbol la creencia más poderosa es el entrenador.
+
+Jorge Padilla Ogalde (01:09:55.688)
+mira.
+
+Paola (01:09:57.337)
+Sí, como cualquier deporte, pero en el fútbol porque el entrenador, como un líder, como un papá, modela valores. Nosotros modelamos. Ustedes tres están modelando una forma de acercar una conversación diferente al mundo de las personas que escuchan. Entonces nosotros tenemos que hacernos cargo de lo que modelamos. el entrenador es un modelo para los... O sea, imagínate que en Audax pasó...
+
+el jugador, uno de los futbolistas, uno de los arquero más conocidos en Chile. ¿Quién es?
+
+Gaston Feijoo (01:10:30.897)
+Claudio habías Bravo
+
+Paola (01:10:33.762)
+¿Quien más?
+
+Oscar Vergara (01:10:35.506)
+No, No se nada de futbol, me pillaron me atrevan a fórmula, me voy a a
+
+Jorge Padilla Ogalde (01:10:40.531)
+¿Me he Claudio Bravo?
+
+Paola (01:10:40.889)
+No, no es ese. Claudio... No, tipo. ¿Quién estuvo ahí?
+
+Oscar Vergara (01:10:42.008)
+El clásico, el clásico... El Cabeza de Muela? se llamaba, le decía, ¿no?
+
+Paola (01:10:48.313)
+que después se fue a la Chile, pero fue cadete.
+
+Oscar Vergara (01:10:51.762)
+y
+
+Jorge Padilla Ogalde (01:10:53.145)
+Johnny Herrera, claro.
+
+Paola (01:10:55.289)
+que tuvo el accidente automovilístico, ¿se acuerdan? Herrera. Entonces, Johnny Herrera tenía modelos, Y ese club, mira, el Audax tiene una cosa muy bonita que en su momento, porque en los Antillo la familia que estába, que tuvo mucho que ver con la Andrés Bello, ellos es muy aclanado.
+
+Oscar Vergara (01:10:58.536)
+al famoso Johnny Herrera. Wow.
+
+Paola (01:11:20.729)
+Los hinchas del Audax son familiares, es un barrio. No es todo Chile, es la Florida, es como la quinta región como el Everton. Cuando son clubes más chiquititos es el entorno más cercano sus hinchas. El Colo-Colo está repartido hasta en Europa, todos son Colocolinos. Es más amplio, entonces cuesta más.
+
+Oscar Vergara (01:11:26.354)
+mmm
+
+Gaston Feijoo (01:11:26.896)
+Claro.
+
+Oscar Vergara (01:11:43.058)
+de
+
+Paola (01:11:47.865)
+Entonces el valor del entrenador es un valor importante porque esa persona refiere muchas cosas. cuando yo llegué, pasaron tres personas en el proceso que yo estuve haciendo coach con el Audax primero fui con el Everton y ahí estába Castañeda, que venía justo llegando. Llegó dos semanas después que yo llegué como coach y ellos no creían en este espacio. No creían. El cuerpo técnico era el preparador físico. ahi esta cómo se llama...
+
+Jorge Padilla Ogalde (01:12:06.525)
+Mira.
+
+Gaston Feijoo (01:12:10.629)
+Paola (01:12:18.169)
+en la Audax estaba hoy día es profesor de educacion física y en es kinesiologo Ay, se llama, que un gallo muy querido. Él creía 100 % en el, el gerente técnico, sí, pero no todos. Entonces, cambiar esa creencia es acercarte a romper que ellos necesitan un cuerpo multifuncional, multidisciplinario y que un coach de una mirada distinta sí puede.
+
+Eso es lo que nosotros hicimos en tanto en el Everton como en el Audax, fue trabajar no solamente con él, sino que el cuerpo técnico, los jugadores y las familias. Porque son parte, porque mira, ¿qué hace un jugador de fútbol? Un jugador de fútbol entrena casi desde la mañana hasta las 3, 4 de la tarde, después se va a descansar y después quiere hacer nada. Entonces,
+
+Oscar Vergara (01:12:56.274)
+e involucrarlos a todos.
+
+Jorge Padilla Ogalde (01:12:56.867)
+¡Mira lo extenso del trabajo!
+
+Paola (01:13:16.013)
+¿Cómo ocupa? Yo le decía a los jugadores, ocupen su tiempo, no ir a mirar auto o a salir con la polola o a comprarse ropa, porque esos son los intereses de un jugador de fútbol en general. Es antes que estudie inglés, porque si tú querís llegar a Europa, querís llegar a un país, o a antes intruyete. Y eso es muy importante. Se los digo. Entonces, ¿cómo abrirles mapa a esas personas? El entrenador que quiere, que el cabro entrene y descanse, entrene y descanse. Entonces, ¿cómo le abres?
+
+El mapa, las creencias de un entrenador que mide más allá.
+
+Oscar Vergara (01:13:48.582)
+¿Cómo lo encauzas al proceso?
+
+Paola (01:13:50.713)
+porque es modelo de integral, de valores, de práctica, osea, no solamente de ese. Los noventa y ni tampoco el entrenamiento. El aprendizaje de un jugador de muchas otras disciplinas no está solamente en los noventa o el entrenamiento, lo que pasa entre una etapa y la otra. Porque las relaciones, vinculantes que tiene un jugador de fútbol son muy fuertes.
+
+Oscar Vergara (01:13:54.864)
+Porque a los 90 minutos no termina el partido, ahí continúa.
+
+Jorge Padilla Ogalde (01:14:00.723)
+sector.
+
+Oscar Vergara (01:14:12.818)
+No, no,
+
+Paola (01:14:20.089)
+marcan la vida de una persona y eso entonces entonces el entrenador es un equipo es un es crucial y el cuerpo técnico escucha al técnico porque el que la lleva y lo por supuesto los directivos ¿no? que dicen "a" pero si el cuerpo técnico dice "b" se va a hacer lo que él dice entonces tiene mucho
+
+Oscar Vergara (01:14:23.076)
+Increíble, que increíble como tenemos contacto con tantas cosas.
+
+Oscar Vergara (01:14:47.439)
+Sí, está menuda.
+
+Jorge Padilla Ogalde (01:14:47.995)
+Mira, que me gusta la analogía pensando lo que le pasa a Chile con su entrenador actual y todo en este modelo a seguir quizá nos está haciendo capaz de que lo sigan en el modelo. O no está instaurando ningún modelo también.
+
+Paola (01:15:01.305)
+Y eso hay que hacerlo porque genera vínculos, genera... osea, tú, los jugadores antiguos, le... Recuerdan a qué jugador... Tú le preguntas, ¿qué entrenador a ti te marcó la vida? Y hay miles. Pero esos miles de valorico son 3 o 4. Entonces... Claro, y no todos los...
+
+Oscar Vergara (01:15:20.818)
+que pasó con Bielsa de alguna manera en Chile. Que todo el mundo lo adoraba porque él tenía esta estructura de trabajo bien estricta pero que también se extendía a la vida personal, que hay que tener ciertos metodologías, acostarse temprano, levantarse temprano. Hábitos, sí.
+
+Jorge Padilla Ogalde (01:15:23.357)
+Claro.
+
+Paola (01:15:35.639)
+hábitos hábitos hábitos que a veces se repiten y los entrenadores van a algún lugar y el mismo hábito pero no todos los equipos tienen la misma forma de generar hábito además la situación social también de los jugadores aquí hay un tema importante de la familia hay que crear redes con la familia y es una labor del entrenador es parte del sistema
+
+Jorge Padilla Ogalde (01:15:36.563)
+habitos.
+
+Paola (01:16:04.697)
+es la vida sistémica, siempre, es igual que cuando tú tienes un hijo y lo llevas al psicólogo. Tú no dices, ah, el problema del cabro y yo aquí soy el papá, no más le pago la consulta. No es así, yo tengo que ir al psicólogo y oye, ¿cómo generamos? ¿Qué necesita? O la dieta de un hijo, no sé, sobrepeso y tú te comías una hamburguesa, le invitaste a McDonald's y el cabro come todo el día pollo con lechuga y está mostrando al lado tuyo, o sea, todo está en la dieta en la casa, porque es psicémico. No puede ser así.
+
+Oscar Vergara (01:16:32.818)
+Y es ahí donde unimos a lo que tú decías al principio, somos todos líderes. Porque de alguna manera estamos transmitiendo nuestro modus operandi, la forma de operar la vida, la forma de vivirla. O sea, de alguna forma van a absorber los que están alrededor.
+
+Paola (01:16:39.031)
+¿Y eso?
+
+Paola (01:16:44.981)
+En este sitio, aquí, usted mismo, este sistema aquí, lo mismo que estamos los cuatro en la pantalla, aquí cada uno es líder en su espacio para que esto funcione. Pero si le entregamos todo a Gastón y queda la escoba responsable de Gastón, no, o lo entregamos todo a Gastón, no puede ser. Cada uno en su espacio del sistema, tenemos una responsabilidad de liderazgo. Todos tenemos que ocupar esa competencia. El liderazgo no tiene que ir con jineta.
+
+No tiene que con un cargo, tiene que con actitud de vida.
+
+Oscar Vergara (01:17:18.29)
+Yo creo que esa es la mejor forma de cerrar esta conversación. Porque creo que engloba lo que hemos conversado en esta horita y cuarto próximamente de... Somos todos líderes, todos podemos mover a las personas, todos podemos motivar. Hay otra cosa que me quedó marcadísima y creo que lo voy a sugerir como el nombre del capítulo. Y es no comamos mierda. Si no queremos estar mal, si la queremos pasar bien, si queremos avanzar...
+
+Jorge Padilla Ogalde (01:17:18.65)
+Maravilloso.
+
+Gastón (01:17:22.592)
+de cerrar.
+
+Paola (01:17:30.745)
+Sí.
+
+Oscar Vergara (01:17:47.506)
+No vayamos a la mierda y avancemos donde está la miel porque ahí la vamos a pasar bien y vamos a hacer abejas. Así que, Paola, no tengo más que decirte que darte las gracias de haberte sumado, de haber tenido la disposición de compartir con nosotros, de sumarte con estas personas que no conoces, de robarte un espacio del día viernes. De verdad, muchas gracias. No sé si tú quieres...
+
+Jorge Padilla Ogalde (01:17:50.535)
+seamos abejas!
+
+Oscar Vergara (01:18:14.434)
+hacer algún comentario o Jorge Gastón tiene que algún comentario para despedir y invitar a la gente también a ver el siguiente capítulo también que vamos a tener disponible.
+
+Jorge Padilla Ogalde (01:18:23.985)
+A mí me gustaría decir algo... algo... algo rápido. que logramos el objetivo y una de las cosas que también hablamos es que tenemos un propósito para este podcast. Y el propósito es que generamos una hora o un cuarto de contenidos a través de una experta como Paola que aprovecho de agradecer su presencia también para que alguien lo ocupe como una herramienta y pueda tomar estas palabras clave, estas mismas frases de convertirse en una abeja, ir a buscar y movilizarse para ayudar a alguien.
+
+Gastón (01:18:24.142)
+Llevo en mi lado, dale, dale vamos ver
+
+Jorge Padilla Ogalde (01:18:53.555)
+Y ese es el propósito de este podcast y creo que lo logramos. lo logramos, muchas gracias Paola por haber ayudado a lograr eso. Que ese es lo que queremos hacer. No queremos una chapita, no queremos generar tantos chapitas para la vida, sino que queremos dejar estas herramientas para que alguien las pueda rescatar, consumir y utilizarlas para desplazarse. Eso es mi mensaje.
+
+Gastón (01:19:17.184)
+Y yo de mi parte, Pavola, también agradecerte tu tiempo el estar acá con nosotros. Y como tú dijiste que te gustaba la incomodidad, te quiero incomodar ahora que todavía estamos grabando. Me gustaría invitarte para que nos volviéramos a juntar en un par de episodios más, porque creo que tienes muchísimo para darnos, muchísimo para aprender.
+
+Así que seguramente en esta ronda que tenemos acá con los muchachos para seguir entrevistando gente vamos a encontrar temas que te vamos a querer traer. Así que te quiero pedir que dentro de meses, semanas, sé, ahí veremos. Nos vuelves a dar un espacio porque es muy nutritivo lo que nos dice.
+
+Paola (01:19:48.767)
+A fele.
+
+Paola (01:19:54.521)
+No, gracias, yo feliz, a mí me encantan las conversaciones y yo quiero agradecerles también, me sentí muy cómoda, a mí me encanta lo natural, lo espontáneo, no me gustan las cosas estructuradas, me siento incómoda, yo soy, bueno, muchas veces más irreverente que compuesta, no soy bien comportada yo. Entonces, pero me gusta y me encantó, ¿saben qué? el interés de usted, el lenguaje de usted.
+
+Jorge Padilla Ogalde (01:20:07.121)
+jajaja
+
+Paola (01:20:21.561)
+Y creo plenamente en este tipo de recursos para que la gente escuche, se siente identificado con cosas simples de la vida. Lo que es que tenemos historias de la vida, y todos, que a veces no las contamos, no las decimos porque no es distinto. Nos puede servir para otro, puede ser un ingrediente de decir, oye, pucha cómo llegó acá. Igual, como todas las personas, pero tenemos que...
+
+Jorge Padilla Ogalde (01:20:39.389)
+exacto.
+
+Jorge Padilla Ogalde (01:20:47.783)
+sector.
+
+Paola (01:20:48.823)
+Sentiendo orgulloso lo que hemos creado. Eso sí, yo creo que es importante. Darle fuerza a lo... a hacer... como dejar este post, ¿no? Dejar ser más tiempo abeja sin pasar por ser mosca. Porque la mierda también nos sirve para darnos cuenta de dónde estamos.
+
+Oscar Vergara (01:21:08.85)
+Sí, los contrastes
+
+Paola (01:21:11.639)
+Sí, Ya, un beso a los tres. Gracias, pasen lo bien. Y ustedes me dicen cómo pago esto.
+
+Oscar Vergara (01:21:12.9)
+Hola, muchísimas gracias por el tiempo.
+
+Oscar Vergara (01:21:18.482)
+No, te sales de la reunión y dejas que termine de cargar la información. Te aparece arriba un indicador de cuál porcentaje lleva de carga. Cuando llegue al 100, ya te puedes salir. Exacto, tienes que cortar la llama como el teléfono y no cerrar el navegador. muy importante.
+
+Jorge Padilla Ogalde (01:21:27.845)
+tiene que seleccionar lib entonces el cortar la llamada como el teléfono no cerrar el navegador
+
+Paola (01:21:35.441)
+solamente corta el teléfono y deja ya ya beso gracias a usted, pasalo bien chau chau, les suporto chau
+
+Oscar Vergara (01:21:37.419)
+Exacto. Te mandamos un abrazo gigante. Cuídate mucho. Que estés bien. Chao.
+
+Jorge Padilla Ogalde (01:21:37.796)
+Exacto.
+
+Abrazo gigante y gracias Paola. Gracias, Chao, chao.
+
+Oscar Vergara (01:21:46.19)
+Oye, qué buena conversación. Qué buena conversación. Qué buena conversación.
+
+Gastón (01:21:49.332)
+Perdón, pero yo le tuve que pedir...
+
+Jorge Padilla Ogalde (01:21:51.207)
+Yo miraba a Gastón y Gastón miraba así como enamorado, así como ella es la psicóloga que necesite toda la vida.
+
+Oscar Vergara (01:21:55.614)
+jajajaja
+
+Gastón (01:21:57.23)
+Le tuve que pedir mas tiempo, le tuve que pedir mas tiempo, necesitaba mas tiempo de ella.
+
+Oscar Vergara (01:22:00.24)
+Sí claro.
+
+y que a y de alle, e yine y de alle.
+
+Jorge Padilla Ogalde (01:22:03.475)
+Si, no, pero después se nos va a ascender mucho el podcast, por eso hay que cortar. hecho, yo estaba creyendo desde ahí como terminemos, porque si no va a ser aburrido tanto tiempo.
+
+Oscar Vergara (01:22:10.034)
+Sí, sí, yo creo que el tiempo estuvo perfecto. Ella también se desenvolvió súper bien. Pero te damos un segundo que me estaban dando un mensaje. Gracias por unirte. Le damos un segundito. que están todos acá.
+
+Jorge Padilla Ogalde (01:22:21.171)
+¿Yo era la mina?
+
+Jorge Padilla Ogalde (01:22:26.419)
+Wampus T2 en caso se le apagó la cámara Gastón, suena una llamada... Ah ahí está por eso y a Oscar también se desconectó de un rato weón
+
+Gastón (01:22:31.606)
+A mi se me acabó la batería.
+
+Oscar Vergara (01:22:34.802)
+Deja irlo. En realidad si también se desconectó. Pero tranquilo porque justo cuando...
+
+Gastón (01:22:39.264)
+A mi se me acabó la batería pero si tenía como backup la computadora.
+
+Oscar Vergara (01:22:43.8)
+justo, voy a, voy a jodir ahora.
+
+Jorge Padilla Ogalde (01:22:43.911)
+Sí, estuvo bueno.
+

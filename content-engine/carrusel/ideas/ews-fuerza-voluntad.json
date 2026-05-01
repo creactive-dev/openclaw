@@ -1,0 +1,59 @@
+{
+  "titulo": "Por qué la fuerza de voluntad nunca funcionó",
+  "slug": "ews-fuerza-voluntad",
+  "template_set": "easyway",
+  "palabras_clave": ["fuerza de voluntad", "95%", "mental", "Easyway"],
+  "slides": [
+    {
+      "layout": "hero-dark",
+      "etiqueta": "Desmitificar",
+      "headline": "No es falta de *fuerza de voluntad*.",
+      "subheadline": "Llevas años intentándolo. El problema no eres tú — es el método."
+    },
+    {
+      "layout": "stat",
+      "etiqueta": "El problema",
+      "number": "95%",
+      "label": "de la adicción es mental",
+      "context": "Solo el 5% es físico. Los parches, chicles y medicamentos atacan ese 5% — y por eso fallan."
+    },
+    {
+      "layout": "content-light",
+      "etiqueta": "Lo que falla",
+      "titulo": "Métodos que atacan el *5% equivocado*",
+      "bullets": [
+        "Parches de nicotina: reemplazan la sustancia, no el deseo",
+        "Fuerza de voluntad: luchar contra ti mismo no es dejar — es resistir",
+        "Medicamentos: efectos secundarios sin cambiar la raíz mental",
+        "Cigarrillos electrónicos: misma trampa, diferente envase"
+      ]
+    },
+    {
+      "layout": "content",
+      "etiqueta": "El método Easyway",
+      "titulo": "Easyway ataca el *95% mental*",
+      "bullets": [
+        "Elimina el DESEO de fumar — no lo reprime",
+        "Una sola sesión de 6 horas, sin sufrimiento ni medicamentos",
+        "40 años de historia, 50 países, 90% de tasa de éxito",
+        "Al final de la sesión fumas tu último cigarro conscientemente"
+      ]
+    },
+    {
+      "layout": "quote",
+      "quote": "Es brillante... fumas tu *último cigarro* y ya está.",
+      "author": "Ashton Kutcher"
+    },
+    {
+      "layout": "cta",
+      "texto": "¿Listo para *liberarte* del tabaco?",
+      "cta": "Reserva en easyway.cl",
+      "nota": "Garantía 100% — si no dejas de fumar en 3 meses, te devolvemos el dinero."
+    }
+  ],
+  "captions": {
+    "instagram": "La mayoría cree que no puede dejar de fumar por falta de fuerza de voluntad.\n\nNo es eso.\n\nLa adicción al tabaco es 95% mental. Los métodos convencionales (parches, medicamentos, e-cigs) atacan el 5% físico — y por eso fallan después de días.\n\nEasyway trabaja el 95% que importa. Sin sufrimiento. Sin medicamentos. En una sola sesión de 6 horas.\n\n40 años. 50 países. 90% de éxito. Garantía del 100%.\n\nEl siguiente seminario está en easyway.cl ↓\n\n#Seatrevió #DejarDeFumar #EasywayChile #AllenCarr",
+    "linkedin": "Cada año, miles de personas en Chile intentan dejar de fumar — y fracasan.\n\nNo es falta de voluntad. Es que atacan el problema equivocado.\n\nLa adicción al tabaco es 95% mental y solo 5% física. Pero casi todos los métodos (parches, medicamentos, cigarrillos electrónicos) combaten ese 5%. Por eso el síndrome de abstinencia dura 3-4 días máximo... y sin embargo la gente sigue fumando 10, 20, 30 años.\n\nEl método Easyway, desarrollado por Allen Carr hace 40 años, ataca el 95% mental. Una sola sesión de 6 horas. Sin medicamentos. Sin sufrimiento. Con garantía del 100%.\n\nOperamos en Chile hace años. ¿Quieres saber cómo funciona? DM o +56 9 8342 3928.\n\n#CesaciónTabáquica #BienestarLaboral #EasywayChile",
+    "threads": "No es falta de fuerza de voluntad. La adicción al tabaco es 95% mental. Los parches atacan el 5% físico. Por eso fallan. Easyway ataca el 95. Una sesión. 90% de éxito. 40 años."
+  }
+}
