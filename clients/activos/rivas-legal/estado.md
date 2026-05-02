@@ -1,14 +1,18 @@
 # Estado — Rivas Legal
-Última actualización: 2026-04-15
+Última actualización: 2026-05-02
+
+## Estado
+⛔ INACTIVO — ya no es cliente activo (confirmado por Oscar el 2026-05-02)
 
 ## Última interacción
 Fecha: 2026-04-15
 Tipo: seguimiento administrativo
 Resumen: Retainer activo. En espera administrativa.
 
-## Contexto activo
+## Historial
 - Web y chat con IA entregados y funcionando correctamente.
-- Estado actual: Esperando poder facturar para realizar el cobro correspondiente.
+- Estaba esperando facturación para cobro.
+- Cliente dado de baja en mayo 2026.
 
-## Próximo hito
-Qué: Emitir factura y concretar el cobro al cliente.
+## Acción pendiente
+→ Mover carpeta de `clients/activos/` a `clients/archivo/` cuando se confirme cierre formal.
