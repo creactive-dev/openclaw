@@ -25,3 +25,4 @@
 
 *Última actualización: 2026-05-01*
 - [ ] Test de sincronización CAS → GitHub
+- [ ] Preparar entregables de migración de salida para Rivas Legal (accesos, archivos, documentación) — @rivas-legal
