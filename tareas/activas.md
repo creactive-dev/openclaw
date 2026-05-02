@@ -24,3 +24,4 @@
 ---
 
 *Última actualización: 2026-05-01*
+- [ ] Test de sincronización CAS → GitHub
